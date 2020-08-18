@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Fuddi-Landing-Page/precache-manifest.950b2960d696c7435ae11d874835da66.js"
+  "/Fuddi-Landing-Page/precache-manifest.d233b203e8259957115d306046beb7f4.js"
 );
 
 self.addEventListener('message', (event) => {
