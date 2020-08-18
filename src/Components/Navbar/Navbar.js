@@ -8,7 +8,8 @@ const Navbar = props => {
     return (
         <header>
             <div className="logo">
-                <img alt="logo"/>
+                {/*<img alt="logo"/>*/}
+                <h1>Logo</h1>
             </div>
             <NavList/>
         </header>
