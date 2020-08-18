@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Fuddi-Landing-Page/static/css/main.27fd15f6.chunk.css",
-    "main.js": "/Fuddi-Landing-Page/static/js/main.6f0716f9.chunk.js",
-    "main.js.map": "/Fuddi-Landing-Page/static/js/main.6f0716f9.chunk.js.map",
+    "main.css": "/Fuddi-Landing-Page/static/css/main.c786d0e7.chunk.css",
+    "main.js": "/Fuddi-Landing-Page/static/js/main.86cc7b0b.chunk.js",
+    "main.js.map": "/Fuddi-Landing-Page/static/js/main.86cc7b0b.chunk.js.map",
     "runtime-main.js": "/Fuddi-Landing-Page/static/js/runtime-main.dd35f3a7.js",
     "runtime-main.js.map": "/Fuddi-Landing-Page/static/js/runtime-main.dd35f3a7.js.map",
     "static/js/2.e1e9c436.chunk.js": "/Fuddi-Landing-Page/static/js/2.e1e9c436.chunk.js",
     "static/js/2.e1e9c436.chunk.js.map": "/Fuddi-Landing-Page/static/js/2.e1e9c436.chunk.js.map",
     "index.html": "/Fuddi-Landing-Page/index.html",
-    "precache-manifest.2250c0c071b652e216eb708db1efbe9e.js": "/Fuddi-Landing-Page/precache-manifest.2250c0c071b652e216eb708db1efbe9e.js",
+    "precache-manifest.e3afbb55c10946bd897116dddf2ccf68.js": "/Fuddi-Landing-Page/precache-manifest.e3afbb55c10946bd897116dddf2ccf68.js",
     "service-worker.js": "/Fuddi-Landing-Page/service-worker.js",
-    "static/css/main.27fd15f6.chunk.css.map": "/Fuddi-Landing-Page/static/css/main.27fd15f6.chunk.css.map",
+    "static/css/main.c786d0e7.chunk.css.map": "/Fuddi-Landing-Page/static/css/main.c786d0e7.chunk.css.map",
     "static/js/2.e1e9c436.chunk.js.LICENSE.txt": "/Fuddi-Landing-Page/static/js/2.e1e9c436.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dd35f3a7.js",
     "static/js/2.e1e9c436.chunk.js",
-    "static/css/main.27fd15f6.chunk.css",
-    "static/js/main.6f0716f9.chunk.js"
+    "static/css/main.c786d0e7.chunk.css",
+    "static/js/main.86cc7b0b.chunk.js"
   ]
 }
