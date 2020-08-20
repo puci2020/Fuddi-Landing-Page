@@ -1,7 +1,7 @@
 .home {
   background-color: dimgray;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: calc(100vh - 135px);
 }
 
 /*# sourceMappingURL=Home.css.map */
