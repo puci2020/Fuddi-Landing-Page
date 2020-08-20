@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Fuddi-Landing-Page/static/css/main.c786d0e7.chunk.css",
+    "main.css": "/Fuddi-Landing-Page/static/css/main.01d696d5.chunk.css",
     "main.js": "/Fuddi-Landing-Page/static/js/main.8a4992a0.chunk.js",
     "main.js.map": "/Fuddi-Landing-Page/static/js/main.8a4992a0.chunk.js.map",
     "runtime-main.js": "/Fuddi-Landing-Page/static/js/runtime-main.dd35f3a7.js",
@@ -8,15 +8,15 @@
     "static/js/2.e1e9c436.chunk.js": "/Fuddi-Landing-Page/static/js/2.e1e9c436.chunk.js",
     "static/js/2.e1e9c436.chunk.js.map": "/Fuddi-Landing-Page/static/js/2.e1e9c436.chunk.js.map",
     "index.html": "/Fuddi-Landing-Page/index.html",
-    "precache-manifest.056687c294beb74d8a1b61d1e85dfda3.js": "/Fuddi-Landing-Page/precache-manifest.056687c294beb74d8a1b61d1e85dfda3.js",
+    "precache-manifest.f5b36919c98eded91012cc3af7d4f48f.js": "/Fuddi-Landing-Page/precache-manifest.f5b36919c98eded91012cc3af7d4f48f.js",
     "service-worker.js": "/Fuddi-Landing-Page/service-worker.js",
-    "static/css/main.c786d0e7.chunk.css.map": "/Fuddi-Landing-Page/static/css/main.c786d0e7.chunk.css.map",
+    "static/css/main.01d696d5.chunk.css.map": "/Fuddi-Landing-Page/static/css/main.01d696d5.chunk.css.map",
     "static/js/2.e1e9c436.chunk.js.LICENSE.txt": "/Fuddi-Landing-Page/static/js/2.e1e9c436.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dd35f3a7.js",
     "static/js/2.e1e9c436.chunk.js",
-    "static/css/main.c786d0e7.chunk.css",
+    "static/css/main.01d696d5.chunk.css",
     "static/js/main.8a4992a0.chunk.js"
   ]
 }
