@@ -12,6 +12,10 @@
   transform: translateX(-100%);
   transition: transform 1s ease-out;
 }
+.side-drawer nav {
+  display: flex;
+  justify-content: center;
+}
 .side-drawer ul {
   list-style: none;
   display: flex;
