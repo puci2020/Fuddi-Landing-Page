@@ -1,7 +1,8 @@
 .nav
-  position: relative
+  position: absolute
   //float: right
   width: auto
+  right: 10%
   //display: flex
   //justify-content:
   //background-color: red
@@ -29,3 +30,8 @@
         &:hover
           color: #FDFF00
           cursor: pointer
+
+@media (max-width: 768px)
+
+  .nav ul
+    display: none

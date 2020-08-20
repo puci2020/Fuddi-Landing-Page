@@ -1,0 +1,42 @@
+.side-drawer
+  height: 100vh
+  background: #1f2021
+  box-shadow: 2px 0 5px rgba(0,0,0, .5)
+  position: fixed
+  top: 0
+  left: 0
+  width: 70%
+  max-width: 400px
+  display: flex
+  //justify-content: center
+  align-items: center
+  transform: translateX(-100%)
+  transition: transform 1s ease-out
+
+  ul
+    list-style: none
+    display: flex
+    align-items: center
+    margin: 0
+    padding: 0 30px
+    height: auto
+    flex-direction: column
+
+  li
+    padding: 25px 10px
+
+    a
+      text-decoration: none
+      color: #FFFFFF
+
+      &:hover
+        color: #FDFF00
+        cursor: pointer
+
+.open
+  transform: translateX(0)
+
+@media (min-width: 769px)
+  .side-drawer
+    display: none
+

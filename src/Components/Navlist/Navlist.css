@@ -1,6 +1,7 @@
 .nav {
-  position: relative;
+  position: absolute;
   width: auto;
+  right: 10%;
 }
 .nav .links {
   height: 74px;
@@ -22,6 +23,12 @@
 .nav ul li a:hover {
   color: #FDFF00;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=Navlist.css.map */
