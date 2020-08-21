@@ -1,7 +1,23 @@
 .home {
-  background-color: dimgray;
+  background-image: url("../../img/par1_komp.png");
   width: 100vw;
   height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+.home .layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.home .layer img {
+  height: 100%;
+  width: auto;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=Home.css.map */
