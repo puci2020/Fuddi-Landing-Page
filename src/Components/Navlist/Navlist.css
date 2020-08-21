@@ -25,9 +25,41 @@
   cursor: pointer;
 }
 
+#lang2 {
+  display: none;
+}
+
+#lang {
+  margin-left: 30px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+#lang option {
+  color: black;
+}
+
 @media (max-width: 768px) {
   .nav ul {
     display: none;
+  }
+
+  #lang {
+    display: none;
+  }
+
+  #lang2 {
+    display: block;
+  }
+  #lang2 button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
   }
 }
 
