@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/Fuddi-Landing-Page/static/css/main.b6c1dae1.chunk.css",
-    "main.js": "/Fuddi-Landing-Page/static/js/main.042e8efb.chunk.js",
-    "main.js.map": "/Fuddi-Landing-Page/static/js/main.042e8efb.chunk.js.map",
+    "main.css": "/Fuddi-Landing-Page/static/css/main.5f4e7947.chunk.css",
+    "main.js": "/Fuddi-Landing-Page/static/js/main.ecb1235e.chunk.js",
+    "main.js.map": "/Fuddi-Landing-Page/static/js/main.ecb1235e.chunk.js.map",
     "runtime~main.js": "/Fuddi-Landing-Page/static/js/runtime~main.e342184c.js",
     "runtime~main.js.map": "/Fuddi-Landing-Page/static/js/runtime~main.e342184c.js.map",
-    "static/js/2.d08994be.chunk.js": "/Fuddi-Landing-Page/static/js/2.d08994be.chunk.js",
-    "static/js/2.d08994be.chunk.js.map": "/Fuddi-Landing-Page/static/js/2.d08994be.chunk.js.map",
+    "static/js/2.454f209d.chunk.js": "/Fuddi-Landing-Page/static/js/2.454f209d.chunk.js",
+    "static/js/2.454f209d.chunk.js.map": "/Fuddi-Landing-Page/static/js/2.454f209d.chunk.js.map",
     "index.html": "/Fuddi-Landing-Page/index.html",
-    "precache-manifest.de0abb542c118878cad34472001df706.js": "/Fuddi-Landing-Page/precache-manifest.de0abb542c118878cad34472001df706.js",
+    "precache-manifest.6ac3ece54cbd11d7648d18a73e82021b.js": "/Fuddi-Landing-Page/precache-manifest.6ac3ece54cbd11d7648d18a73e82021b.js",
     "service-worker.js": "/Fuddi-Landing-Page/service-worker.js",
-    "static/css/main.b6c1dae1.chunk.css.map": "/Fuddi-Landing-Page/static/css/main.b6c1dae1.chunk.css.map",
+    "static/css/main.5f4e7947.chunk.css.map": "/Fuddi-Landing-Page/static/css/main.5f4e7947.chunk.css.map",
     "static/media/app.png": "/Fuddi-Landing-Page/static/media/app.e0aab94f.png",
     "static/media/Home.css": "/Fuddi-Landing-Page/static/media/field3.b3c26dab.jpeg",
     "static/media/logo.png": "/Fuddi-Landing-Page/static/media/logo.8329ff52.png",
+    "static/media/roadmap.png": "/Fuddi-Landing-Page/static/media/roadmap.f5ec31af.png",
     "static/media/white3.png": "/Fuddi-Landing-Page/static/media/white3.06bf648d.png"
   }
 }
