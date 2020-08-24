@@ -11,7 +11,7 @@ function Header() {
             <h1>{t('home.header1')}</h1>
             <h1>{t('home.header2')}</h1>
             {/*<h3>{t('home.header3')}</h3>*/}
-            <a href="#about"><button>Sprawdź teraz!</button></a>
+            <a href="#about"><button>{t('home.button')}</button></a>
         </div>
     );
 

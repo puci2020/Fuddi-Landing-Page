@@ -4,7 +4,7 @@
   top: 0;
   height: 153px;
   width: 100vw;
-  padding: 0 85px 10px 85px;
+  padding: 0 85px 10px 10%;
   display: flex;
   align-items: center;
   color: #FFFFFF;
@@ -24,10 +24,22 @@
   height: 100%;
 }
 
+.logo_title {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  transition: 1s;
+}
+
 .active {
   background-color: #18611cdb;
   height: 100px;
   font-size: 0.9rem;
+}
+
+.logo_active {
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
 }
 
 /*# sourceMappingURL=Navbar.css.map */

@@ -6,7 +6,8 @@ function Roadmap() {
 
 
     return (
-        <div className="roadmap">
+        <div className="roadmap" id="roadmap">
+            <div className="space"></div>
             <h2> Road Map</h2>
             <div className="map">
                 <img src={roadmap}/>

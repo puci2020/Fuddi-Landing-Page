@@ -21,8 +21,8 @@ function NavList()
         <div className="nav">
             <ul>
                 <li><a href="#home">{t("link1.1")}</a></li>
-                <li><a href="#about">{t('link2.1')}</a></li>
-                <li><a href="#">{t('link3.1')}</a></li>
+                <li><a href="#about">{t('link3.1')}</a></li>
+                <li><a href="#roadmap">{t('link2.1')}</a></li>
                 <li><a href="#">{t('link4.1')}</a></li>
                 <li><select id="lang" onChange={()=>changeLanguage()}>
                     <option value={'pl'}>PL</option>

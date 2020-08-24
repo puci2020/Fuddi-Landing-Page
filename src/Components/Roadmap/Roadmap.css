@@ -2,7 +2,13 @@
   background-color: #183361;
   width: 100vw;
   height: auto;
-  padding-top: 100px;
+  margin-top: 100px;
+}
+
+.space {
+  height: 100px;
+  background-color: white;
+  width: 100%;
 }
 
 .map {
@@ -13,6 +19,12 @@
 .map img {
   width: 70%;
   height: auto;
+}
+
+h2 {
+  color: white;
+  text-shadow: 0.3rem 0.3rem 0.4rem black;
+  margin: 40px 20px 40px 15vw;
 }
 
 @media (max-width: 768px) {
