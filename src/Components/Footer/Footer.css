@@ -8,8 +8,6 @@ footer {
   flex-direction: column;
 }
 footer .logo_item {
-  position: relative;
-  float: left;
   height: 50px;
   width: auto;
   overflow: hidden;
