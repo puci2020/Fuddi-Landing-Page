@@ -4,6 +4,7 @@ import white from './../../img/white3.png';
 import Header from "../Header/Header";
 import app from "../../img/app.png"
 import {Parallax} from "react-scroll-parallax/cjs";
+import Grid from '@material-ui/core/Grid';
 
 class Home extends Component {
 
@@ -17,16 +18,25 @@ class Home extends Component {
                 {/*<Parallax className="layer secound_layer" y={[70, -10]} tagOuter="figure">*/}
                 {/*    <img className="white" src={white}/>*/}
                 {/*</Parallax>*/}
-                <Parallax className="phone" y={[40, -30]} tagOuter="figure">
-                    <div className="item">
-                        <img src={app}/>
+                <Grid container>
+                    <Grid item className="caption" xs={12} md={6}>
+                        <Header/>
+                    </Grid>
+                    <Grid item className="caption" xs={12} md={6}>
+                        <Parallax className="phone" y={[160, -30]} tagOuter="figure">
+                            <div className="item">
+                                <img src={app}/>
 
-                    </div>
-                </Parallax>
+                            </div>
+                        </Parallax>
+                    </Grid>
+                </Grid>
 
-                <Header/>
+                < img
+                    className="layer white"
+                    src={white}
+                />
 
-                <img className="layer white" src={white}/>
             </div>
         );
     }

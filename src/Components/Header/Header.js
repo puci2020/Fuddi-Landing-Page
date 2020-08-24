@@ -10,7 +10,8 @@ function Header() {
         <div className="title">
             <h1>{t('home.header1')}</h1>
             <h1>{t('home.header2')}</h1>
-            <h3>{t('home.header3')}</h3>
+            {/*<h3>{t('home.header3')}</h3>*/}
+            <button>Sprawdź teraz!</button>
         </div>
     );
 
