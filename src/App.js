@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
 import {ParallaxProvider} from 'react-scroll-parallax';
 import Roadmap from "./Components/Roadmap/Roadmap";
+import Footer from "./Components/Footer/Footer";
 
 class App extends Component {
     state = {
@@ -56,7 +57,7 @@ class App extends Component {
                 {sideDrawer}
                 <About/>
                 <Roadmap/>
-
+                <Footer/>
             </div>
         );
     }
