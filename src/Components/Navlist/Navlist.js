@@ -25,17 +25,21 @@ function NavList() {
                           duration={500}>{t("link1.1")}</Link>
                 </li>
                 <li>
-                    <Link activeClass="a" to="about" spy={true} smooth={true} offset={-100}
+                    <Link activeClass="a" to="about" spy={true} smooth={true} offset={-80}
                           duration={500}>{t("link3.1")}</Link>
                 </li>
                 <li>
-                    <Link activeClass="a" to="roadmap" spy={true} smooth={true} offset={-100}
+                    <Link activeClass="a" to="roadmap" spy={true} smooth={true} offset={-80}
                           duration={500}>{t("link2.1")}</Link>
+                </li>
+                <li>
+                    <Link activeClass="a" to="footer" spy={true} smooth={true} offset={0}
+                          duration={500}>{t("link4.1")}</Link>
                 </li>
                 {/*<li><a href="#home">{t("link1.1")}</a></li>*/}
                 {/*<li><a href="#about">{t('link3.1')}</a></li>*/}
                 {/*<li><a href="#roadmap">{t('link2.1')}</a></li>*/}
-                <li><a href="#">{t('link4.1')}</a></li>
+                {/*<li><a href="#">{t('link4.1')}</a></li>*/}
                 <li><select id="lang" onChange={() => changeLanguage()}>
                     <option value={'pl'}>PL</option>
                     <option value={'en'}>EN</option>

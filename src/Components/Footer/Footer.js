@@ -12,36 +12,31 @@ function Footer() {
 
     return (
 
-        <footer>
+        <footer id="footer">
+            <div className="logo_container">
+                <div className="logo_item">
+                    <img src={logo} alt="Fuddi logo"/>
+                </div>
+                <div className="logo_title_footer">Fuddi</div>
+            </div>
+            <div className="social">
+                <img src={facebook} alt="Facebook"/>
+                <img src={instagram} alt="Instagram"/>
+                <img src={linkedin} alt="Linkedin"/>
+            </div>
+            <div className="google">
+                <img src={google} alt="Google"/>
+            </div>
 
+            <div className="contact">
+                <img src={mail} alt="Email"/>
+                <a href={"mailto:fuddi@gmail.com"}>fuddi@gmail.com</a>
+            </div>
 
-            {/*<Grid container>*/}
-            {/*    <Grid item className="left" xs={12} md={6}>*/}
-                    <div className="logo_container">
-                        <div className="logo_item">
-                            <img src={logo} alt="Fuddi logo"/>
-                        </div>
-                        <div className="logo_title_footer">Fuddi</div>
-                    </div>
-                    <div className="social">
-                        <img src={facebook} alt="Facebook"/>
-                        <img src={instagram} alt="Instagram"/>
-                        <img src={linkedin} alt="Linkedin"/>
-                    </div>
-                    <div className="google">
-                        <img src={google} alt="Google"/>
-                    </div>
-                {/*</Grid>*/}
-                {/*<Grid item className="right" xs={12} md={6}>*/}
-                    <div className="contact">
-                        <img src={mail} alt="Email"/>
-                        <a href={"mailto:fuddi@gmail.com"}>fuddi@gmail.com</a>
-                    </div>
-                {/*</Grid>*/}
-                {/*<Grid item className="bottom" xs={12} md={12}>*/}
-                    <div className="copyright">© 2020 Wombadi. All rights reserved</div>
-            {/*    </Grid>*/}
-            {/*</Grid>*/}
+            <div className="copyright">© 2020
+                <a href="https://wombadi.pl/"> <u>Wombadi</u></a>
+                . All rights reserved
+            </div>
         </footer>
     );
 }
