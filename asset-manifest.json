@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/Fuddi-Landing-Page/static/css/main.e6ce2175.chunk.css",
-    "main.js": "/Fuddi-Landing-Page/static/js/main.510d098b.chunk.js",
-    "main.js.map": "/Fuddi-Landing-Page/static/js/main.510d098b.chunk.js.map",
+    "main.css": "/Fuddi-Landing-Page/static/css/main.efe1df0b.chunk.css",
+    "main.js": "/Fuddi-Landing-Page/static/js/main.809ffcfb.chunk.js",
+    "main.js.map": "/Fuddi-Landing-Page/static/js/main.809ffcfb.chunk.js.map",
     "runtime~main.js": "/Fuddi-Landing-Page/static/js/runtime~main.e342184c.js",
     "runtime~main.js.map": "/Fuddi-Landing-Page/static/js/runtime~main.e342184c.js.map",
-    "static/js/2.f494e6d4.chunk.js": "/Fuddi-Landing-Page/static/js/2.f494e6d4.chunk.js",
-    "static/js/2.f494e6d4.chunk.js.map": "/Fuddi-Landing-Page/static/js/2.f494e6d4.chunk.js.map",
+    "static/js/2.1f5fd474.chunk.js": "/Fuddi-Landing-Page/static/js/2.1f5fd474.chunk.js",
+    "static/js/2.1f5fd474.chunk.js.map": "/Fuddi-Landing-Page/static/js/2.1f5fd474.chunk.js.map",
     "index.html": "/Fuddi-Landing-Page/index.html",
-    "precache-manifest.36de6605cbd00cf84cb30d8bfc266a7e.js": "/Fuddi-Landing-Page/precache-manifest.36de6605cbd00cf84cb30d8bfc266a7e.js",
+    "precache-manifest.15d4b608c22955e1bc7440f446e57e17.js": "/Fuddi-Landing-Page/precache-manifest.15d4b608c22955e1bc7440f446e57e17.js",
     "service-worker.js": "/Fuddi-Landing-Page/service-worker.js",
-    "static/css/main.e6ce2175.chunk.css.map": "/Fuddi-Landing-Page/static/css/main.e6ce2175.chunk.css.map",
-    "static/media/Home.css": "/Fuddi-Landing-Page/static/media/par1_komp.dcc16e10.png",
-    "static/media/par2_komp.png": "/Fuddi-Landing-Page/static/media/par2_komp.050dd226.png",
-    "static/media/par3_komp.png": "/Fuddi-Landing-Page/static/media/par3_komp.ca6cb24c.png"
+    "static/css/main.efe1df0b.chunk.css.map": "/Fuddi-Landing-Page/static/css/main.efe1df0b.chunk.css.map",
+    "static/media/app.png": "/Fuddi-Landing-Page/static/media/app.e0aab94f.png",
+    "static/media/Home.css": "/Fuddi-Landing-Page/static/media/field3.b3c26dab.jpeg",
+    "static/media/logo.png": "/Fuddi-Landing-Page/static/media/logo.8329ff52.png",
+    "static/media/white3.png": "/Fuddi-Landing-Page/static/media/white3.06bf648d.png"
   }
 }
