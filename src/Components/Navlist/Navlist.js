@@ -20,8 +20,8 @@ function NavList()
     return (
         <div className="nav">
             <ul>
-                <li><a href="#">{t("link1.1")}</a></li>
-                <li><a href="#">{t('link2.1')}</a></li>
+                <li><a href="#home">{t("link1.1")}</a></li>
+                <li><a href="#about">{t('link2.1')}</a></li>
                 <li><a href="#">{t('link3.1')}</a></li>
                 <li><a href="#">{t('link4.1')}</a></li>
                 <li><select id="lang" onChange={()=>changeLanguage()}>

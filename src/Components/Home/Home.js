@@ -11,7 +11,7 @@ class Home extends Component {
     render() {
 
         return (
-            <div className="home">
+            <div className="home" id="home">
                 {/*<Parallax className="layer first_layer" y={[-10, 10]} tagOuter="figure">*/}
                 {/*    <img src={field}/>*/}
                 {/*</Parallax>*/}

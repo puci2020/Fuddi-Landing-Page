@@ -5,6 +5,7 @@ import About from "./Components/About/About";
 import Navbar from "./Components/Navbar/Navbar";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
 import {ParallaxProvider} from 'react-scroll-parallax';
+import Roadmap from "./Components/Roadmap/Roadmap";
 
 class App extends Component {
     state = {
@@ -54,7 +55,7 @@ class App extends Component {
                 <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
                 {sideDrawer}
                 <About/>
-                <About/>
+                <Roadmap/>
 
             </div>
         );

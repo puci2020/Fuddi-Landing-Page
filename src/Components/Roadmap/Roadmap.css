@@ -1,0 +1,24 @@
+.roadmap {
+  background-color: #183361;
+  width: 100vw;
+  height: auto;
+  padding-top: 100px;
+}
+
+.map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.map img {
+  width: 70%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .map img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Roadmap.css.map */
