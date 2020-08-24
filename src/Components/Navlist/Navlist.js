@@ -25,12 +25,12 @@ function NavList()
                 <li><a href="#">{t('link3.1')}</a></li>
                 <li><a href="#">{t('link4.1')}</a></li>
                 <li><select id="lang" onChange={()=>changeLanguage()}>
-                    <option value={'pl'}>Polski</option>
-                    <option value={'en'}>English</option>
+                    <option value={'pl'}>PL</option>
+                    <option value={'en'}>EN</option>
                 </select></li>
                 <ul id="lang2">
-                    <button onClick={()=>changeLanguageBtn('pl')}>Polski</button>
-                    <button onClick={()=>changeLanguageBtn('en')}>English</button>
+                    <button onClick={()=>changeLanguageBtn('pl')}>PL</button>
+                    <button onClick={()=>changeLanguageBtn('en')}>EN</button>
                 </ul>
             </ul>
 

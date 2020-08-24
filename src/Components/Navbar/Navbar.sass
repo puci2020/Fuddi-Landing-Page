@@ -1,12 +1,14 @@
-header
-  position: -webkit-sticky
-  position: sticky
+.navbar
+  //position: -webkit-sticky
+  //position: sticky
+  position: fixed
+  background-color: transparent
   top: 0
   height: 153px
   width: 100vw
   padding: 0 85px 10px 85px
   //background-color: transparent
-  background-color: green
+  //background-color: green
   display: flex
   align-items: center
   //justify-content: space-between
@@ -15,8 +17,20 @@ header
   font: inherit
   font-weight: 400
   letter-spacing: 1px
+  transition: 1s
 
   .logo
     position: relative
     float: left
-    width: auto
+    height: 70%
+    overflow: hidden
+
+    img
+      height: 100%
+
+
+.active
+  background-color: #18611cdb
+  height: 100px
+  font-size: .9rem
+

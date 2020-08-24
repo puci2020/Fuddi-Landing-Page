@@ -1,11 +1,10 @@
-header {
-  position: -webkit-sticky;
-  position: sticky;
+.navbar {
+  position: fixed;
+  background-color: transparent;
   top: 0;
   height: 153px;
   width: 100vw;
   padding: 0 85px 10px 85px;
-  background-color: green;
   display: flex;
   align-items: center;
   color: #FFFFFF;
@@ -13,11 +12,22 @@ header {
   font: inherit;
   font-weight: 400;
   letter-spacing: 1px;
+  transition: 1s;
 }
-header .logo {
+.navbar .logo {
   position: relative;
   float: left;
-  width: auto;
+  height: 70%;
+  overflow: hidden;
+}
+.navbar .logo img {
+  height: 100%;
+}
+
+.active {
+  background-color: #18611cdb;
+  height: 100px;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=Navbar.css.map */
