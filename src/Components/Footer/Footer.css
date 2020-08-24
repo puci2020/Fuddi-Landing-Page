@@ -7,6 +7,11 @@ footer {
   justify-content: center;
   flex-direction: column;
 }
+footer .logo_container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
 footer .logo_item {
   height: 50px;
   width: auto;
@@ -20,11 +25,10 @@ footer .logo_title_footer {
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   font-weight: bold;
-  padding-bottom: 20px;
 }
 footer .social {
-  height: 40px;
-  width: 200px;
+  height: 30px;
+  width: 150px;
   overflow: hidden;
   padding: 5px;
   display: flex;
@@ -32,11 +36,35 @@ footer .social {
   align-items: center;
 }
 footer .social img {
+  height: 100%;
+  width: auto;
   cursor: pointer;
 }
-footer .copyright {
-  padding: 20px;
+footer .google {
+  padding-top: 10px;
+}
+footer .google img {
+  cursor: pointer;
+}
+footer .contact {
+  display: flex;
+  align-items: center;
+}
+footer .contact img {
+  margin-right: 10px;
+  height: 30px;
+  width: auto;
+}
+footer .contact a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.copyright {
+  padding: 10px;
   color: lightgray;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=Footer.css.map */

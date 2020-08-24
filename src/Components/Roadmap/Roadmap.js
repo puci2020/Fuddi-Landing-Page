@@ -10,7 +10,7 @@ function Roadmap() {
             {/*<div className="space"></div>*/}
             <h2> Road Map</h2>
             <div className="map">
-                <img src={roadmap}/>
+                <img src={roadmap} alt="Road Map"/>
             </div>
         </div>
     );

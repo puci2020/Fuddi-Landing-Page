@@ -6,6 +6,10 @@ footer
   align-items: center
   justify-content: center
   flex-direction: column
+  .logo_container
+    display: flex
+    align-items: center
+    padding-bottom: 10px
 
   .logo_item
     height: 50px
@@ -21,22 +25,50 @@ footer
     font-size: 1.5rem
     letter-spacing: .2rem
     font-weight: bold
-    padding-bottom: 20px
+    //padding-bottom: 20px
 
   .social
-    height: 40px
-    width: 200px
+    height: 30px
+    width: 150px
     overflow: hidden
     padding: 5px
     display: flex
     justify-content: space-between
     align-items: center
     img
+      height: 100%
+      width: auto
       cursor: pointer
 
+  .google
+    padding-top: 10px
+    img
+      cursor: pointer
+  .contact
+    display: flex
+    align-items: center
+    img
+      margin-right: 10px
+      height: 30px
+      width: auto
+    a
+      text-decoration: none
+      color: white
+      cursor: pointer
 
+//.left
+//  padding-left: 20%
+//
+//.right
+//  padding-right: 20%
+//  padding-left: 10%
+//
+//.bottom
+//  display: flex
+//  justify-content: center
 
-  .copyright
-    padding: 20px
-    color: lightgray
+.copyright
+  padding: 10px
+  color: lightgray
+  font-size: .8rem
 

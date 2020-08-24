@@ -25,7 +25,7 @@ class Home extends Component {
                     <Grid item className="caption" xs={12} md={6}>
                         <Parallax className="phone" y={[160, -30]} tagOuter="figure">
                             <div className="item">
-                                <img src={app}/>
+                                <img src={app} alt="Fuddi app screen"/>
                             </div>
                         </Parallax>
                     </Grid>
@@ -33,7 +33,7 @@ class Home extends Component {
 
                 < img
                     className="layer white"
-                    src={white}
+                    src={white} alt="White mountains"
                 />
 
             </div>

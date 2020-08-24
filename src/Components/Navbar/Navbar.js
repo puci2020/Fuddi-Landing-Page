@@ -21,7 +21,7 @@ const Navbar = props => {
     return (
         <header className={navbar ? 'navbar active' : 'navbar'}>
             <div className="logo">
-                <img src={logo}/>
+                <img src={logo} alt="Fuddi logo"/>
             </div>
             <div className={navbar ? 'logo_title logo_active' : 'logo_title'}>Fuddi</div>
 
