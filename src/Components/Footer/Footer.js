@@ -39,7 +39,7 @@ function Footer() {
                     </div>
                 {/*</Grid>*/}
                 {/*<Grid item className="bottom" xs={12} md={12}>*/}
-                    <div className="copyright">© 2020 Adam Pucicki. All rights reserved</div>
+                    <div className="copyright">© 2020 Wombadi. All rights reserved</div>
             {/*    </Grid>*/}
             {/*</Grid>*/}
         </footer>
