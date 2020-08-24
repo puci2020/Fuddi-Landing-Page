@@ -26,7 +26,6 @@ class Home extends Component {
                         <Parallax className="phone" y={[160, -30]} tagOuter="figure">
                             <div className="item">
                                 <img src={app}/>
-
                             </div>
                         </Parallax>
                     </Grid>

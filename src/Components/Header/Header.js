@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import {useTranslation} from "react-i18next";
+import {Link} from "react-scroll";
 
 function Header() {
 
@@ -11,7 +12,8 @@ function Header() {
             <h1>{t('home.header1')}</h1>
             <h1>{t('home.header2')}</h1>
             {/*<h3>{t('home.header3')}</h3>*/}
-            <a href="#about"><button>{t('home.button')}</button></a>
+            <Link activeClass="a" to="about" spy={true} smooth={true} offset={-100}
+                  duration={500}><button>{t('home.button')}</button></Link>
         </div>
     );
 
