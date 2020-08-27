@@ -8,7 +8,7 @@ import delivery from '../../img/icons/delivery.png'
 import {useTranslation} from "react-i18next";
 
 
-function About() {
+const About = () => {
 
     const {t} = useTranslation();
 
@@ -76,6 +76,6 @@ function About() {
             </div>
         </div>
     );
-}
+};
 
 export default About;

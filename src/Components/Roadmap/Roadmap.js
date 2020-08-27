@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Roadmap.css"
-import roadmap from '../../img/roadmap.png';
+import roadmap from '../../img/roadmap.jpeg';
 
 function Roadmap() {
 
