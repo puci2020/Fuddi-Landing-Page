@@ -2,13 +2,13 @@
   "link1": {
     "1": "Strona główna"
   },
-  "link2":{
+  "link2": {
     "1": "Droga do sukcesu"
   },
-  "link3":{
+  "link3": {
     "1": "Zalety aplikacji"
   },
-  "link4":{
+  "link4": {
     "1": "Kontakt"
   },
   "home": {
@@ -16,5 +16,29 @@
     "header2": "Fuddi to aplikacja dla Ciebie!",
     "header3": "Pobierz już teraz wersję Beta w Google Play",
     "button": "Sprawdź teraz!"
+  },
+  "benefits": {
+    "headers": {
+      "header1": "Jakie wartości chcemy, aby niosła aplikacja?",
+      "header2": "Pragniemy połączyć trzy grupy użytkowników Fuddi"
+    },
+    "lgBox": {
+      "box1": "Tworzymy platformę m-commerce dzięki, której codzienne zakupy będą proste i szybkie.",
+      "box2": "Oferowane produkty będą najwyższej jakości w przystępnej cenie. Zależy nam na pokazaniu, że wyroby wytwarzane przy użyciu rąk są nie tylko smaczniejsze, ale mają w sobie cząstkę swojego twórcy lub w przypadku owoców i warzyw akcent osoby, która o nich dbała."
+    },
+    "smBox": {
+      "box1": {
+        "header": "Klienci",
+        "content": "Jeśli nie byłoby klienta, nie byłoby aplikacji."
+      },
+      "box2": {
+        "header": "Producenci",
+        "content": "Rolnicy, jak i rzemieślnicy, to oni dzięki swojej ciężkiej pracy wytwarzają produkt najwyższej jakości."
+      },
+      "box3": {
+        "header": "Dostawcy",
+        "content": "Każda osoba, która przy okazji podróży zadeklaruje chęć dostarczenia towaru od Producenta do Klienta."
+      }
+    }
   }
 }
