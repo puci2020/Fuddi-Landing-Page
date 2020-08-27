@@ -23,7 +23,7 @@ const Navbar = props => {
             <div className="logo">
                 <img src={logo} alt="Fuddi logo"/>
             </div>
-            <div className={navbar ? 'logo_title logo_active' : 'logo_title'}>Fuddi</div>
+            {/*<div className={navbar ? 'logo_title logo_active' : 'logo_title'}>Fuddi</div>*/}
 
             <Burger click={props.drawerClickHandler} />
             <NavList/>

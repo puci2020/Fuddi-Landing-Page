@@ -17,7 +17,7 @@ function Footer() {
                 <div className="logo_item">
                     <img src={logo} alt="Fuddi logo"/>
                 </div>
-                <div className="logo_title_footer">Fuddi</div>
+                {/*<div className="logo_title_footer">Fuddi</div>*/}
             </div>
             <div className="social">
                 <img src={facebook} alt="Facebook"/>

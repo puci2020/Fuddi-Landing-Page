@@ -8,6 +8,7 @@
     justify-content: space-around;
     flex-flow: column nowrap;
     cursor: pointer;
+    margin: 10px;
   }
   .Burger div {
     width: 2rem;

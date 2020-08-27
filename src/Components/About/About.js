@@ -13,45 +13,11 @@ function About() {
 
         <div className="about" id="about">
             <div className="background">
-                {/*<Grid container className="box">*/}
-                {/*    /!*<Grid item className="row first" xs={12} md={6}>*!/*/}
-
-                {/*    /!*</Grid>*!/*/}
-                {/*    /!*<Grid item className="row first" xs={12} md={6}>*!/*/}
-
-                {/*    /!*</Grid>*!/*/}
-                {/*    /!*<Grid item className="row secound" xs={12} md={4}>*!/*/}
-
-                {/*    /!*</Grid>*!/*/}
-                {/*    /!*<Grid item className="row secound" xs={12} md={4}>*!/*/}
-
-                {/*    /!*</Grid>*!/*/}
-                {/*    /!*<Grid item className="row secound" xs={12} md={4}>*!/*/}
-
-                {/*    /!*</Grid>*!/*/}
-                {/*    <Grid item xs={12} md={6}>*/}
-                {/*        <Paper className="paper">xs=12 sm=6</Paper>*/}
-                {/*    </Grid>*/}
-                {/*    <Grid item xs={12} md={6}>*/}
-                {/*        <Paper className="paper">xs=12 sm=6</Paper>*/}
-                {/*    </Grid>*/}
-                {/*    <Grid item xs={12} md={3}>*/}
-                {/*        <Paper className="paper">xs=6 sm=3</Paper>*/}
-                {/*    </Grid>*/}
-                {/*    <Grid item xs={12} md={3}>*/}
-                {/*        <Paper className="paper">xs=6 sm=3</Paper>*/}
-                {/*    </Grid>*/}
-                {/*    <Grid item xs={12} md={3}>*/}
-                {/*        <Paper className="paper">xs=6 sm=3</Paper>*/}
-                {/*    </Grid>*/}
-
-                {/*</Grid>*/}
                 <h2>Jakie wartości chcemy, aby niosła aplikacja</h2>
                 <div className="row">
-
                     <div className="item one">
                         <div className="box first">
-                            <div className="icon">
+                            <div className="icon top">
                                 <img src={shoppingcart} alt="Shopping cart"/>
                             </div>
                             <div className="text">Tworzymy platformę e-commerce
@@ -61,7 +27,7 @@ function About() {
                     </div>
                     <div className="item two">
                         <div className="box first">
-                            <div className="icon">
+                            <div className="icon top">
                                 <img src={vegetable} alt="Shopping cart"/>
                             </div>
                             <div className="text">Oferowane produkty będą najwyższej jakości w przystępnej cenie. Zależy
@@ -71,13 +37,12 @@ function About() {
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <h2>Pragniemy połączyć trzy grupy użytkowników Fuddi</h2>
                 <div className="row">
-                    <div className="item five">
+                    <div className="item three">
                         <div className="box sec">
-                            <div className="icon sm">
+                            <div className="icon bottom">
                                 <img src={user} alt="Shopping cart"/>
                             </div>
                             <div className="text small">
@@ -86,9 +51,9 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="item six">
+                    <div className="item four">
                         <div className="box sec">
-                            <div className="icon sm">
+                            <div className="icon bottom">
                                 <img src={farmer} alt="Shopping cart"/>
                             </div>
                             <div className="text small">
@@ -98,9 +63,9 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="item seven">
+                    <div className="item five">
                         <div className="box sec">
-                            <div className="icon sm">
+                            <div className="icon bottom">
                                 <img src={delivery} alt="Shopping cart"/>
                             </div>
                             <div className="text small">
@@ -110,11 +75,6 @@ function About() {
                         </div>
                     </div>
                 </div>
-                {/*<div className="row sec">*/}
-                {/*    <div className="col o">asd</div>*/}
-                {/*    <div className="col t">dfg</div>*/}
-                {/*    <div className="col th">dfg</div>*/}
-                {/*</div>*/}
             </div>
         </div>
     );
