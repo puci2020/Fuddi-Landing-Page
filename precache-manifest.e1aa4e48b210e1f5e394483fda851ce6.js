@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88f0ffeb7cdc378bb1f4f2f54b94e28c",
+    "revision": "ce59092e433a097be911d33367f519f8",
     "url": "/Fuddi-Landing-Page/index.html"
   },
   {
-    "revision": "ed496146c4f3447efb45",
-    "url": "/Fuddi-Landing-Page/static/css/main.932c5edd.chunk.css"
+    "revision": "40b74db644b915233c92",
+    "url": "/Fuddi-Landing-Page/static/css/main.147e56d7.chunk.css"
   },
   {
     "revision": "a6d305f969067978c410",
     "url": "/Fuddi-Landing-Page/static/js/2.a2a1fdb5.chunk.js"
   },
   {
-    "revision": "ed496146c4f3447efb45",
-    "url": "/Fuddi-Landing-Page/static/js/main.d2b3b304.chunk.js"
+    "revision": "40b74db644b915233c92",
+    "url": "/Fuddi-Landing-Page/static/js/main.b5227166.chunk.js"
   },
   {
     "revision": "9e531edac3d052356c60",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Fuddi-Landing-Page/static/media/farmer.0b0bd3f0.png"
   },
   {
-    "revision": "b3c26dab66b5d989e4738ec698d3c3a5",
-    "url": "/Fuddi-Landing-Page/static/media/field3.b3c26dab.jpeg"
+    "revision": "9b6015b850197f85e4bdf4d460e9bcc3",
+    "url": "/Fuddi-Landing-Page/static/media/home.9b6015b8.jpeg"
   },
   {
     "revision": "7bc8f9392bae1a45861a49ab20d52589",
     "url": "/Fuddi-Landing-Page/static/media/logo.7bc8f939.png"
   },
   {
-    "revision": "f5ec31af0e1f87ec05e651ddbc6c7edf",
-    "url": "/Fuddi-Landing-Page/static/media/roadmap.f5ec31af.png"
+    "revision": "3ac9182704263e090e3208439057ef02",
+    "url": "/Fuddi-Landing-Page/static/media/roadmap.3ac91827.jpeg"
   },
   {
     "revision": "b1f826c03f8b891a7d311e8ff5482ea6",
