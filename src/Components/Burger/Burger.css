@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
-  .Burger {
+  .burger {
     width: 2rem;
     height: 2rem;
     position: absolute;
@@ -10,11 +10,15 @@
     cursor: pointer;
     margin: 10px;
   }
-  .Burger div {
+  .burger div {
     width: 2rem;
     height: 0.25rem;
     background-color: white;
     border-radius: 10px;
+  }
+
+  #first, #third, #secound {
+    transition: transform 0.35s ease-in-out;
   }
 }
 

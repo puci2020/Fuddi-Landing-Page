@@ -3,11 +3,13 @@ import './Burger.css'
 
 const Burger = props => {
 
+
+
     return (
-        <div className="Burger" id="burger" onClick={props.click}>
-            <div id="first"></div>
-            <div id="secound"></div>
-            <div id="third"></div>
+        <div className="burger" id="burger" onClick={props.click}>
+            <div id="first"/>
+            <div id="secound"/>
+            <div id="third"/>
         </div>
     );
 };

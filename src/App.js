@@ -27,16 +27,14 @@ class App extends Component {
             }
         });
         if (!this.state.active) {
+            // console.log("działą");
             document.getElementById('secound').style.display = "none";
             document.getElementById('first').style.transform = "translateY(8px) rotate(45deg)";
-            // document.getElementById('first').style.marginTop= "15px";
-
             document.getElementById('third').style.transform = "translateY(-8px) rotate(-45deg)";
-            // document.getElementById('third').style.marginBottom= "15px";
-
         } else {
+            // console.log("nie")
             document.getElementById('secound').style.display = "block";
-            document.getElementById('first').style.transform = "rotate(180deg)";
+            document.getElementById('first').style.transform = "rotate(0)";
             document.getElementById('first').style.marginTop = "0";
             document.getElementById('third').style.transform = "rotate(0)";
             document.getElementById('third').style.marginBottom = "0";
@@ -44,17 +42,24 @@ class App extends Component {
     };
 
     render() {
-        let sideDrawer;
+        let sideDrawer = <SideDrawer/>;
 
         if (this.state.sideDrawerOpen) {
             sideDrawer = <SideDrawer show={this.state.sideDrawerOpen}/>
         }
+
+        // let navBar = <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
+        //
+        // if (this.state.active){
+        //     navBar = <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
+        // }
         return (
             <div className="App">
                 <ParallaxProvider>
                     <Home/>
                 </ParallaxProvider>
                 <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
+                {/*{navBar}*/}
                 {sideDrawer}
                 <ParallaxProvider>
                     <Screens/>
