@@ -56,7 +56,9 @@ class App extends Component {
                 </ParallaxProvider>
                 <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
                 {sideDrawer}
-                <Screens/>
+                <ParallaxProvider>
+                    <Screens/>
+                </ParallaxProvider>
                 <About/>
                 <Roadmap/>
                 <Footer/>
