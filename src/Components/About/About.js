@@ -97,11 +97,11 @@ const Box = styled.div`
   border-radius: 20px;
   background-color: rgba(43, 57, 71, 85%);
   width: 100%;
-  height: ${(props) => props.first ? '320px' : props.sec ? '340px' : 'auto'};
+  height: ${({first,  sec}) => first ? '320px' : sec ? '340px' : 'auto'};
   display: flex;
   align-items: center;
   //overflow: hidden;
-  flex-direction: ${(props) => props.sec ? 'column' : 'row'};
+  flex-direction: ${({sec}) => sec ? 'column' : 'row'};
 `;
 
 const Icon = styled.div`
@@ -155,7 +155,7 @@ const About = () => {
             <Background>
                 <h2>{t('benefits.headers.header1')}</h2>
                 <Row>
-                    <div className="item one">
+                    <div className="one">
                         <Box first>
                             <Icon top>
                                 <img src={shoppingcart} alt="Shopping cart"/>
@@ -164,10 +164,10 @@ const About = () => {
                             </Text>
                         </Box>
                     </div>
-                    <div className="item two">
+                    <div className="two">
                         <Box first>
                             <Icon top>
-                                <img src={vegetable} alt="Shopping cart"/>
+                                <img src={vegetable} alt="Vegetables"/>
                             </Icon>
                             <Text>{t('benefits.lgBox.box2')}
                             </Text>
@@ -176,7 +176,7 @@ const About = () => {
                 </Row>
                 <h2>{t('benefits.headers.header2')}</h2>
                 <Row>
-                    <div className="item three">
+                    <div className="three">
                         <Box sec>
                             <Icon bottom>
                                 <img src={user} alt="Shopping cart"/>
@@ -187,7 +187,7 @@ const About = () => {
                             </Text>
                         </Box>
                     </div>
-                    <div className="item four">
+                    <div className="four">
                         <Box sec>
                             <Icon bottom>
                                 <img src={farmer} alt="Shopping cart"/>
@@ -198,7 +198,7 @@ const About = () => {
                             </Text>
                         </Box>
                     </div>
-                    <div className="item five">
+                    <div className="five">
                         <Box sec>
                             <Icon bottom>
                                 <img src={delivery} alt="Shopping cart"/>
