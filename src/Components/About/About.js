@@ -179,7 +179,7 @@ const About = () => {
                     <div className="three">
                         <Box sec>
                             <Icon bottom>
-                                <img src={user} alt="Shopping cart"/>
+                                <img src={user} alt="User icon"/>
                             </Icon>
                             <Text small>
                                 <h4>{t('benefits.smBox.box1.header')}</h4>
@@ -190,7 +190,7 @@ const About = () => {
                     <div className="four">
                         <Box sec>
                             <Icon bottom>
-                                <img src={farmer} alt="Shopping cart"/>
+                                <img src={farmer} alt="Farmer icon"/>
                             </Icon>
                             <Text small>
                                 <h4>{t('benefits.smBox.box2.header')}</h4>
@@ -201,7 +201,7 @@ const About = () => {
                     <div className="five">
                         <Box sec>
                             <Icon bottom>
-                                <img src={delivery} alt="Shopping cart"/>
+                                <img src={delivery} alt="Truck icon"/>
                             </Icon>
                             <Text small>
                                 <h4>{t('benefits.smBox.box3.header')}</h4>
