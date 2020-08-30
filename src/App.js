@@ -8,6 +8,7 @@ import {ParallaxProvider} from 'react-scroll-parallax';
 import Roadmap from "./Components/Roadmap/Roadmap";
 import Footer from "./Components/Footer/Footer";
 import Screens from "./Components/Screens/Screens";
+import Team from "./Components/Team/Team";
 
 class App extends Component {
     state = {
@@ -65,6 +66,7 @@ class App extends Component {
                     <Screens/>
                 </ParallaxProvider>
                 <About/>
+                <Team/>
                 <Roadmap/>
                 <Footer/>
 
