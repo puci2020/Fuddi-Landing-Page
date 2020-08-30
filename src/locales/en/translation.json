@@ -11,6 +11,9 @@
   "link4": {
     "1": "Contact"
   },
+  "link5": {
+    "1": "Team"
+  },
   "home": {
     "header1": "Fresh vegetables and fruits without leaving your home?",
     "header2": "Fuddi is the application for you!",
@@ -40,5 +43,8 @@
         "content": "Any person who declares the willingness to deliver the goods from the manufacturer to the customer during the trip."
       }
     }
+  },
+  "team" : {
+    "header": "Our Team"
   }
 }

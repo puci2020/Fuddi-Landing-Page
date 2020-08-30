@@ -29,6 +29,10 @@ function NavList() {
                           duration={500}>{t("link3.1")}</Link>
                 </li>
                 <li>
+                    <Link activeClass="a" to="team" spy={true} smooth={true} offset={-80}
+                          duration={500}>{t("link5.1")}</Link>
+                </li>
+                <li>
                     <Link activeClass="a" to="roadmap" spy={true} smooth={true} offset={-80}
                           duration={500}>{t("link2.1")}</Link>
                 </li>

@@ -11,6 +11,9 @@
   "link4": {
     "1": "Kontakt"
   },
+  "link5": {
+    "1": "Zespół"
+  },
   "home": {
     "header1": "Świeże warzywa i owoce bez wychodzenia z domu?",
     "header2": "Fuddi to aplikacja dla Ciebie!",
@@ -40,5 +43,8 @@
         "content": "Każda osoba, która przy okazji podróży zadeklaruje chęć dostarczenia towaru od Producenta do Klienta."
       }
     }
+  },
+  "team" : {
+    "header": "Nasz Zespół"
   }
 }

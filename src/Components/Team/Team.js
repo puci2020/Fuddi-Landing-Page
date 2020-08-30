@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components'
-import linkedin from '../../img/social_icons/linkedin.png'
+import facebook from '../../img/social_icons/facebook2.png'
+import linkedin from '../../img/social_icons/linkedin2.png'
+import github from '../../img/social_icons/github.png'
+import {useTranslation} from "react-i18next";
 
 const StyledWrapper = styled.div`
   width: 100vw;
@@ -23,6 +26,16 @@ width: 100%;
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 100px;
   padding: 0 10%;
+  @media (max-width: 960px){
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 10px;
+      }
+  @media (max-width: 767px){
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      grid-gap: 10px;
+      }
 `;
 
 const GridItem = styled.div`
@@ -66,7 +79,7 @@ const Social = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20%;
+  max-width: 160px;
   img{
   height: 25px;
   width: auto;
@@ -76,27 +89,83 @@ const Social = styled.div`
 
 
 const Team = () => {
+    const {t} = useTranslation();
     return (
-        <StyledWrapper>
-            <h2>Team</h2>
+        <StyledWrapper id="team">
+            <h2>{t("team.header")}</h2>
             <StyledGrid>
-<GridItem>
-    <div className="photo"></div>
-    <div className="desc">
-        <h4>John Doe</h4>
-        <h5>CEO</h5>
-        <Social>
-            <img src={linkedin} alt="Linkedin icon"/>
-            <img src={linkedin} alt="Linkedin icon"/>
-            <img src={linkedin} alt="Linkedin icon"/>
-        </Social>
-    </div>
-</GridItem>
-<GridItem/>
-<GridItem/>
-<GridItem/>
-<GridItem/>
-<GridItem/>
+                <GridItem>
+                    <div className="photo"></div>
+                    <div className="desc">
+                        <h4>John Doe</h4>
+                        <h5>CEO</h5>
+                        <Social>
+                            <img src={facebook} alt="Facebook icon"/>
+                            <img src={linkedin} alt="Linkedin icon"/>
+                            <img src={github} alt="Github icon"/>
+                        </Social>
+                    </div>
+                </GridItem>
+                <GridItem>
+                    <div className="photo"></div>
+                    <div className="desc">
+                        <h4>John Doe</h4>
+                        <h5>COO</h5>
+                        <Social>
+                            <img src={facebook} alt="Facebook icon"/>
+                            <img src={linkedin} alt="Linkedin icon"/>
+                            <img src={github} alt="Github icon"/>
+                        </Social>
+                    </div>
+                </GridItem>
+                <GridItem>
+                    <div className="photo"></div>
+                    <div className="desc">
+                        <h4>John Doe</h4>
+                        <h5>UX/UI Designer</h5>
+                        <Social>
+                            <img src={facebook} alt="Facebook icon"/>
+                            <img src={linkedin} alt="Linkedin icon"/>
+                            <img src={github} alt="Github icon"/>
+                        </Social>
+                    </div>
+                </GridItem>
+                <GridItem>
+                    <div className="photo"></div>
+                    <div className="desc">
+                        <h4>John Doe</h4>
+                        <h5>Android Developer</h5>
+                        <Social>
+                            <img src={facebook} alt="Facebook icon"/>
+                            <img src={linkedin} alt="Linkedin icon"/>
+                            <img src={github} alt="Github icon"/>
+                        </Social>
+                    </div>
+                </GridItem>
+                <GridItem>
+                    <div className="photo"></div>
+                    <div className="desc">
+                        <h4>John Doe</h4>
+                        <h5>Frontend Developer</h5>
+                        <Social>
+                            <img src={facebook} alt="Facebook icon"/>
+                            <img src={linkedin} alt="Linkedin icon"/>
+                            <img src={github} alt="Github icon"/>
+                        </Social>
+                    </div>
+                </GridItem>
+                <GridItem>
+                    <div className="photo"></div>
+                    <div className="desc">
+                        <h4>John Doe</h4>
+                        <h5>Backend Developer</h5>
+                        <Social>
+                            <img src={facebook} alt="Facebook icon"/>
+                            <img src={linkedin} alt="Linkedin icon"/>
+                            <img src={github} alt="Github icon"/>
+                        </Social>
+                    </div>
+                </GridItem>
             </StyledGrid>
         </StyledWrapper>
     );
