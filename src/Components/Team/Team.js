@@ -4,6 +4,12 @@ import facebook from '../../img/social_icons/facebook2.png'
 import linkedin from '../../img/social_icons/linkedin2.png'
 import github from '../../img/social_icons/github.png'
 import {useTranslation} from "react-i18next";
+import face1 from '../../img/team/1.jpg'
+import face2 from '../../img/team/2.jpg'
+import face3 from '../../img/team/3.jpg'
+import face4 from '../../img/team/4.jpg'
+import face5 from '../../img/team/5.jpg'
+import face6 from '../../img/team/6.jpg'
 
 const StyledWrapper = styled.div`
   width: 100vw;
@@ -19,8 +25,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledGrid = styled.div`
-width: 100%;
-//height: 80%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -41,7 +46,6 @@ width: 100%;
 const GridItem = styled.div`
   width: 100%;
   height: 350px;
-  //background-color: lightgrey;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,6 +57,12 @@ const GridItem = styled.div`
   height: 168px;
   background-color: #18611c;
   border-radius: 50%;
+  overflow: hidden;
+  img{
+  width: 100%;
+  height: auto;
+  
+  }
   }
   .desc{
   padding: 20px;
@@ -62,14 +72,13 @@ const GridItem = styled.div`
   flex-direction: column;
   width: 100%;
   height: 50%;
-  //background-color: #FDFF00;
   font-size: 1.1rem;
   color: #636363;
     h4{
       font-weight: 600;
     }
     h5{
-    font-weight: 450;
+    font-weight: 400;
     }
   }
 `;
@@ -81,10 +90,9 @@ const Social = styled.div`
   justify-content: space-between;
   max-width: 160px;
   img{
-  height: 25px;
+  height: 22px;
   width: auto;
   }
-  //background-color: #18611c;
 `;
 
 
@@ -95,7 +103,9 @@ const Team = () => {
             <h2>{t("team.header")}</h2>
             <StyledGrid>
                 <GridItem>
-                    <div className="photo"></div>
+                    <div className="photo">
+                        <img src={face1} alt="Face1"/>
+                    </div>
                     <div className="desc">
                         <h4>John Doe</h4>
                         <h5>CEO</h5>
@@ -107,7 +117,7 @@ const Team = () => {
                     </div>
                 </GridItem>
                 <GridItem>
-                    <div className="photo"></div>
+                    <div className="photo"><img src={face2} alt="Face1"/></div>
                     <div className="desc">
                         <h4>John Doe</h4>
                         <h5>COO</h5>
@@ -119,7 +129,7 @@ const Team = () => {
                     </div>
                 </GridItem>
                 <GridItem>
-                    <div className="photo"></div>
+                    <div className="photo"><img src={face3} alt="Face1"/></div>
                     <div className="desc">
                         <h4>John Doe</h4>
                         <h5>UX/UI Designer</h5>
@@ -131,7 +141,7 @@ const Team = () => {
                     </div>
                 </GridItem>
                 <GridItem>
-                    <div className="photo"></div>
+                    <div className="photo"><img src={face4} alt="Face1"/></div>
                     <div className="desc">
                         <h4>John Doe</h4>
                         <h5>Android Developer</h5>
@@ -143,7 +153,7 @@ const Team = () => {
                     </div>
                 </GridItem>
                 <GridItem>
-                    <div className="photo"></div>
+                    <div className="photo"><img src={face5} alt="Face1"/></div>
                     <div className="desc">
                         <h4>John Doe</h4>
                         <h5>Frontend Developer</h5>
@@ -155,7 +165,7 @@ const Team = () => {
                     </div>
                 </GridItem>
                 <GridItem>
-                    <div className="photo"></div>
+                    <div className="photo"><img src={face6} alt="Face1"/></div>
                     <div className="desc">
                         <h4>John Doe</h4>
                         <h5>Backend Developer</h5>
