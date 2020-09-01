@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3afb87ca8f609924625fd0b9d0b3dd06",
+    "revision": "5d99d96f47d0a1c5d4f62ca013934610",
     "url": "/Fuddi-Landing-Page/index.html"
   },
   {
-    "revision": "d8a6b07bd70186076d4f",
-    "url": "/Fuddi-Landing-Page/static/css/main.fb285758.chunk.css"
+    "revision": "6229b097acb9ff4e9f3e",
+    "url": "/Fuddi-Landing-Page/static/css/main.f1d09e03.chunk.css"
   },
   {
-    "revision": "0987dbe63f03fcb561aa",
-    "url": "/Fuddi-Landing-Page/static/js/2.d4ac7498.chunk.js"
+    "revision": "a5a2c34acb7391c2aed7",
+    "url": "/Fuddi-Landing-Page/static/js/2.b18d1c13.chunk.js"
   },
   {
-    "revision": "d8a6b07bd70186076d4f",
-    "url": "/Fuddi-Landing-Page/static/js/main.8ee3fdd0.chunk.js"
+    "revision": "6229b097acb9ff4e9f3e",
+    "url": "/Fuddi-Landing-Page/static/js/main.3e52d81b.chunk.js"
   },
   {
     "revision": "9e531edac3d052356c60",
