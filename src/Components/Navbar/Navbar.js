@@ -19,7 +19,7 @@ const Navbar = props => {
     window.addEventListener('scroll', changeBackground);
 
     return (
-        <header className={navbar ? 'navbar active' : 'navbar'}>
+        <header className={navbar ? 'navbar scroll' : 'navbar'}>
             <div className="logo">
                 <img src={logo} alt="Fuddi logo"/>
             </div>

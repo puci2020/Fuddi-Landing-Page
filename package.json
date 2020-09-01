@@ -15,6 +15,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-i18next": "^10.12.4",
+    "react-router-hash-link-offset": "^1.2.0",
     "react-scripts": "3.1.1",
     "react-scroll": "^1.8.1",
     "react-scroll-parallax": "^2.3.4",
