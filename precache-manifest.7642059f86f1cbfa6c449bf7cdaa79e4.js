@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cdd292ff6dbca87479aac68f7245ee85",
+    "revision": "e6103252bf1894af5516010b7b3a02a7",
     "url": "/Fuddi-Landing-Page/index.html"
   },
   {
-    "revision": "ef966147c47645bc5703",
-    "url": "/Fuddi-Landing-Page/static/css/main.9c10973d.chunk.css"
+    "revision": "e2c78cc557e7990c9f06",
+    "url": "/Fuddi-Landing-Page/static/css/main.9d6583eb.chunk.css"
   },
   {
-    "revision": "a5a2c34acb7391c2aed7",
-    "url": "/Fuddi-Landing-Page/static/js/2.b18d1c13.chunk.js"
+    "revision": "4482ea311c9b1851a361",
+    "url": "/Fuddi-Landing-Page/static/js/2.f91d0d9f.chunk.js"
   },
   {
-    "revision": "ef966147c47645bc5703",
-    "url": "/Fuddi-Landing-Page/static/js/main.97d0d5bb.chunk.js"
+    "revision": "e2c78cc557e7990c9f06",
+    "url": "/Fuddi-Landing-Page/static/js/main.e4dcd9bb.chunk.js"
   },
   {
-    "revision": "9e531edac3d052356c60",
-    "url": "/Fuddi-Landing-Page/static/js/runtime~main.1fa72aa3.js"
+    "revision": "7185212e8eef8a7aec9e",
+    "url": "/Fuddi-Landing-Page/static/js/runtime~main.12793277.js"
   },
   {
     "revision": "ba5c1a480e39a2cea18a2e35622ea232",
