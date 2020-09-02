@@ -1,10 +1,10 @@
 import React from 'react';
 import './Screens.css';
 import {Parallax} from "react-scroll-parallax/cjs";
-import screen1 from '../../img/screens/screen1.png'
-import screen2 from '../../img/screens/screen2.png'
-import screen3 from '../../img/screens/screen3.png'
-import screen4 from '../../img/screens/screen4.png'
+import screen1 from '../../img/screens/screen1.jpeg'
+import screen2 from '../../img/screens/screen2.jpeg'
+import screen3 from '../../img/screens/screen3.jpeg'
+import screen4 from '../../img/screens/screen4.jpeg'
 
 
 

@@ -30,7 +30,7 @@ const ContentItem = styled.div`
   padding: 20px 0;
   }
   p{
-    text-align: justify;
+    text-align: left;
   }
   @media (max-width: 1024px){
       padding: 25px;

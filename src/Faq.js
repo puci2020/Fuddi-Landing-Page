@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
-import backGround from './img/faq2.jpeg'
+import backGround from './img/faq.jpeg'
 import Content from './Components/FaqItem/FaqItem'
 
 
@@ -19,29 +19,11 @@ const StyledWrapper = styled.div`
   background-position: center 0;
   background-attachment: fixed;
   overflow:hidden;
-  //h2{
-  //  color: rgb(255, 255, 255);
-  //text-shadow: .2rem .2rem .1rem black;
-  //
-  //}
  
 `;
 
 
 
-// const ContentItem = styled.div`
-//   height: 400px;
-//   border-radius: 20px;
-//   background-color: rgba(43,57,71,85%);
-//   padding: 40px;
-//   color: white;
-//   letter-spacing: .1rem;
-//   font-size: 1.1rem;
-//   h4{
-//   padding: 20px 0;
-//   }
-//
-// `;
 
 class Faq extends Component {
     state = {

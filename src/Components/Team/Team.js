@@ -7,7 +7,7 @@ import {useTranslation} from "react-i18next";
 import face1 from '../../img/team/1.jpg'
 import face2 from '../../img/team/2.jpg'
 import face3 from '../../img/team/3.jpg'
-import face4 from '../../img/team/4.jpg'
+import face4 from '../../img/team/adam_pucicki.jpeg'
 import face5 from '../../img/team/5.jpg'
 import face6 from '../../img/team/6.jpg'
 
@@ -107,8 +107,8 @@ const Team = () => {
                         <img src={face1} alt="Face1"/>
                     </div>
                     <div className="desc">
-                        <h4>John Doe</h4>
-                        <h5>CEO</h5>
+                        <h4>Rafał Szuwalski</h4>
+                        <h5>CEO & Co-founder</h5>
                         <Social>
                             <img src={facebook} alt="Facebook icon"/>
                             <img src={linkedin} alt="Linkedin icon"/>
@@ -119,8 +119,8 @@ const Team = () => {
                 <GridItem>
                     <div className="photo"><img src={face2} alt="Face1"/></div>
                     <div className="desc">
-                        <h4>John Doe</h4>
-                        <h5>COO</h5>
+                        <h4>Krystian Szwedo</h4>
+                        <h5>CTO & Co-founder</h5>
                         <Social>
                             <img src={facebook} alt="Facebook icon"/>
                             <img src={linkedin} alt="Linkedin icon"/>
@@ -131,8 +131,8 @@ const Team = () => {
                 <GridItem>
                     <div className="photo"><img src={face3} alt="Face1"/></div>
                     <div className="desc">
-                        <h4>John Doe</h4>
-                        <h5>UX/UI Designer</h5>
+                        <h4>Szymon Mrozowski</h4>
+                        <h5>COO & Co-founder</h5>
                         <Social>
                             <img src={facebook} alt="Facebook icon"/>
                             <img src={linkedin} alt="Linkedin icon"/>
@@ -141,14 +141,15 @@ const Team = () => {
                     </div>
                 </GridItem>
                 <GridItem>
-                    <div className="photo"><img src={face4} alt="Face1"/></div>
+                    <div className="photo"><img src={face4} alt="Adam Pucicki"/></div>
                     <div className="desc">
-                        <h4>John Doe</h4>
-                        <h5>Android Developer</h5>
+                        <h4>Adam Pucicki</h4>
+                        <h5>Front-end Specialist & Co-founder</h5>
                         <Social>
-                            <img src={facebook} alt="Facebook icon"/>
-                            <img src={linkedin} alt="Linkedin icon"/>
-                            <img src={github} alt="Github icon"/>
+                            <p/>
+                            <a target="_blank" rel="noopener noreferrer" href="http://linkedin.com/in/adampucicki"> <img src={linkedin} alt="Linkedin icon"/></a>
+                            <a target="_blank" rel="noopener noreferrer" href="http://github.com/puci2020"><img src={github} alt="Github icon"/></a>
+                            <p/>
                         </Social>
                     </div>
                 </GridItem>

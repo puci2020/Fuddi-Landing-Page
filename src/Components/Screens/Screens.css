@@ -10,6 +10,7 @@
   overflow: hidden;
   height: 100%;
   width: auto;
+  margin-right: 20px;
 }
 .screens .screen img {
   width: 100%;
