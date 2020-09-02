@@ -46,5 +46,12 @@
   },
   "team" : {
     "header": "Our Team"
+  },
+  "faq": {
+    "header" : "What do you want to know",
+    "quest1": {
+      "header" : "Are there similar platforms",
+      "content" : "In short, yes, to be precise, no. On the web, we can come across many craft stores, farmer food markets, and even online supermarkets, but our application offer and business model are revolutionary. The goal we set ourselves as the creators of the platform is to create a place where the customer will have quick and easy access to all the freshest food products without leaving home."
+    }
   }
 }

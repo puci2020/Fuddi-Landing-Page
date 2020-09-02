@@ -4,14 +4,44 @@ import styled from 'styled-components'
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
+import backGround from './img/faq2.jpeg'
+import Content from './Components/FaqItem/FaqItem'
+
 
 const StyledWrapper = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background-color: lightgrey;
-  padding: 100px 10%;
+  padding: 100px 0;
+  background-image: url(${backGround});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-attachment: fixed;
+  overflow:hidden;
+  //h2{
+  //  color: rgb(255, 255, 255);
+  //text-shadow: .2rem .2rem .1rem black;
+  //
+  //}
  
 `;
+
+
+
+// const ContentItem = styled.div`
+//   height: 400px;
+//   border-radius: 20px;
+//   background-color: rgba(43,57,71,85%);
+//   padding: 40px;
+//   color: white;
+//   letter-spacing: .1rem;
+//   font-size: 1.1rem;
+//   h4{
+//   padding: 20px 0;
+//   }
+//
+// `;
 
 class Faq extends Component {
     state = {
@@ -45,24 +75,25 @@ class Faq extends Component {
         }
     };
 
-render()
-{
-    let sideDrawer = <SideDrawer/>;
+    render() {
+        let sideDrawer = <SideDrawer/>;
 
-    if (this.state.sideDrawerOpen) {
-        sideDrawer = <SideDrawer show={this.state.sideDrawerOpen}/>
+        if (this.state.sideDrawerOpen) {
+            sideDrawer = <SideDrawer show={this.state.sideDrawerOpen}/>
+        }
+        return (
+            <div className="faq" id="faq">
+                <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
+
+                {sideDrawer}
+                <StyledWrapper>
+
+                    <Content/>
+                </StyledWrapper>
+                <Footer/>
+            </div>
+        );
     }
-    return (
-        <div className="faq" id="faq">
-            <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
+}
 
-            {sideDrawer}
-            <StyledWrapper>
-                faq
-            </StyledWrapper>
-            <Footer/>
-        </div>
-    );
-}
-}
 export default Faq;

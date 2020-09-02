@@ -46,5 +46,12 @@
   },
   "team" : {
     "header": "Nasz Zespół"
+  },
+  "faq": {
+    "header": "Co chcesz wiedzieć",
+   "quest1": {
+     "header" : "Czy istnieją podobne platformy",
+     "content" : "Krótko mówiąc tak, mówiąc precyzyjnie nie. W sieci możemy natknąć się na wiele sklepów z produktami rzemieślniczymi, ryneczków z żywnością pochodzącą od rolnika, a nawet na supermarkety online, lecz oferta naszej aplikacji oraz model biznesowy są rewolucyjne. Cel jaki sobie postawiliśmy jako twórcy platformy to stworzenie takiego miejsca, gdzie klient będzie miał szybki i łatwy dostęp do wszystkich najświeższych produktów spożywczych bez konieczności wychodzenia z domu."
+   }
   }
 }
