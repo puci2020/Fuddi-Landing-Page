@@ -29,6 +29,9 @@ const ContentItem = styled.div`
   h4{
   padding: 20px 0;
   }
+  p{
+    text-align: justify;
+  }
   
 `;
 
