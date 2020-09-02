@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf3debf9d04aee96b19b55ce1b2aeb59",
+    "revision": "a11b3d07ea0e8a256f2751d88c65bbc5",
     "url": "/Fuddi-Landing-Page/index.html"
   },
   {
-    "revision": "bd27f7eb2a5770b2cf76",
+    "revision": "e96a73f08397b250a0bb",
     "url": "/Fuddi-Landing-Page/static/css/main.a37a59c8.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Fuddi-Landing-Page/static/js/2.c5c44dba.chunk.js"
   },
   {
-    "revision": "bd27f7eb2a5770b2cf76",
-    "url": "/Fuddi-Landing-Page/static/js/main.21189a29.chunk.js"
+    "revision": "e96a73f08397b250a0bb",
+    "url": "/Fuddi-Landing-Page/static/js/main.1a20c7e0.chunk.js"
   },
   {
     "revision": "9e531edac3d052356c60",
@@ -68,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Fuddi-Landing-Page/static/media/logo.7bc8f939.png"
   },
   {
-    "revision": "3ac9182704263e090e3208439057ef02",
-    "url": "/Fuddi-Landing-Page/static/media/roadmap.3ac91827.jpeg"
+    "revision": "88a8857f49d6e236df747dc8685c4f33",
+    "url": "/Fuddi-Landing-Page/static/media/roadmap.88a8857f.jpeg"
   },
   {
     "revision": "fe7b8c6747df594cb3777399ad9290c6",
