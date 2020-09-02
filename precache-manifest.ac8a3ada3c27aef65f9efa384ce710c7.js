@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6548c8e26ee281c8cbfa9ec011b0e292",
+    "revision": "9f42eb45e607f5a8b69fae1fa90b96bf",
     "url": "/Fuddi-Landing-Page/index.html"
   },
   {
-    "revision": "b6b1e18de8ca2c3983d5",
+    "revision": "439cb2d05c672d7be588",
     "url": "/Fuddi-Landing-Page/static/css/main.f1d09e03.chunk.css"
   },
   {
-    "revision": "a5a2c34acb7391c2aed7",
-    "url": "/Fuddi-Landing-Page/static/js/2.b18d1c13.chunk.js"
+    "revision": "b811739b77aae5f79e5e",
+    "url": "/Fuddi-Landing-Page/static/js/2.1a733fc6.chunk.js"
   },
   {
-    "revision": "b6b1e18de8ca2c3983d5",
-    "url": "/Fuddi-Landing-Page/static/js/main.8b7104e3.chunk.js"
+    "revision": "439cb2d05c672d7be588",
+    "url": "/Fuddi-Landing-Page/static/js/main.1dc1ab5e.chunk.js"
   },
   {
     "revision": "9e531edac3d052356c60",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e0aab94f4498ab5c22d167deb6c0ff75",
     "url": "/Fuddi-Landing-Page/static/media/app.e0aab94f.png"
+  },
+  {
+    "revision": "1e9f01162859ce7bec44274a13bb9d24",
+    "url": "/Fuddi-Landing-Page/static/media/faq2.1e9f0116.jpeg"
   },
   {
     "revision": "0b0bd3f0ff2bedd8cd02b3328f01ef17",
