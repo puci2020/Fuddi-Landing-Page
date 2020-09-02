@@ -79,6 +79,7 @@ const GridItem = styled.div`
     }
     h5{
     font-weight: 400;
+    text-align: center;
     }
   }
 `;
@@ -144,7 +145,8 @@ const Team = () => {
                     <div className="photo"><img src={face4} alt="Adam Pucicki"/></div>
                     <div className="desc">
                         <h4>Adam Pucicki</h4>
-                        <h5>Front-end Specialist & Co-founder</h5>
+                        <h5>Frontend Specialist<br/>
+                        & Co-founder</h5>
                         <Social>
                             <p/>
                             <a target="_blank" rel="noopener noreferrer" href="http://linkedin.com/in/adampucicki"> <img src={linkedin} alt="Linkedin icon"/></a>
