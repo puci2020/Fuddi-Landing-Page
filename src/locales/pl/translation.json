@@ -49,9 +49,42 @@
   },
   "faq": {
     "header": "Co chcesz wiedzieć",
+
    "quest1": {
-     "header" : "Czy istnieją podobne platformy",
+     "header" : "Czy istnieją podobne platformy?",
      "content" : "Krótko mówiąc tak, mówiąc precyzyjnie nie. W sieci możemy natknąć się na wiele sklepów z produktami rzemieślniczymi, ryneczków z żywnością pochodzącą od rolnika, a nawet na supermarkety online, lecz oferta naszej aplikacji oraz model biznesowy są rewolucyjne. Cel jaki sobie postawiliśmy jako twórcy platformy to stworzenie takiego miejsca, gdzie klient będzie miał szybki i łatwy dostęp do wszystkich najświeższych produktów spożywczych bez konieczności wychodzenia z domu."
-   }
+   },
+    "quest2": {
+      "header" : "Dlaczego powinieneś zaufać Fuddi?",
+      "content" : "Pragniemy dostarczać naszym klientom najlepsze towary przy jednoczesnym zachowaniu niskiej ceny oraz z najwyższą jakością i czasem realizacji usługi. Każda osoba z naszego zespołu cechuje się  niebywałą ambicją. Wkładamy w rzeczy, które tworzymy maksymalne najwięcej zaangażowania w efekcie pozostawiając w nich cząstkę siebie. Funkcjonalności jakie implementujemy w aplikacji na ten moment to między innymi: możliwość wystawiania produktów bez ograniczeń, możliwość zakupu szerokiej gamy produktów, personalizacja usługi, możliwość zapłaty na różne sposoby, ocena jakości towaru oraz usługi sprzedającego, rozwiązanie dla dostawców, rozwiązanie dla producentów do budowania pozytywnych stosunków z użytkownikami platformy. Niezależnie od tego aplikacja znajduje jeszcze we wczesnej fazie rozwoju, lecz tak samo jak z maleńkiej pestki powstanie kiedyś wspaniałe drzewo, tak z tych kilku oferowanych obecnie funkcjonalności powstanie prawdziwe dzieło. Warto również zaznaczyć, że poprzez pobranie i korzystanie z aplikacji wspierasz Polskich rolników, przedsiębiorców oraz Polską gospodarkę ."
+    },
+    "quest3": {
+      "header" : "Czy szukacie inwestorów?",
+      "content" : "Tak. Pełen ogólny zakres prac jakie mamy w planach znajduje się w sekcji RoadMap, po szczegółowe informacje zapraszamy do kontaktu. Obecnie zakończyliśmy etap MVP, chcemy iść z projektem do przodu, dlatego zapraszamy wszystkie osoby zainteresowane współpracą o kontakt mailowo przez adres [mail]."
+    },
+    "quest4": {
+      "header" : "Jak chcemy zarabiać na aplikacji?",
+      "content" : "Na początkowych etapach będzie pobierana niewielka prowizja od transakcji kupna-sprzedaży, będziemy udostępniać zainteresowanym stronom powierzchnie reklamowe oraz wyświetlać wyróżnienia na ekranach klientów. W dalszej perspektywie specjalny algorytm badający zachowania i przyzwyczajenia klientów będzie wyświetlał specjalnie spersonalizowaną ofertę, aby skrócić czas zakupu i poprawić doświadczenie klienta z użytkowania aplikacji.\nDodatkowo, dzięki wiedzy jaką udało nam się nabyć w toku studiów oraz przy innych projektach, chcemy świadczyć usługi informatyczne, a zarazem pragniemy pomagać innym aspirującym przedsiębiorcom spełniać swoje marzenia i cele startupowe."
+    },
+    "quest5": {
+      "header" : "Co nas motywuje i jaki cel nam przyświeca?",
+      "content" : "Jesteśmy ambitną grupą, każdego z nas motywują różne rzeczy, lecz wspólnym czynnikiem dającym nam kopa do działania jest zmiana na lepsze i pokazanie, że niemożliwe jest możliwe. Chcemy rozwijać tak samo siebie, swoje umiejętności, rozwijać swój potencjał, jak i budować wokół przyjazne wspierające się nawzajem środowisko. Jedna z wielu maksym jaka nam przyświeca to “Myśl globalnie, działaj lokalnie”."
+    },
+    "quest6": {
+      "header" : "Kim jesteśmy?",
+      "content" : "Wszystkie osoby w naszym dynamicznie rozwijającym się zespole (w obecnym stanie) to absolwenci informatyki i mimo jednego tła edukacyjnego, każdy z nas interesuje i zajmuje się inną dziedziną, dzięki czemu wspólnie się dopełniamy. \nDlatego, że posiadamy taką samą podstawę jesteśmy w stanie dojść do porozumienia na etapie projektowym i rozdzielić obowiązki w zespole w sposób efektywny i odpowiadający kompetencjom potrzebnym przy wykonaniu konkretnych zadań..Programowanie i rozwój aplikacji dla każdego z nas jest czystą przyjemnością, ponieważ to nasza pasja, w którą wkładamy jak najwięcej serca i czasu. Wraz z rozwojem tworzonego przez nas oprogramowania, rozwijają się nasze umiejętności i poszerzają zainteresowania. Różnorodność używanych technologii pozwala na stworzenie w pełni rozwijalnego i działającego produktu, który możemy zaoferować wraz z szeroką gamą usług spełniających, spełniających Państwa oczekiwania.\n"
+    },
+    "quest7": {
+      "header" : "Czy pracujecie nad innymi projektami?",
+      "content" : "Tak, obecnie pracujemy nad rozwojem kilku innych inicjatyw między innymi z branży artystycznej, recyklingu i druku 3D. Pracujemy także nad wprowadzeniem paru aplikacji na rynek oraz tworzymy responsywne strony internetowe. Pomagamy również w planowaniu oraz realizacji prac młodych przedsiębiorców i ich startupów. Począwszy od wsparcia technologicznego, przez marketing po pomoc w znalezieniu inwestora.\n"
+    },
+    "quest8": {
+      "header" : "Czy szukacie kogoś do współpracy?\n",
+      "content" : "Jeśli jesteś osobą lub grupą osób, które chcą mieć wpływ na rozwój siebie, swojego środowiska w skali mikro i makro oraz chcesz przeżyć przygodę życia i być świadkiem wzrostu startupów od zalążka po międzynarodowe korporacje skontaktuj się z nami. A jeśli jesteś osobą, która posiada pomysł oraz aktywnie go rozwija i tak się składa, że poszukujesz potencjalnych ścieżek rozwoju oraz profesjonalnego wsparcia zapraszamy. \n"
+    },
+    "quest9": {
+      "header" : "Jak możemy nawiązać kontakt?/ Jak mogę wejść we współpracę?\n",
+      "content" : "Jeśli interesuje Cię współpraca napisz co możemy Ci zaoferować oraz co Ty możesz zaoferować Nam.\nNapisz do nas pod, któryś z tych adresów (mail).\n"
+    }
   }
 }

@@ -50,8 +50,40 @@
   "faq": {
     "header" : "What do you want to know",
     "quest1": {
-      "header" : "Are there similar platforms",
+      "header" : "Are there similar platforms?",
       "content" : "In short, yes, to be precise, no. On the web, we can come across many craft stores, farmer food markets, and even online supermarkets, but our application offer and business model are revolutionary. The goal we set ourselves as the creators of the platform is to create a place where the customer will have quick and easy access to all the freshest food products without leaving home."
+    },
+    "quest2": {
+      "header" : "Why should you trust Fuddi?",
+      "content" : "We want to provide our customers with the best goods while maintaining a low price and the highest quality and time of service. Each person from our team is characterized by incredible ambition. We put the most commitment into the things that we create and, in effect, leave a part of ourselves in them. The functionalities that we implement in the application at the moment include: the ability to display products without restrictions, the ability to purchase a wide range of products, personalization of the service, the ability to pay in various ways, assessment of the quality of goods and the seller's services, a solution for suppliers, a solution for manufacturers to build positive relations with platform users. Regardless of this, the application is still at an early stage of development, but just as a tiny seed will someday become a wonderful tree, a real work of art will be created from these few functionalities offered now. It is also worth noting that by downloading and using the application, you support Polish farmers, entrepreneurs and the Polish economy."
+    },
+    "quest3": {
+      "header" : "Are you looking for investors?",
+      "content" : "Yes. The full general scope of works that we are planning can be found in the RoadMap section, for detailed information please contact us. We have now completed the MVP stage, we want to move forward with the project, so we invite all people interested in cooperation to contact us by e-mail via [e-mail]."
+    },
+    "quest4": {
+      "header" : "How do we want to make money on the application?",
+      "content" : "In the initial stages, a small commission will be charged on purchase and sale transactions, we will provide interested parties with advertising space and display awards on customer screens. In the longer term, a special algorithm that studies customer behavior and habits will display a specially personalized offer to shorten the purchase time and improve the customer's experience of using the application.\nAdditionally, thanks to the knowledge we have acquired in the course of studies and in other projects, we want to provide IT services, and at the same time we want to help other aspiring entrepreneurs fulfill their dreams and startup goals."
+    },
+    "quest5": {
+      "header" : "What motivates us and what is our goal?",
+      "content" : "We are an ambitious group, each of us is motivated by different things, but the common factor that gives us a kick to act is change for the better and showing that it is impossible. We want to develop ourselves, our skills, develop our potential, and build a friendly environment that supports each other. One of the many maxims that guide us is “Think globally, act locally”."
+    },
+    "quest6": {
+      "header" : "Who we are?",
+      "content" : "All people in our dynamically developing team (as it stands today) are IT graduates, and despite one educational background, each of us is interested in a different field, so we complement each other together.\nBecause we have the same foundation, we are able to reach an agreement at the design stage and allocate responsibilities in the team in an effective manner and corresponding to the competences needed to perform specific tasks. Programming and development of applications for each of us is pure pleasure, because it is our passion in which we put as much heart and time as possible. Along with the development of the software we create, our skills and interests expand. The variety of technologies used allows us to create a fully expandable and working product that we can offer along with a wide range of services that meet your expectations."
+    },
+    "quest7": {
+      "header" : "Are you working on other projects?",
+      "content" : "Yes, we are currently working on the development of several other initiatives in the arts, recycling and 3D printing industries, among others. We are also working on introducing a few applications to the market and creating responsive websites. We also help in planning and implementing the work of young entrepreneurs and their startups. Starting from technological support, through marketing, to help in finding an investor."
+    },
+    "quest8": {
+      "header" : "Are you looking for someone to cooperate with?",
+      "content" : "If you are a person or a group of people who want to have an impact on the development of yourself, your environment on a micro and macro scale, and you want to experience the adventure of a lifetime and witness the growth of startups from seed to international corporations, contact us. And if you are a person who has an idea and is actively developing it, and it so happens that you are looking for potential development paths and professional support, we invite you."
+    },
+    "quest9": {
+      "header" : "How can we make contact? / How can I cooperate?",
+      "content" : "If you are interested in cooperation, write what we can offer you and what you can offer us.\nWrite to us at one of these addresses (e-mail)."
     }
   }
 }
