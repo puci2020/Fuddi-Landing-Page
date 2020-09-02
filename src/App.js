@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Main from './Main'
 import Faq from "./Faq";
-import About from './Components/About/About'
 
 
 class App extends Component {
@@ -10,7 +9,6 @@ class App extends Component {
         return (
             <Router basename={process.env.PUBLIC_URL}>
                 <Route path={"/"} exact component={Main}/>
-                <Route path={"/about"} component={About} render={()=><Redirect to="/"/>}/>
                 <Route path={"/faq"} component={Faq}/>
             </Router>
         );

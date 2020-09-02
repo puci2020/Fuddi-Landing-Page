@@ -1,14 +1,14 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Main from './Main';
+import App from './App';
 import './i18n';
 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <Suspense fallback={(<div>Loading</div>)}>
-        <Main />
+        <App />
     </Suspense>
     , document.getElementById('root'));
 
