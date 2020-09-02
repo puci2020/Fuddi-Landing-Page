@@ -32,6 +32,9 @@ const ContentItem = styled.div`
   p{
     text-align: justify;
   }
+  @media (max-width: 1024px){
+      padding: 25px;
+  }
   
 `;
 
