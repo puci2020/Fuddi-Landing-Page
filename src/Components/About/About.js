@@ -19,18 +19,22 @@ const Wrapper = styled.div`
     background-position: center 0;
     background-attachment: fixed;
     padding-bottom: 20px;
-    font-size: ${({theme}) => theme.font.size.m};
+    font-size: ${({theme}) => theme.font.size.s};
     //@media (max-width: 960px){
     // .about{
     //    height: auto;
     //  }
     //}
     
-    h2{
-    font-size: ${({theme}) => theme.font.size.l};
-    }
+
 `;
 
+const H2 = styled.h2`
+  font-size: ${({theme}) => theme.font.size.l};
+  margin: 40px 20px 40px 10%;
+  color: ${({theme}) => theme.colors.white};
+  text-shadow: .2rem .2rem .1rem black;
+`;
 
 const Row = styled.div`
     display: grid;
@@ -92,7 +96,7 @@ const Row = styled.div`
 
 const Box = styled.div`
   border-radius: 20px;
-  background-color: rgba(43, 57, 71, 85%);
+  background-color: ${({theme}) => theme.colors.box};
   width: 100%;
   height: ${({first,  sec}) => first ? '320px' : sec ? '340px' : 'auto'};
   display: flex;
@@ -137,7 +141,7 @@ const Text = styled.div`
     font-size: ${({theme}) => theme.font.size.s};
   }
   ${({theme}) => theme.media.phone}{
-    font-size: ${({theme}) => theme.font.size.xs};
+    font-size: ${({theme}) => theme.font.size.xxs};
     padding: 5px;
   }
 `;
@@ -149,7 +153,7 @@ const About = () => {
     return (
 
         <Wrapper id="about">
-                <h2>{t('benefits.headers.header1')}</h2>
+                <H2>{t('benefits.headers.header1')}</H2>
                 <Row>
                     <div className="one">
                         <Box first>
@@ -170,7 +174,7 @@ const About = () => {
                         </Box>
                     </div>
                 </Row>
-                <h2>{t('benefits.headers.header2')}</h2>
+                <H2>{t('benefits.headers.header2')}</H2>
                 <Row>
                     <div className="three">
                         <Box sec>

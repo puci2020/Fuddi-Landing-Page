@@ -4,12 +4,16 @@ export const theme = {
         greenTransparent: '#18611cdb',
         box: 'rgba(43,57,71,85%)',
         white: 'rgb(255, 255, 255)',
-        gray: '#3e3e3e'
+        gray: '#3e3e3e',
+        grayLight: '#636363',
+        orange: '#ff9a00',
+        grayMenu: '#1f2021'
     },
     font: {
         weight: {
             thin: 300,
             regular: 400,
+            plusRegular: 600,
             bold: 700
         },
         space: {
@@ -17,8 +21,9 @@ export const theme = {
             m: '.2rem'
         },
         size: {
-            xs: '12px',
-            s: '14px',
+            xxs: '12px',
+            xs: '14px',
+            s: '16px',
             m: '17px',
             l: '24px',
             xl: '40px'

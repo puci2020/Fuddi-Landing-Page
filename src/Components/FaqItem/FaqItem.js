@@ -12,40 +12,50 @@ const Content = styled.div`
   grid-gap: 60px;
   padding: 0 10%;
   
-  @media (max-width: 1024px){
+  ${({theme}) => theme.media.tablet}{
   grid-template-columns: 1fr;
   grid-template-rows: repeat(9, auto);
+  grid-gap: 20px;
   }
 `;
 
 const ContentItem = styled.div`
   height: auto;
   border-radius: 20px;
-  background-color: rgba(43,57,71,85%);
+  background-color: ${({theme}) => theme.colors.box};
   padding: 40px;
-  color: white;
-  letter-spacing: .1rem;
-  font-size: 1.1rem;
+  color: ${({theme}) => theme.colors.white};
+  letter-spacing: ${({theme}) => theme.font.space.s};
+  font-size: ${({theme}) => theme.font.size.m};
   h4{
   padding: 20px 0;
   }
   p{
     text-align: left;
   }
-  @media (max-width: 1024px){
+  ${({theme}) => theme.media.tablet}{
       padding: 25px;
+      font-size: ${({theme}) => theme.font.size.s};
+  }
+  ${({theme}) => theme.media.phone}{
+      font-size: ${({theme}) => theme.font.size.xxs};
   }
   
 `;
 
-
+const H2 = styled.h2`
+  font-size: ${({theme}) => theme.font.size.l};
+  margin: 40px 20px 40px 10%;
+  color: ${({theme}) => theme.colors.white};
+  text-shadow: .2rem .2rem .1rem black;
+`;
 const FaqItem = () => {
 
     const {t} = useTranslation();
 
     return (
         <div>
-            <h2>{t('faq.header')}</h2>
+            <H2>{t('faq.header')}</H2>
             <Content>
                 <ContentItem>
                     <h4>{t('faq.quest1.header')}</h4>

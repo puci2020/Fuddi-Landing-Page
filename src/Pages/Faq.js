@@ -7,6 +7,7 @@ import SideDrawer from "../Components/SideDrawer/SideDrawer";
 import backGround from '../img/faq.jpeg'
 import Content from '../Components/FaqItem/FaqItem'
 import GlobalStyle from "../Theme/GlobalStyles";
+import Layout from "../Theme/Layout";
 
 
 const StyledWrapper = styled.div`
@@ -65,6 +66,7 @@ class Faq extends Component {
             sideDrawer = <SideDrawer show={this.state.sideDrawerOpen}/>
         }
         return (
+            <Layout>
             <div className="faq" id="faq">
                 <GlobalStyle/>
                 <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
@@ -76,6 +78,7 @@ class Faq extends Component {
                 </StyledWrapper>
                 <Footer/>
             </div>
+            </Layout>
         );
     }
 }

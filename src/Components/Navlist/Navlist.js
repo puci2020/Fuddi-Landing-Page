@@ -1,14 +1,87 @@
 import React from 'react';
-import "./Navlist.css"
+import styled from 'styled-components'
 import {useTranslation} from "react-i18next";
-// import {Link} from "react-scroll";
 import {HashLink as Link} from 'react-router-hash-link';
-// import smoothscroll from 'smoothscroll-polyfill';
 
 
 
+const NavWrapper = styled.div`
+  position: absolute;
+  width: auto;
+  right: 10%;
+`
 
+const UL = styled.ul`
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  
+  li{
+  padding: 30px 10px;
+  
+    a{
+      text-decoration: none;
+      color: ${({theme}) => theme.colors.white};
+      
+      &:hover{
+        color: ${({theme}) => theme.colors.orange};
+        cursor: pointer;
+      }
+    }
+  }
+  
+  #lang{
+  margin-left: 30px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: ${({theme}) => theme.colors.white};
+  
+  option{
+  color: black;
+  }
+  }
+  
+  #lang2{
+  display: none;
+  }
+  
+  ${({theme}) => theme.media.tablet}{
+    display: none;
+    
+    #lang{
+    display: none;
+    }
+    
+    #lang2{
+    display: block;
+    }
+  }
+`;
 
+const Select = styled.select`
+  margin-left: 30px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: ${({theme}) => theme.colors.white};
+  font-size: ${({theme}) => theme.font.size.s};
+  
+  option{
+  color: black;
+  }
+  
+`;
+
+const Button = styled.button`
+  border: none;
+  background-color: transparent;
+  color: ${({theme}) => theme.colors.white};
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+`;
 
 function NavList() {
     const {t, i18n} = useTranslation();
@@ -23,51 +96,49 @@ function NavList() {
         i18n.changeLanguage(lang);
     }
 
-
-    // const scrolledY = window.scrollY;
-    // if (scrolledY){
-    //     window.scroll(0, scrolledY - 80);
-    //     console.log("elo")
-    // }
-
-
     return (
 
-            <div className="nav">
-                <ul>
-                    <li>
-                        <Link smooth to="/#home" scroll={el => el.scrollIntoView({behavior: 'smooth'})} > {t("link1.1")}</Link>
-                    </li>
-                    <li>
-                        <Link smooth to="/#about" scroll={el => el.scrollIntoView({behavior: 'smooth'})}  >{t("link3.1")}</Link>
-                    </li>
-                    <li>
-                        {/*<Link activeClass="a" to="/#team" spy={true} smooth={true} offset={-80}*/}
-                        {/*      duration={500}>{t("link5.1")}</Link>*/}
-                        <Link smooth to="/#team" scroll={el => el.scrollIntoView({behavior: 'smooth'})} >{t("link5.1")}</Link>
-                    </li>
-                    <li>
-                        <Link smooth to="/#roadmap" scroll={el => el.scrollIntoView({behavior: 'smooth'})} >{t("link2.1")}</Link>
-                    </li>
-                    <li>
-                        <Link smooth to="/#footer" scroll={el => el.scrollIntoView({behavior: 'smooth'})} >{t("link4.1")}</Link>
-                    </li>
-                    <li>
-                        <Link smooth to={'/faq/#faq'} scroll={el => el.scrollIntoView({behavior: 'smooth'})}  top="0">FAQ</Link>
-                    </li>
+        <NavWrapper>
+            <UL>
+                <li>
+                    <Link smooth to="/#home"
+                          scroll={el => el.scrollIntoView({behavior: 'smooth'})}> {t("link1.1")}</Link>
+                </li>
+                <li>
+                    <Link smooth to="/#about"
+                          scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link3.1")}</Link>
+                </li>
+                <li>
+                    {/*<Link activeClass="a" to="/#team" spy={true} smooth={true} offset={-80}*/}
+                    {/*      duration={500}>{t("link5.1")}</Link>*/}
+                    <Link smooth to="/#team"
+                          scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link5.1")}</Link>
+                </li>
+                <li>
+                    <Link smooth to="/#roadmap"
+                          scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link2.1")}</Link>
+                </li>
+                <li>
+                    <Link smooth to="/#footer"
+                          scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link4.1")}</Link>
+                </li>
+                <li>
+                    <Link smooth to={'/faq/#faq'} scroll={el => el.scrollIntoView({behavior: 'smooth'})}
+                          top="0">FAQ</Link>
+                </li>
 
-                    <li><select id="lang" onChange={() => changeLanguage()}>
-                        <option value={'pl'}>PL</option>
-                        <option value={'en'}>EN</option>
-                    </select></li>
-                    <ul id="lang2">
-                        <button onClick={() => changeLanguageBtn('pl')}>PL</button>
-                        <button onClick={() => changeLanguageBtn('en')}>EN</button>
-                    </ul>
+                <li><Select id="lang" onChange={() => changeLanguage()}>
+                    <option value={'pl'}>PL</option>
+                    <option value={'en'}>EN</option>
+                </Select></li>
+                <ul id="lang2">
+                    <Button onClick={() => changeLanguageBtn('pl')}>PL</Button>
+                    <Button onClick={() => changeLanguageBtn('en')}>EN</Button>
                 </ul>
+            </UL>
 
 
-            </div>
+        </NavWrapper>
 
     );
 

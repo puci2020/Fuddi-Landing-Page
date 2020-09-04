@@ -17,12 +17,15 @@ const StyledWrapper = styled.div`
   overflow: hidden;
   padding-bottom: 20px;
   
-  
-  h2{
+
+`;
+
+const H2 = styled.h2`
   color: black;
   text-shadow: none;
-  }
+  margin: 40px 20px 40px 10%;
 `;
+
 
 const StyledGrid = styled.div`
   width: 100%;
@@ -31,12 +34,12 @@ const StyledGrid = styled.div`
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 100px;
   padding: 0 10%;
-  @media (max-width: 960px){
+  ${({theme}) => theme.media.tablet}{
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(3, 1fr);
       grid-gap: 10px;
       }
-  @media (max-width: 767px){
+   ${({theme}) => theme.media.phone}{
       grid-template-columns: 1fr;
       grid-template-rows: repeat(6, 1fr);
       grid-gap: 10px;
@@ -55,7 +58,6 @@ const GridItem = styled.div`
   .photo{
   width: 168px;
   height: 168px;
-  background-color: #18611c;
   border-radius: 50%;
   overflow: hidden;
   img{
@@ -72,13 +74,14 @@ const GridItem = styled.div`
   flex-direction: column;
   width: 100%;
   height: 50%;
-  font-size: 1.1rem;
-  color: #636363;
+  font-size: ${({theme}) => theme.font.size.m};
+  color: ${({theme}) => theme.colors.grayLight};
     h4{
-      font-weight: 600;
+      font-weight:  ${({theme}) => theme.font.weight.plusRegular};
     }
     h5{
-    font-weight: 400;
+    font-weight: ${({theme}) => theme.font.weight.regular};
+    font-size: ${({theme}) => theme.font.size.xs};
     text-align: center;
     }
   }
@@ -101,7 +104,7 @@ const Team = () => {
     const {t} = useTranslation();
     return (
         <StyledWrapper id="team">
-            <h2>{t("team.header")}</h2>
+            <H2>{t("team.header")}</H2>
             <StyledGrid>
                 <GridItem>
                     <div className="photo">
