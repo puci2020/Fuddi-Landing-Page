@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
-import Main from './Main'
-import Faq from "./Faq";
+import Main from './Pages/Main'
+import Faq from "./Pages/Faq";
 
 
 class App extends Component {

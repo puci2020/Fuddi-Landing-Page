@@ -1,17 +1,68 @@
 import React, {Component} from 'react';
-import "./Home.css"
+import styled from 'styled-components'
+
 import white from './../../img/white3.png';
 import Header from "../Header/Header";
 import app from "../../img/app.png"
 import {Parallax} from "react-scroll-parallax/cjs";
 import Grid from '@material-ui/core/Grid';
+import background from '../../img/home.jpeg'
+
+const HomeWrapper = styled.div`
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url(${background});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  .layer{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -80px;
+  
+  ${({theme}) => theme.media.tablet}{
+  bottom: 0;
+  }
+  }
+  
+  .caption{
+  padding-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  ${({theme}) => theme.media.tablet}{
+    padding-top: 50%;
+    padding-right: 10%;
+  }
+  }
+  
+  .phone{
+  width: 300px;
+  height: 1000px;
+  overflow: hidden;
+  img{
+  width: 100%;
+  height: 100%;
+  }
+  ${({theme}) => theme.media.tablet}{
+  display: none;
+  }
+  }
+`;
+
 
 class Home extends Component {
 
     render() {
 
         return (
-            <div className="home" id="home">
+            <HomeWrapper id="home">
                 {/*<Parallax className="layer first_layer" y={[-10, 10]} tagOuter="figure">*/}
                 {/*    <img src={field}/>*/}
                 {/*</Parallax>*/}
@@ -36,7 +87,7 @@ class Home extends Component {
                     src={white} alt="White mountains"
                 />
 
-            </div>
+            </HomeWrapper>
         );
     }
 }

@@ -1,16 +1,32 @@
 import React, {Component} from 'react';
-import './App.css';
-import Home from "./Components/Home/Home";
-import About from "./Components/About/About";
-import Navbar from "./Components/Navbar/Navbar";
-import SideDrawer from "./Components/SideDrawer/SideDrawer";
-import {ParallaxProvider} from 'react-scroll-parallax';
-import Roadmap from "./Components/Roadmap/Roadmap";
-import Footer from "./Components/Footer/Footer";
-import Screens from "./Components/Screens/Screens";
-import Team from "./Components/Team/Team";
+// import '../App.css'
+import styled from 'styled-components'
+import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer";
+import SideDrawer from "../Components/SideDrawer/SideDrawer";
+import backGround from '../img/faq.jpeg'
+import Content from '../Components/FaqItem/FaqItem'
+import GlobalStyle from "../Theme/GlobalStyles";
 
-class Main extends Component {
+
+const StyledWrapper = styled.div`
+  width: 100vw;
+  height: auto;
+  background-color: lightgrey;
+  padding: 100px 0;
+  background-image: url(${backGround});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-attachment: fixed;
+  overflow:hidden;
+ 
+`;
+
+
+
+
+class Faq extends Component {
     state = {
         sideDrawerOpen: false,
         active: false
@@ -48,31 +64,20 @@ class Main extends Component {
         if (this.state.sideDrawerOpen) {
             sideDrawer = <SideDrawer show={this.state.sideDrawerOpen}/>
         }
-
-        // let navBar = <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
-        //
-        // if (this.state.active){
-        //     navBar = <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
-        // }
         return (
-            <div className="App">
-                <ParallaxProvider>
-                    <Home/>
-                </ParallaxProvider>
+            <div className="faq" id="faq">
+                <GlobalStyle/>
                 <Navbar drawerClickHandler={this.drawerToggleClickHandler}/>
-                {/*{navBar}*/}
-                {sideDrawer}
-                <ParallaxProvider>
-                    <Screens/>
-                </ParallaxProvider>
-                <About/>
-                <Team/>
-                <Roadmap/>
-                <Footer/>
 
+                {sideDrawer}
+                <StyledWrapper>
+
+                    <Content/>
+                </StyledWrapper>
+                <Footer/>
             </div>
         );
     }
 }
 
-export default Main;
+export default Faq;

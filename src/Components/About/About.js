@@ -19,22 +19,18 @@ const Wrapper = styled.div`
     background-position: center 0;
     background-attachment: fixed;
     padding-bottom: 20px;
-    @media (max-width: 960px){
-     .about{
-        height: auto;
-      }
+    font-size: ${({theme}) => theme.font.size.m};
+    //@media (max-width: 960px){
+    // .about{
+    //    height: auto;
+    //  }
+    //}
+    
+    h2{
+    font-size: ${({theme}) => theme.font.size.l};
     }
 `;
 
-const Background = styled.div`
-    // overflow: hidden;
-    // background-image: url(${back});
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center 0;
-    // background-attachment: fixed;
-    // padding-bottom: 20px;
-`;
 
 const Row = styled.div`
     display: grid;
@@ -44,6 +40,7 @@ const Row = styled.div`
     margin: 0;
     padding: 0 10%;
     justify-content: center;
+    
     
     .one{
       grid-column: 1/4;
@@ -100,7 +97,6 @@ const Box = styled.div`
   height: ${({first,  sec}) => first ? '320px' : sec ? '340px' : 'auto'};
   display: flex;
   align-items: center;
-  //overflow: hidden;
   flex-direction: ${({sec}) => sec ? 'column' : 'row'};
 `;
 
@@ -128,20 +124,21 @@ const Text = styled.div`
   width: ${(props) => props.small ? '80%' : '60%'};
   height: ${(props) => props.small ? '60%' : 'auto'};
   padding: 10px 20px 10px 10px;
-  color: white;
-  letter-spacing: .1rem;
-  font-size: 1.1rem;
+  color: ${({theme}) => theme.colors.white};
+  letter-spacing: ${({theme}) => theme.font.space.s};
+  
   overflow: hidden;
   text-align: ${(props) => props.small ? 'center' : 'left'};
   h4{
   padding: ${(props) => props.small ? '10px 0 20px' : 'auto'};
   }
-  @media (max-width: 960px){
-    font-size: .7rem;
-    padding: 5px;
+  
+  ${({theme}) => theme.media.tablet}{
+    font-size: ${({theme}) => theme.font.size.s};
   }
-  @media (max-width: 1250px){
-    font-size: .9rem;
+  ${({theme}) => theme.media.phone}{
+    font-size: ${({theme}) => theme.font.size.xs};
+    padding: 5px;
   }
 `;
 
@@ -152,7 +149,6 @@ const About = () => {
     return (
 
         <Wrapper id="about">
-            <Background>
                 <h2>{t('benefits.headers.header1')}</h2>
                 <Row>
                     <div className="one">
@@ -210,7 +206,6 @@ const About = () => {
                         </Box>
                     </div>
                 </Row>
-            </Background>
         </Wrapper>
     );
 };
