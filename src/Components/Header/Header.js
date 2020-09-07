@@ -31,6 +31,7 @@ const Button = styled.button`
   outline: none;
   cursor: pointer;
   transition: background-color .2s, color .2s;
+  border-radius: 50px;
   
   &:hover{
   color: ${({theme}) => theme.colors.white};

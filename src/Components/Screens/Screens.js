@@ -31,22 +31,22 @@ const Screens = () => {
 
     return (
         <ScreensWrapper>
-            <Parallax className="screen" y={[120, -30]} tagOuter="figure">
+            <Parallax className="screen" y={[100, -30]} tagOuter="figure">
                 <div className="screen_item1">
                     <img src={screen1} alt="Fuddi app screen"/>
                 </div>
             </Parallax>
-            <Parallax className="screen" y={[220, -90]} tagOuter="figure">
+            <Parallax className="screen" y={[200, -90]} tagOuter="figure">
                 <div className="screen_item2">
                     <img src={screen2} alt="Fuddi app screen"/>
                 </div>
             </Parallax>
-            <Parallax className="screen" y={[120, -30]} tagOuter="figure">
+            <Parallax className="screen" y={[100, -30]} tagOuter="figure">
                 <div className="screen_item3">
                     <img src={screen3} alt="Fuddi app screen"/>
                 </div>
             </Parallax>
-            <Parallax className="screen" y={[220, -90]} tagOuter="figure">
+            <Parallax className="screen" y={[200, -90]} tagOuter="figure">
                 <div className="screen_item4">
                     <img src={screen4} alt="Fuddi app screen"/>
                 </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import wave from '../../img/wave.png'
 import people from '../../img/contact.png'
+import {useTranslation} from "react-i18next";
 
 const ContactWrapper = styled.div`
   
@@ -39,18 +40,29 @@ const ContactLeft = styled.div`
   height: 100%;
   width: 100%;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   //background-color: #636363;
   img{
   width: 100%;
   height: auto;
   }
+  
+  ${({theme}) => theme.media.tablet}{
+    display: none;
+  }
 `;
 
 const ContactRight = styled.div`
-  padding-top: 40px;
+  //padding-top: 40px;
   width: 100%;
   height: 100%;
   z-index: 1;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
 `;
 
 const SmallInput = styled.input`
@@ -79,49 +91,62 @@ const Textarea = styled.textarea`
 `;
 
 const Checkbox = styled.div`
- 
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: 8px;
-    cursor: pointer;
-
-    
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 20px;
-      height: 20px;
-      background-color: lightgray;
-      border-radius: 3px;
-
-  
-`
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+  }
+`;
 
 const Label = styled.label`
-  margin-left: 20px;
+  margin-left: 10px;
+  color: rgb(5,28,74);
+
+`;
+
+const Button = styled.button`
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  //border: 1px solid lightgrey;
+  border: none;
+  outline: none;
+  cursor:pointer;
+  background-color: rgba(15, 173, 142 ,1);
+  font-size: ${({theme}) => theme.font.size.s};
+  letter-spacing: ${({theme}) => theme.font.space.s};
   color: ${({theme}) => theme.colors.white};
+  transition: background-color .2s ease-in-out;
+  &:hover{
+  background-color: #18611c;
+  }
 `;
 
 const ContactItem = () => {
+    const {t} = useTranslation();
     return (
         <div>
-            <H2>Chcesz o coś zapytać?</H2>
+            <H2>{t('contact.header')}</H2>
             <ContactWrapper>
                 <ContactLeft>
                     <img src={people} alt="People"/>
                 </ContactLeft>
                 <ContactRight>
-                    <SmallInput type="text" placeholder="Imię"/>
-                    <SmallInput type="text" placeholder="Nazwisko"/>
-                    <SmallInput type="text" placeholder="Email"/>
-                    <Textarea  placeholder="Twoje pytanie..."/>
-                    <Checkbox type="checkbox" name="policy"/>
-                    <Label for="policy">Akceptuję politykę prywatności</Label>
-                    {/*<Checkbox>*/}
-                    {/*    <input className="checkbox" type="checkbox" />*/}
-                    {/*    <p>Akceptuje politykę prywatności</p>*/}
-                    {/*</Checkbox>*/}
+                    <form>
+                        <SmallInput type="text" placeholder={t('contact.form.placeholder.firstName')}/>
+                        <SmallInput type="text" placeholder={t('contact.form.placeholder.lastName')}/>
+                        <SmallInput type="text" placeholder="Email"/>
+                        <Textarea placeholder={t('contact.form.placeholder.question')}/>
+                        <Checkbox>
+                            <input type="checkbox" name="policy"/>
+                            <Label>{t('contact.form.policy')}</Label>
+                        </Checkbox>
+                        <Button type="submit">{t('contact.form.button')}</Button>
+                    </form>
                 </ContactRight>
             </ContactWrapper>
             <Wave src={wave} alt="White wave"/>

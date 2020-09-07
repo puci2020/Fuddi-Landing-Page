@@ -85,5 +85,17 @@
       "header" : "How can we make contact? / How can I cooperate?",
       "content" : "If you are interested in cooperation, write what we can offer you and what you can offer us.\nWrite to us at one of these addresses (e-mail)."
     }
+  },
+  "contact": {
+    "header": "Do you want to ask about something?",
+    "form": {
+      "placeholder" : {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "question": "Your question..."
+      },
+      "policy" : "I accept the privacy policy",
+      "button" : "Send"
+    }
   }
 }

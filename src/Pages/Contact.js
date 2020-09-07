@@ -12,6 +12,7 @@ const StyledWrapper = styled.div`
   width: 100vw;
   //min-height: calc(100vh - 250px);
   min-height: 100vh;
+  height: auto;
   padding: 100px 0;
   background-color: ${({theme}) => theme.colors.greenTransparent};
   //background-size: cover;
