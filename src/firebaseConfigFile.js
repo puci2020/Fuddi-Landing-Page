@@ -1,3 +1,6 @@
+import firebase from 'firebase/app'
+import 'firebase/firestore'
+
 var firebaseConfig = {
     apiKey: "AIzaSyAvcGc7_YO6YNUcuI0vxYQmtZ68F1LuXkg",
     authDomain: "fuddi-landing-page.firebaseapp.com",
@@ -10,4 +13,6 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// firebase.analytics();
+
+export default firebase;

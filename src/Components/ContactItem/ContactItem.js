@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components'
 import wave from '../../img/wave.png'
 import people from '../../img/contact.png'
 import {useTranslation} from "react-i18next";
+import firebase from "../../firebaseConfigFile";
 
 const ContactWrapper = styled.div`
   
@@ -126,7 +127,29 @@ const Button = styled.button`
   }
 `;
 
+
 const ContactItem = () => {
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [question, setQuestion] = useState('');
+
+    function onSubmit(e) {
+        e.preventDefault();
+
+        firebase.firestore().collection('/contact-form').add({
+            firstName,
+            lastName,
+            email,
+            question
+        }).then(() => {
+            setFirstName('');
+            setLastName('');
+            setEmail('');
+            setQuestion('');
+        })
+    }
+
     const {t} = useTranslation();
     return (
         <div>
@@ -136,11 +159,14 @@ const ContactItem = () => {
                     <img src={people} alt="People"/>
                 </ContactLeft>
                 <ContactRight>
-                    <form>
-                        <SmallInput type="text" placeholder={t('contact.form.placeholder.firstName')}/>
-                        <SmallInput type="text" placeholder={t('contact.form.placeholder.lastName')}/>
-                        <SmallInput type="text" placeholder="Email"/>
-                        <Textarea placeholder={t('contact.form.placeholder.question')}/>
+                    <form onSubmit={onSubmit}>
+                        <SmallInput type="text" value={firstName} onChange={e => setFirstName(e.currentTarget.value)}
+                                    placeholder={t('contact.form.placeholder.firstName')}/>
+                        <SmallInput type="text" value={lastName} onChange={e => setLastName(e.currentTarget.value)}
+                                    placeholder={t('contact.form.placeholder.lastName')}/>
+                        <SmallInput type="text" value={email} onChange={e => setEmail(e.currentTarget.value)} placeholder="Email"/>
+                        <Textarea value={question} onChange={e => setQuestion(e.currentTarget.value)}
+                                  placeholder={t('contact.form.placeholder.question')}/>
                         <Checkbox>
                             <input type="checkbox" name="policy"/>
                             <Label>{t('contact.form.policy')}</Label>
