@@ -174,7 +174,7 @@ const Team = () => {
                     <div className="photo"><img src={face5} alt="Face1"/></div>
                     <div className="desc">
                         <h4>Paulina Talarowska</h4>
-                        <h5>Backend Developer</h5>
+                        <h5>KAM</h5>
                         <Social>
                             <img src={facebook} alt="Facebook icon"/>
                             <img src={linkedin} alt="Linkedin icon"/>
