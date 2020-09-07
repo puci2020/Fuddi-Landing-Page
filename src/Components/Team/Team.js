@@ -159,7 +159,7 @@ const Team = () => {
                     </div>
                 </GridItem>
                 <GridItem>
-                    <div className="photo"><img src={face5} alt="Face1"/></div>
+                    <div className="photo"><img src={face6} alt="Face1"/></div>
                     <div className="desc">
                         <h4>John Doe</h4>
                         <h5>Frontend Developer</h5>
@@ -171,9 +171,9 @@ const Team = () => {
                     </div>
                 </GridItem>
                 <GridItem>
-                    <div className="photo"><img src={face6} alt="Face1"/></div>
+                    <div className="photo"><img src={face5} alt="Face1"/></div>
                     <div className="desc">
-                        <h4>John Doe</h4>
+                        <h4>Paulina Talarowska</h4>
                         <h5>Backend Developer</h5>
                         <Social>
                             <img src={facebook} alt="Facebook icon"/>
