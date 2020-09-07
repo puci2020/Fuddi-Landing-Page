@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Fuddi-Landing-Page/static/css/main.1dd88ba7.chunk.css",
-    "main.js": "/Fuddi-Landing-Page/static/js/main.8ea1897d.chunk.js",
-    "main.js.map": "/Fuddi-Landing-Page/static/js/main.8ea1897d.chunk.js.map",
+    "main.js": "/Fuddi-Landing-Page/static/js/main.d7243c03.chunk.js",
+    "main.js.map": "/Fuddi-Landing-Page/static/js/main.d7243c03.chunk.js.map",
     "runtime~main.js": "/Fuddi-Landing-Page/static/js/runtime~main.1fa72aa3.js",
     "runtime~main.js.map": "/Fuddi-Landing-Page/static/js/runtime~main.1fa72aa3.js.map",
-    "static/js/2.e2445be2.chunk.js": "/Fuddi-Landing-Page/static/js/2.e2445be2.chunk.js",
-    "static/js/2.e2445be2.chunk.js.map": "/Fuddi-Landing-Page/static/js/2.e2445be2.chunk.js.map",
+    "static/js/2.36ceba98.chunk.js": "/Fuddi-Landing-Page/static/js/2.36ceba98.chunk.js",
+    "static/js/2.36ceba98.chunk.js.map": "/Fuddi-Landing-Page/static/js/2.36ceba98.chunk.js.map",
     "index.html": "/Fuddi-Landing-Page/index.html",
-    "precache-manifest.7fa0a854d932cab83580cb70b36dc240.js": "/Fuddi-Landing-Page/precache-manifest.7fa0a854d932cab83580cb70b36dc240.js",
+    "precache-manifest.3227b1e6028cdf0c1632a681f456181e.js": "/Fuddi-Landing-Page/precache-manifest.3227b1e6028cdf0c1632a681f456181e.js",
     "service-worker.js": "/Fuddi-Landing-Page/service-worker.js",
     "static/css/main.1dd88ba7.chunk.css.map": "/Fuddi-Landing-Page/static/css/main.1dd88ba7.chunk.css.map",
     "static/media/1.jpg": "/Fuddi-Landing-Page/static/media/1.ba5c1a48.jpg",
@@ -19,6 +19,7 @@
     "static/media/aboutBG.jpeg": "/Fuddi-Landing-Page/static/media/aboutBG.4b9a23c9.jpeg",
     "static/media/adam_pucicki.jpeg": "/Fuddi-Landing-Page/static/media/adam_pucicki.03c7fc3c.jpeg",
     "static/media/app.png": "/Fuddi-Landing-Page/static/media/app.e0aab94f.png",
+    "static/media/contact.png": "/Fuddi-Landing-Page/static/media/contact.4c9b32d7.png",
     "static/media/faq.jpeg": "/Fuddi-Landing-Page/static/media/faq.1e9f0116.jpeg",
     "static/media/farmer.png": "/Fuddi-Landing-Page/static/media/farmer.0b0bd3f0.png",
     "static/media/home.jpeg": "/Fuddi-Landing-Page/static/media/home.9b6015b8.jpeg",
@@ -30,6 +31,7 @@
     "static/media/screen4.jpeg": "/Fuddi-Landing-Page/static/media/screen4.b9de8216.jpeg",
     "static/media/shoppingcart.svg": "/Fuddi-Landing-Page/static/media/shoppingcart.b1f826c0.svg",
     "static/media/vegetable.svg": "/Fuddi-Landing-Page/static/media/vegetable.926acfc1.svg",
+    "static/media/wave.png": "/Fuddi-Landing-Page/static/media/wave.31b7e9b6.png",
     "static/media/white3.png": "/Fuddi-Landing-Page/static/media/white3.06bf648d.png"
   }
 }
