@@ -32,8 +32,9 @@ const HomeWrapper = styled.div`
   
   .caption{
   padding-left: 10%;
+  padding-top: 25vh;
   display: flex;
-  align-items: center;
+  //align-items: center;
   justify-content: center;
   
   ${({theme}) => theme.media.tablet}{
@@ -44,12 +45,19 @@ const HomeWrapper = styled.div`
   
   .phone{
   width: 300px;
-  height: 1000px;
+  height: 2000px;
   overflow: hidden;
+  @media(max-width: 1367px){
+    
+    width:250px
+    
+  }
   img{
   width: 100%;
   height: 100%;
   }
+  
+  
   ${({theme}) => theme.media.tablet}{
   display: none;
   }
@@ -74,7 +82,7 @@ class Home extends Component {
                         <Header/>
                     </Grid>
                     <Grid item className="caption" xs={12} md={6}>
-                        <Parallax className="phone" y={[160, -30]} tagOuter="figure">
+                        <Parallax className="phone" y={[40, -90]} tagOuter="figure">
                             <div className="item">
                                 <img src={app} alt="Fuddi app screen"/>
                             </div>
