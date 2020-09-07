@@ -19,7 +19,7 @@ const NavbarWrapper = styled.header`
   font-weight: ${({theme}) => theme.font.weight.regular};
   letter-spacing: ${({theme}) => theme.font.space.s};
   transition: background-color 1s, height 1s, font-size 1s;
-  z-index: 2;
+  z-index: 3;
   
   .scroll{
   background-color: ${({theme}) => theme.colors.greenTransparent};

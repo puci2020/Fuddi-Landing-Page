@@ -119,7 +119,7 @@ function NavList() {
                           scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link2.1")}</Link>
                 </li>
                 <li>
-                    <Link smooth to="/#footer"
+                    <Link smooth to={'/contact'}
                           scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link4.1")}</Link>
                 </li>
                 <li>

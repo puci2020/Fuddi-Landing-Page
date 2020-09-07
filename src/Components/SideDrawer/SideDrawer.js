@@ -17,7 +17,7 @@ const NavWrapper = styled.nav`
       justify-content: center;
       transform: translateX(-100%);
       transition: transform .35s ease-in-out;
-      z-index: 1;
+      z-index: 2;
   }
   
   .open{
