@@ -112,6 +112,7 @@
     }
   },
   "newsletter": {
-    "button" : "Sign up for the newsletter!"
+    "button" : "Sign up for the newsletter!",
+    "header" : "Stay up to date with the news from Fuddi!"
   }
 }

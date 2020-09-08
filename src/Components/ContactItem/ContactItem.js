@@ -136,7 +136,7 @@ const ContactItem = () => {
     const [checkbox, setCheckbox] = useState(false);
     const date = Date().toLocaleString();
 
-    const [t] = useTranslation();
+    const {t} = useTranslation();
 
 
     function onSubmit(e) {

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components'
 import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
 import SideDrawer from "../Components/SideDrawer/SideDrawer";
 import GlobalStyle from "../Theme/GlobalStyles";
 import Layout from "../Theme/Layout";
