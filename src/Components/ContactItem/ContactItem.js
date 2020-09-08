@@ -133,21 +133,61 @@ const ContactItem = () => {
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [question, setQuestion] = useState('');
+    const [checkbox, setCheckbox] = useState(false);
 
     function onSubmit(e) {
         e.preventDefault();
 
-        firebase.firestore().collection('/contact-form').add({
-            firstName,
-            lastName,
-            email,
-            question
-        }).then(() => {
-            setFirstName('');
-            setLastName('');
-            setEmail('');
-            setQuestion('');
-        })
+        let errors = [];
+
+        function emailIsValid(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+        }
+
+        if (firstName.length === 0) {
+            errors.push('Podaj swoje imię!');
+        }
+
+        if (lastName.length === 0) {
+            errors.push('Podaj swoje nazwisko!');
+
+        }
+
+        if (email.length === 0) {
+            errors.push('Podaj swój email!');
+        }else if (emailIsValid(email)===false){
+            errors.push('Podany email jest nieprawidłowy!');
+        }
+
+        if (question.length === 0) {
+            errors.push('Podaj treść wiadomości!');
+
+        }
+        if (checkbox === false) {
+            errors.push('Zaakceptuj naszą politykę prywatności!');
+
+        }
+
+        if (errors.length !== 0) {
+            alert(errors.join('\n'))
+
+        } else {
+            sendToDB();
+            alert("Wiadomość wysłana pomyślnie!")
+        }
+        function sendToDB() {
+            firebase.firestore().collection('/contact-form').add({
+                firstName,
+                lastName,
+                email,
+                question
+            }).then(() => {
+                setFirstName('');
+                setLastName('');
+                setEmail('');
+                setQuestion('');
+            })
+        }
     }
 
     const {t} = useTranslation();
@@ -164,11 +204,12 @@ const ContactItem = () => {
                                     placeholder={t('contact.form.placeholder.firstName')}/>
                         <SmallInput type="text" value={lastName} onChange={e => setLastName(e.currentTarget.value)}
                                     placeholder={t('contact.form.placeholder.lastName')}/>
-                        <SmallInput type="text" value={email} onChange={e => setEmail(e.currentTarget.value)} placeholder="Email"/>
+                        <SmallInput type="text" value={email} onChange={e => setEmail(e.currentTarget.value)}
+                                    placeholder="Email"/>
                         <Textarea value={question} onChange={e => setQuestion(e.currentTarget.value)}
                                   placeholder={t('contact.form.placeholder.question')}/>
                         <Checkbox>
-                            <input type="checkbox" name="policy"/>
+                            <input type="checkbox" checked={checkbox} onChange={e => setCheckbox(!checkbox)} name="policy"/>
                             <Label>{t('contact.form.policy')}</Label>
                         </Checkbox>
                         <Button type="submit">{t('contact.form.button')}</Button>
