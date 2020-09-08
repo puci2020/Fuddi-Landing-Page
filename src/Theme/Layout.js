@@ -25,7 +25,6 @@ const Button = styled.button`
   
   &:hover{
     background-color: ${({theme}) => theme.colors.greenTransparent};
-    color: ${({theme}) => theme.colors.orange};
     border: 1px solid lightgrey;
   }
   
