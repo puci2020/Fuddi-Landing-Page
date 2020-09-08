@@ -110,5 +110,8 @@
         "success" : "Message sent successfully!"
       }
     }
+  },
+  "newsletter": {
+    "button" : "Sign up for the newsletter!"
   }
 }

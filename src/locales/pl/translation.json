@@ -111,5 +111,8 @@
         "success" : "Wiadomość wysłana pomyślnie!"
       }
     }
+  },
+  "newsletter": {
+    "button" : "Zapisz się na newsletter!"
   }
 }
