@@ -134,6 +134,7 @@ const ContactItem = () => {
     const [email, setEmail] = useState('');
     const [question, setQuestion] = useState('');
     const [checkbox, setCheckbox] = useState(false);
+    const date = Date().toLocaleString();
 
     function onSubmit(e) {
         e.preventDefault();
@@ -169,8 +170,7 @@ const ContactItem = () => {
         }
 
         if (errors.length !== 0) {
-            alert(errors.join('\n'))
-
+            alert(errors.join('\n'));
         } else {
             sendToDB();
             alert("Wiadomość wysłana pomyślnie!")
@@ -180,7 +180,8 @@ const ContactItem = () => {
                 firstName,
                 lastName,
                 email,
-                question
+                question,
+                date
             }).then(() => {
                 setFirstName('');
                 setLastName('');
