@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import {ThemeProvider} from 'styled-components'
 import {theme} from "./Theme";
 import {useTranslation} from "react-i18next";
+import {HashLink as Link} from 'react-router-hash-link';
 
 const Button = styled.button`
   width: 220px;
@@ -42,7 +43,7 @@ const Layout = ({children}) => {
         <ThemeProvider theme={theme}>
             <GlobalStyle/>
             {children}
-            <Button>{t('newsletter.button')}</Button>
+            <Link to="/newsletter"><Button>{t('newsletter.button')}</Button></Link>
         </ThemeProvider>
     );
 };

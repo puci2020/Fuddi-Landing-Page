@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Main from './Pages/Main'
 import Faq from "./Pages/Faq";
 import Contact from "./Pages/Contact";
+import Newsletter from "./Pages/Newsletter";
 
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
                 <Route path={"/"} exact component={Main}/>
                 <Route path={"/faq"} component={Faq}/>
                 <Route path={"/contact"} component={Contact}/>
+                <Route path={"/newsletter"} component={Newsletter}/>
             </Router>
         );
     }
