@@ -95,7 +95,10 @@
         "lastName": "Nazwisko",
         "question": "Twoje pytanie..."
       },
-      "policy" : "Akceptuje poliktę prywatności",
+      "policy" : {
+        "part1" : "Akceptuje '",
+        "part2" : "poliktę prywatności'"
+      },
       "button" : "Wyślij"
     },
     "alert": {

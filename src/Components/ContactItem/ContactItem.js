@@ -100,13 +100,18 @@ const Checkbox = styled.div`
   input[type="checkbox"]{
     width: 20px;
     height: 20px;
+    margin-right: 10px;
+  }
+  label{
+  display: flex;
+  align-items: center;
   }
 `;
 
 const Label = styled.label`
   margin-left: 10px;
   color: rgb(5,28,74);
-
+ 
 `;
 
 const Button = styled.button`
@@ -213,8 +218,8 @@ const ContactItem = () => {
                         <Textarea value={question} onChange={e => setQuestion(e.currentTarget.value)}
                                   placeholder={t('contact.form.placeholder.question')}/>
                         <Checkbox>
-                            <input type="checkbox" checked={checkbox} onChange={e => setCheckbox(!checkbox)} name="policy"/>
-                            <Label>{t('contact.form.policy')}</Label>
+                            <Label><input type="checkbox" checked={checkbox} onChange={e => setCheckbox(!checkbox)} name="policy"/>
+                            {t('contact.form.policy.part1')}<a href="#">{t('contact.form.policy.part2')}</a></Label>
                         </Checkbox>
                         <Button type="submit">{t('contact.form.button')}</Button>
                     </form>

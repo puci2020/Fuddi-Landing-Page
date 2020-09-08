@@ -94,7 +94,10 @@
         "lastName": "Last Name",
         "question": "Your question..."
       },
-      "policy" : "I accept the privacy policy",
+      "policy" : {
+        "part1" : "I accept '",
+        "part2" : "the privacy policy'"
+      },
       "button" : "Send"
     },
     "alert": {
