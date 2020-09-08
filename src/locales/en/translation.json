@@ -96,6 +96,19 @@
       },
       "policy" : "I accept the privacy policy",
       "button" : "Send"
+    },
+    "alert": {
+      "error": {
+        "firstName": "Give your first name!",
+        "lastName": "Give your last name!",
+        "email": {
+          "empty" : "Give your email!",
+          "invalid": "This email is invalid!"
+        },
+        "message": "Give your message!",
+        "checkbox" : "You have to accept our privacy policy!",
+        "success" : "Message sent successfully!"
+      }
     }
   }
 }

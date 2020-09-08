@@ -136,6 +136,9 @@ const ContactItem = () => {
     const [checkbox, setCheckbox] = useState(false);
     const date = Date().toLocaleString();
 
+    const [t] = useTranslation();
+
+
     function onSubmit(e) {
         e.preventDefault();
 
@@ -146,26 +149,26 @@ const ContactItem = () => {
         }
 
         if (firstName.length === 0) {
-            errors.push('Podaj swoje imię!');
+            errors.push(t('contact.alert.error.firstName'));
         }
 
         if (lastName.length === 0) {
-            errors.push('Podaj swoje nazwisko!');
+            errors.push(t('contact.alert.error.lastName'));
 
         }
 
         if (email.length === 0) {
-            errors.push('Podaj swój email!');
+            errors.push(t('contact.alert.error.email.empty'));
         }else if (emailIsValid(email)===false){
-            errors.push('Podany email jest nieprawidłowy!');
+            errors.push(t('contact.alert.error.email.invalid'));
         }
 
         if (question.length === 0) {
-            errors.push('Podaj treść wiadomości!');
+            errors.push(t('contact.alert.error.message'));
 
         }
         if (checkbox === false) {
-            errors.push('Zaakceptuj naszą politykę prywatności!');
+            errors.push(t('contact.alert.error.checkbox'));
 
         }
 
@@ -173,7 +176,7 @@ const ContactItem = () => {
             alert(errors.join('\n'));
         } else {
             sendToDB();
-            alert("Wiadomość wysłana pomyślnie!")
+            alert(t('contact.alert.error.success'))
         }
         function sendToDB() {
             firebase.firestore().collection('/contact-form').add({
@@ -191,7 +194,7 @@ const ContactItem = () => {
         }
     }
 
-    const {t} = useTranslation();
+
     return (
         <div>
             <H2>{t('contact.header')}</H2>

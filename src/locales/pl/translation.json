@@ -97,6 +97,19 @@
       },
       "policy" : "Akceptuje poliktę prywatności",
       "button" : "Wyślij"
+    },
+    "alert": {
+      "error": {
+        "firstName": "Podaj swoje imię!",
+        "lastName": "Podaj swoje nazwisko!",
+        "email": {
+          "empty" : "Podaj swój email!",
+          "invalid": "Podany email jest nieprawidłowy!"
+        },
+        "message": "Podaj treść wiadomości!",
+        "checkbox" : "Zaakceptuj naszą politkę prywatności!",
+        "success" : "Wiadomość wysłana pomyślnie!"
+      }
     }
   }
 }
