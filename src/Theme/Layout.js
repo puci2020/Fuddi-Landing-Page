@@ -9,7 +9,8 @@ import {HashLink as Link} from 'react-router-hash-link';
 const Button = styled.button`
   width: 220px;
   height: 50px;
-  background-color: ${({theme}) => theme.colors.green};
+  //background-color: ${({theme}) => theme.colors.green};
+  background-color: red;
   color: ${({theme}) => theme.colors.white};
   border-radius: 25px;
   border: 1px solid darkolivegreen;
