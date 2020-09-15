@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components'
-import shoppingcart from '../../img/icons/shoppingcart.svg'
+import shoppingcart from '../../img/icons/shopping-cart.svg'
 import vegetable from '../../img/icons/vegetable.svg'
-import user from '../../img/icons/user.png'
-import farmer from '../../img/icons/farmer.png'
-import delivery from '../../img/icons/delivery.png'
+import user from '../../img/icons/user.svg'
+import farmer from '../../img/icons/farmer.svg'
+import delivery from '../../img/icons/delivery.svg'
 import {useTranslation} from "react-i18next";
 import back from '../../img/aboutBG.jpeg'
 
