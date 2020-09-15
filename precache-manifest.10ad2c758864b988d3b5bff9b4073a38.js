@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cfe1f65ec779c66198f88ece334334ac",
+    "revision": "20891fb6d827c88108a60245fbd8464a",
     "url": "/Fuddi-Landing-Page/index.html"
   },
   {
-    "revision": "fc8ee3eb9a71d9e84e20",
+    "revision": "14f0efda1a4c7b2fee5a",
     "url": "/Fuddi-Landing-Page/static/css/main.1dd88ba7.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Fuddi-Landing-Page/static/js/2.dba16521.chunk.js"
   },
   {
-    "revision": "fc8ee3eb9a71d9e84e20",
-    "url": "/Fuddi-Landing-Page/static/js/main.97515811.chunk.js"
+    "revision": "14f0efda1a4c7b2fee5a",
+    "url": "/Fuddi-Landing-Page/static/js/main.1c7799fd.chunk.js"
   },
   {
     "revision": "9e531edac3d052356c60",
@@ -56,12 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Fuddi-Landing-Page/static/media/contact.4c9b32d7.png"
   },
   {
+    "revision": "f42a2bfebad2e99241fa6e89831e9620",
+    "url": "/Fuddi-Landing-Page/static/media/delivery.f42a2bfe.svg"
+  },
+  {
     "revision": "1e9f01162859ce7bec44274a13bb9d24",
     "url": "/Fuddi-Landing-Page/static/media/faq.1e9f0116.jpeg"
   },
   {
-    "revision": "0b0bd3f0ff2bedd8cd02b3328f01ef17",
-    "url": "/Fuddi-Landing-Page/static/media/farmer.0b0bd3f0.png"
+    "revision": "fcaaf268c0ca70b3b0476b4c623bac51",
+    "url": "/Fuddi-Landing-Page/static/media/farmer.fcaaf268.svg"
   },
   {
     "revision": "9b6015b850197f85e4bdf4d460e9bcc3",
@@ -92,12 +96,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Fuddi-Landing-Page/static/media/screen4.b9de8216.jpeg"
   },
   {
-    "revision": "b1f826c03f8b891a7d311e8ff5482ea6",
-    "url": "/Fuddi-Landing-Page/static/media/shoppingcart.b1f826c0.svg"
+    "revision": "c9beb5e407592ed97afaf28bf2e934e4",
+    "url": "/Fuddi-Landing-Page/static/media/shopping-cart.c9beb5e4.svg"
   },
   {
-    "revision": "926acfc1f9e8cebf832d40f97e8ae968",
-    "url": "/Fuddi-Landing-Page/static/media/vegetable.926acfc1.svg"
+    "revision": "dea70ba441a4878d17c0c4de7b487231",
+    "url": "/Fuddi-Landing-Page/static/media/user.dea70ba4.svg"
+  },
+  {
+    "revision": "6eedafee69c6406a2c64ea6d0e796164",
+    "url": "/Fuddi-Landing-Page/static/media/vegetable.6eedafee.svg"
   },
   {
     "revision": "31b7e9b62c231af4ad6610e75f6eee0e",
