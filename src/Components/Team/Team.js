@@ -91,7 +91,7 @@ const Social = styled.div`
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 160px;
   img{
   height: 22px;
@@ -151,10 +151,10 @@ const Team = () => {
                         <h5>Frontend Specialist<br/>
                         & Co-founder</h5>
                         <Social>
-                            <p/>
+
                             <a target="_blank" rel="noopener noreferrer" href="http://linkedin.com/in/adampucicki"> <img src={linkedin} alt="Linkedin icon"/></a>
                             <a target="_blank" rel="noopener noreferrer" href="http://github.com/puci2020"><img src={github} alt="Github icon"/></a>
-                            <p/>
+
                         </Social>
                     </div>
                 </GridItem>
