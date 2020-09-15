@@ -114,9 +114,7 @@ const Team = () => {
                         <h4>Rafał Szuwalski</h4>
                         <h5>CEO & Co-founder</h5>
                         <Social>
-                            <img src={facebook} alt="Facebook icon"/>
-                            <img src={linkedin} alt="Linkedin icon"/>
-                            <img src={github} alt="Github icon"/>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rafal-szuwalski/"> <img src={linkedin} alt="Linkedin icon"/></a>
                         </Social>
                     </div>
                 </GridItem>
@@ -126,9 +124,8 @@ const Team = () => {
                         <h4>Krystian Szwedo</h4>
                         <h5>CTO & Co-founder</h5>
                         <Social>
-                            <img src={facebook} alt="Facebook icon"/>
-                            <img src={linkedin} alt="Linkedin icon"/>
-                            <img src={github} alt="Github icon"/>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/krystian-szwedo"> <img src={linkedin} alt="Linkedin icon"/></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/S7f3dz14g1"><img src={github} alt="Github icon"/></a>
                         </Social>
                     </div>
                 </GridItem>
@@ -138,9 +135,8 @@ const Team = () => {
                         <h4>Szymon Mrozowski</h4>
                         <h5>COO & Co-founder</h5>
                         <Social>
-                            <img src={facebook} alt="Facebook icon"/>
-                            <img src={linkedin} alt="Linkedin icon"/>
-                            <img src={github} alt="Github icon"/>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/szymon-mrozowski"> <img src={linkedin} alt="Linkedin icon"/></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/mrozowski"><img src={github} alt="Github icon"/></a>
                         </Social>
                     </div>
                 </GridItem>
@@ -151,10 +147,8 @@ const Team = () => {
                         <h5>Frontend Specialist<br/>
                         & Co-founder</h5>
                         <Social>
-
                             <a target="_blank" rel="noopener noreferrer" href="http://linkedin.com/in/adampucicki"> <img src={linkedin} alt="Linkedin icon"/></a>
                             <a target="_blank" rel="noopener noreferrer" href="http://github.com/puci2020"><img src={github} alt="Github icon"/></a>
-
                         </Social>
                     </div>
                 </GridItem>
