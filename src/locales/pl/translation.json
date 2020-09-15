@@ -31,8 +31,8 @@
     },
     "smBox": {
       "box1": {
-        "header": "Klienci",
-        "content": "Jeśli nie byłoby klienta, nie byłoby aplikacji."
+        "header": "Użytkownicy",
+        "content": "Jeśli nie byłoby użytkowników, nie byłoby aplikacji."
       },
       "box2": {
         "header": "Producenci",
