@@ -1,15 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import {useTranslation} from "react-i18next";
+import arrow from '../../img/icons/arrow.svg'
 
 
 const Content = styled.div`
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(4, auto);
-  grid-gap: 60px;
+  grid-gap: 15px;
   padding: 0 10%;
   
   ${({theme}) => theme.media.tablet}{
@@ -21,20 +22,53 @@ const Content = styled.div`
 
 const ContentItem = styled.div`
   height: auto;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: ${({theme}) => theme.colors.box};
-  padding: 40px;
+  padding: 15px 30px;
   color: ${({theme}) => theme.colors.white};
   letter-spacing: ${({theme}) => theme.font.space.s};
-  font-size: ${({theme}) => theme.font.size.m};
+  font-size: ${({theme}) => theme.font.size.s};
+  cursor: pointer;
   h4{
-  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+      img{
+      width: 12px;
+      height: auto;
+      transform: rotate(0);
+        transition: transform .35s ease-in-out;
+      }
+
+      .rotate{
+        transform: rotate(90deg);
+        transition: transform .3s ease-in-out;
+      }
   }
   p{
     text-align: left;
+    .space{
+    height: 10px;
+    width: 100%;
+    }
+
   }
+  
+  .accordion__item{
+  overflow: hidden;
+  transition: max-height .3s cubic-bezier(1, 0, 1, 0);
+  height: fit-content;
+  max-height: 100vh;
+  }
+  
+  .collapsed{
+  max-height: 0;
+  transition: max-height .35s cubic-bezier(0, 1, 0, 1);
+  
+  }
+  
   ${({theme}) => theme.media.tablet}{
-      padding: 25px;
+      //padding: 25px;
       font-size: ${({theme}) => theme.font.size.s};
   }
   ${({theme}) => theme.media.phone}{
@@ -49,6 +83,19 @@ const H2 = styled.h2`
   color: ${({theme}) => theme.colors.white};
   text-shadow: .2rem .2rem .1rem black;
 `;
+
+const Box = ({title, children}) => {
+    const [open, setOpen] = useState(true);
+    return (
+        <ContentItem onClick={() => setOpen(!open)}>
+            <h4>{title} <img className={open ? '' : 'rotate'} src={arrow} alt="right_arrow"/></h4>
+            <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>
+                <div className="space"/>
+                {children}</p>
+        </ContentItem>
+    )
+};
+
 const FaqItem = () => {
 
     const {t} = useTranslation();
@@ -57,42 +104,69 @@ const FaqItem = () => {
         <div>
             <H2>{t('faq.header')}</H2>
             <Content>
-                <ContentItem>
-                    <h4>{t('faq.quest1.header')}</h4>
-                    <p>{t('faq.quest1.content')}</p>
-                </ContentItem>
-                <ContentItem>
-                    <h4>{t('faq.quest2.header')}</h4>
-                    <p>{t('faq.quest2.content')}</p>
-                </ContentItem>
-                <ContentItem>
-                    <h4>{t('faq.quest3.header')}</h4>
-                    <p>{t('faq.quest3.content')}</p>
-                </ContentItem>
-                <ContentItem>
-                    <h4>{t('faq.quest4.header')}</h4>
-                    <p>{t('faq.quest4.content')}</p>
-                </ContentItem>
-                <ContentItem>
-                    <h4>{t('faq.quest5.header')}</h4>
-                    <p>{t('faq.quest5.content')}</p>
-                </ContentItem>
-                <ContentItem>
-                    <h4>{t('faq.quest6.header')}</h4>
-                    <p>{t('faq.quest6.content')}</p>
-                </ContentItem>
-                <ContentItem>
-                    <h4>{t('faq.quest7.header')}</h4>
-                    <p>{t('faq.quest7.content')}</p>
-                </ContentItem>
-                <ContentItem>
-                    <h4>{t('faq.quest8.header')}</h4>
-                    <p>{t('faq.quest8.content')}</p>
-                </ContentItem>
-                <ContentItem>
-                    <h4>{t('faq.quest9.header')}</h4>
-                    <p>{t('faq.quest9.content')}</p>
-                </ContentItem>
+                <Box title={t('faq.quest1.header')}>
+                    {t('faq.quest1.content')}
+                </Box>
+                <Box title={t('faq.quest2.header')}>
+                    {t('faq.quest2.content')}
+                </Box>
+                <Box title={t('faq.quest3.header')}>
+                    {t('faq.quest3.content')}
+                </Box>
+                <Box title={t('faq.quest4.header')}>
+                    {t('faq.quest4.content')}
+                </Box>
+                <Box title={t('faq.quest5.header')}>
+                    {t('faq.quest5.content')}
+                </Box>
+                <Box title={t('faq.quest6.header')}>
+                    {t('faq.quest6.content')}
+                </Box>
+                <Box title={t('faq.quest7.header')}>
+                    {t('faq.quest7.content')}
+                </Box>
+                <Box title={t('faq.quest8.header')}>
+                    {t('faq.quest8.content')}
+                </Box>
+                <Box title={t('faq.quest9.header')}>
+                    {t('faq.quest9.content')}
+                </Box>
+                {/*<ContentItem>*/}
+                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest1.header')}</h4>*/}
+                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest1.content')}</p>*/}
+                {/*</ContentItem>*/}
+                {/*<ContentItem>*/}
+                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest2.header')}</h4>*/}
+                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest2.content')}</p>*/}
+                {/*</ContentItem>*/}
+                {/*<ContentItem>*/}
+                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest3.header')}</h4>*/}
+                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest3.content')}</p>*/}
+                {/*</ContentItem>*/}
+                {/*<ContentItem>*/}
+                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest4.header')}</h4>*/}
+                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest4.content')}</p>*/}
+                {/*</ContentItem>*/}
+                {/*<ContentItem>*/}
+                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest5.header')}</h4>*/}
+                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest5.content')}</p>*/}
+                {/*</ContentItem>*/}
+                {/*<ContentItem>*/}
+                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest6.header')}</h4>*/}
+                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest6.content')}</p>*/}
+                {/*</ContentItem>*/}
+                {/*<ContentItem>*/}
+                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest7.header')}</h4>*/}
+                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest7.content')}</p>*/}
+                {/*</ContentItem>*/}
+                {/*<ContentItem>*/}
+                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest8.header')}</h4>*/}
+                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest8.content')}</p>*/}
+                {/*</ContentItem>*/}
+                {/*<ContentItem>*/}
+                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest9.header')}</h4>*/}
+                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest9.content')}</p>*/}
+                {/*</ContentItem>*/}
             </Content>
         </div>
     );
