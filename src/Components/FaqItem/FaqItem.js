@@ -30,12 +30,19 @@ const ContentItem = styled.div`
   font-size: ${({theme}) => theme.font.size.s};
   cursor: pointer;
   h4{
+
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  align-items: center;
+  
+  .header{
+  width: 90%;
+  }
+
       img{
       width: 12px;
-      height: auto;
+      height: 12px;
       transform: rotate(0);
         transition: transform .35s ease-in-out;
       }
@@ -88,7 +95,7 @@ const Box = ({title, children}) => {
     const [open, setOpen] = useState(true);
     return (
         <ContentItem onClick={() => setOpen(!open)}>
-            <h4>{title} <img className={open ? '' : 'rotate'} src={arrow} alt="right_arrow"/></h4>
+            <h4><div className="header">{title}</div> <img className={open ? '' : 'rotate'} src={arrow} alt="right_arrow"/></h4>
             <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>
                 <div className="space"/>
                 {children}</p>
