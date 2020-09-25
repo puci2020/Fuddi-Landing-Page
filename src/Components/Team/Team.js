@@ -4,9 +4,9 @@ import facebook from '../../img/social_icons/facebook2.png'
 import linkedin from '../../img/social_icons/linkedin2.png'
 import github from '../../img/social_icons/github.png'
 import {useTranslation} from "react-i18next";
-import face1 from '../../img/team/1.jpg'
+import face1 from '../../img/team/rafal_szuwalski.jpeg'
 import face2 from '../../img/team/2.jpg'
-import face3 from '../../img/team/3.jpg'
+import face3 from '../../img/team/szymon_mrozowski.jpeg'
 import face4 from '../../img/team/adam_pucicki.jpeg'
 import face5 from '../../img/team/5.jpg'
 import face6 from '../../img/team/6.jpg'
@@ -108,7 +108,7 @@ const Team = () => {
             <StyledGrid>
                 <GridItem>
                     <div className="photo">
-                        <img src={face1} alt="Face1"/>
+                        <img src={face1} alt="Radał Szuwalski"/>
                     </div>
                     <div className="desc">
                         <h4>Rafał Szuwalski</h4>
@@ -130,7 +130,7 @@ const Team = () => {
                     </div>
                 </GridItem>
                 <GridItem>
-                    <div className="photo"><img src={face3} alt="Face1"/></div>
+                    <div className="photo"><img src={face3} alt="Szymon Mrozowski"/></div>
                     <div className="desc">
                         <h4>Szymon Mrozowski</h4>
                         <h5>COO & Co-founder</h5>
