@@ -30,7 +30,7 @@ function Footer() {
 
             <div className="contact">
                 <img src={mail} alt="Email"/>
-                <a href={"mailto:fuddi@gmail.com"}>fuddi@gmail.com</a>
+                <a href={"mailto:fuddi.kontakt@gmail.com"}>fuddi.kontakt@gmail.com</a>
             </div>
 
             <div className="copyright">© 2020
