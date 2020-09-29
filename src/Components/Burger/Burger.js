@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 
 const BurgerWrapper = styled.div`
-  ${({theme}) => theme.media.tablet}{
+  @media(max-width: 1350px){
       width: 2rem;
       height: 2rem;
       position: absolute;

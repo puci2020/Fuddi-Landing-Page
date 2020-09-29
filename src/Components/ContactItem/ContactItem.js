@@ -172,10 +172,10 @@ const ContactItem = () => {
             errors.push(t('contact.alert.error.message'));
 
         }
-        if (checkbox === false) {
-            errors.push(t('contact.alert.error.checkbox'));
-
-        }
+        // if (checkbox === false) {
+        //     errors.push(t('contact.alert.error.checkbox'));
+        //
+        // }
 
         if (errors.length !== 0) {
             alert(errors.join('\n'));
@@ -217,10 +217,10 @@ const ContactItem = () => {
                                     placeholder="Email"/>
                         <Textarea value={question} onChange={e => setQuestion(e.currentTarget.value)}
                                   placeholder={t('contact.form.placeholder.question')}/>
-                        <Checkbox>
-                            <Label><input type="checkbox" checked={checkbox} onChange={e => setCheckbox(!checkbox)} name="policy"/>
-                            {t('contact.form.policy.part1')}<a href="#">{t('contact.form.policy.part2')}</a></Label>
-                        </Checkbox>
+                        {/*<Checkbox>*/}
+                        {/*    <Label><input type="checkbox" checked={checkbox} onChange={e => setCheckbox(!checkbox)} name="policy"/>*/}
+                        {/*    {t('contact.form.policy.part1')}<a href="#">{t('contact.form.policy.part2')}</a></Label>*/}
+                        {/*</Checkbox>*/}
                         <Button type="submit">{t('contact.form.button')}</Button>
                     </form>
                 </ContactRight>

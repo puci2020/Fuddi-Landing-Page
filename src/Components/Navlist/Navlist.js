@@ -5,6 +5,7 @@ import {HashLink as Link} from 'react-router-hash-link';
 
 
 
+
 const NavWrapper = styled.div`
   position: absolute;
   width: auto;
@@ -47,7 +48,7 @@ const UL = styled.ul`
   display: none;
   }
   
-  ${({theme}) => theme.media.tablet}{
+   @media(max-width: 1350px){
     display: none;
     
     #lang{
@@ -99,7 +100,30 @@ function NavList() {
     return (
 
         <NavWrapper>
+            {/*<Dropdown>*/}
+            {/*    <span>Strona główna</span>*/}
+            {/*    <div className="content">*/}
+            {/*        <Link smooth to="/#home"*/}
+            {/*              scroll={el => el.scrollIntoView({behavior: 'smooth'})}> {t("link1.1")}</Link>*/}
+            {/*        <Link smooth to="/#home"*/}
+            {/*              scroll={el => el.scrollIntoView({behavior: 'smooth'})}> {t("link1.1")}</Link>*/}
+            {/*        <Link smooth to="/#home"*/}
+            {/*              scroll={el => el.scrollIntoView({behavior: 'smooth'})}> {t("link1.1")}</Link>*/}
+            {/*    </div>*/}
+            {/*</Dropdown>*/}
             <UL>
+
+                {/*<li>*/}
+                {/*    <Select>*/}
+                {/*        <option> {t("link1.1")}</option>*/}
+                {/*        <option><Link smooth to="/#home"*/}
+                {/*                      scroll={el => el.scrollIntoView({behavior: 'smooth'})}> {t("link1.1")}</Link></option>*/}
+                {/*        <option><Link smooth to="/#home"*/}
+                {/*                      scroll={el => el.scrollIntoView({behavior: 'smooth'})}> {t("link1.1")}</Link>*/}
+                {/*        </option>*/}
+                {/*    </Select>*/}
+                {/*</li>*/}
+
                 <li>
                     <Link smooth to="/#home"
                           scroll={el => el.scrollIntoView({behavior: 'smooth'})}> {t("link1.1")}</Link>
@@ -121,6 +145,10 @@ function NavList() {
                 <li>
                     <Link smooth to={'/contact'}
                           scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link4.1")}</Link>
+                </li>
+                <li>
+                    <Link smooth to={'/crowdfunding'} scroll={el => el.scrollIntoView({behavior: 'smooth'})}
+                          top="0">Crowdfunding</Link>
                 </li>
                 <li>
                     <Link smooth to={'/faq/#faq'} scroll={el => el.scrollIntoView({behavior: 'smooth'})}

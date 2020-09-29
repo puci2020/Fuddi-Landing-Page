@@ -4,6 +4,7 @@ import Main from './Pages/Main'
 import Faq from "./Pages/Faq";
 import Contact from "./Pages/Contact";
 import Newsletter from "./Pages/Newsletter";
+import Crowdfunding from "./Pages/Crowdfunding";
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
                 <Route path={"/faq"} component={Faq}/>
                 <Route path={"/contact"} component={Contact}/>
                 <Route path={"/newsletter"} component={Newsletter}/>
+                <Route path={"/crowdfunding"} component={Crowdfunding}/>
             </Router>
         );
     }

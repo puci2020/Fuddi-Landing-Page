@@ -117,5 +117,8 @@
   "newsletter": {
     "button" : "Sign up for the newsletter!",
     "header" : "Stay up to date with the news from Fuddi!"
+  },
+  "crowdfunding": {
+    "header": "We will share more information with them :)"
   }
 }

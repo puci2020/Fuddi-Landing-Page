@@ -118,5 +118,8 @@
   "newsletter": {
     "button" : "Zapisz się na newsletter!",
     "header" : "Bądź na bieżąco z nowościami od Fuddi!"
+  },
+  "crowdfunding": {
+    "header": "Więcej informacji udostępnimy wktórce :)"
   }
 }
