@@ -119,6 +119,8 @@
     "header" : "Stay up to date with the news from Fuddi!"
   },
   "crowdfunding": {
-    "header": "We will share more information with them :)"
+    "def": "Let's start by explaining the concept itself. It comes from a bunch of English words \"crowd\" and \"funding\" - funding. The existence of crowdfunding is closely related to universal access to the Internet. It consists in the fact that the originator of a given project asks for financial support from Internet users, in return offering specific benefits - e.g. a finished product or a discount when buying it, when it is already available for sale.",
+    "source": "Source: ",
+    "link": "https://poradnikprzedsiebiorcy.pl/-crowdfunding-jak-to-dziala"
   }
 }

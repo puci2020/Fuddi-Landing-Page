@@ -17,6 +17,16 @@ const H2 = styled.h2`
   text-shadow: .2rem .2rem .1rem black;
 `;
 
+const P = styled.p`
+  padding: 20px 10%;
+  color: ${({theme}) => theme.colors.white};
+  letter-spacing: ${({theme}) => theme.font.space.s};
+  
+  a{
+    color: ${({theme}) => theme.colors.white};
+  }
+`
+
 const CrowdfundingItem = () => {
 
     const {t} = useTranslation();
@@ -24,11 +34,16 @@ const CrowdfundingItem = () => {
     return (
         <div>
 
-        <Wrapper>
-            <H2>{t('crowdfunding.header')}</H2>
-        </Wrapper>
+            <Wrapper>
+                <H2>Crowdfunding</H2>
+
+                <P>{t('crowdfunding.def')}
+                    <br/><br/>
+
+                    {t('crowdfunding.source')} <a href="https://poradnikprzedsiebiorcy.pl/-crowdfunding-jak-to-dziala"> {t('crowdfunding.link')}</a></P>
+            </Wrapper>
         </div>
-            );
+    );
 };
 
 export default CrowdfundingItem;
