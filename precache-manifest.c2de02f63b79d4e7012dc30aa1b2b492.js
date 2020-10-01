@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad868fae53c1fa59a723c689c4bb7b67",
+    "revision": "da2710e32f2494413b5a11614e3379c9",
     "url": "/index.html"
   },
   {
-    "revision": "7315e2b2c301aed6effe",
+    "revision": "72c6251394855608586a",
     "url": "/static/css/main.1dd88ba7.chunk.css"
   },
   {
-    "revision": "260856af1b8add040ddb",
-    "url": "/static/js/2.444c58f4.chunk.js"
+    "revision": "5c9256bcd8282341aa55",
+    "url": "/static/js/2.9ccc24b3.chunk.js"
   },
   {
-    "revision": "7315e2b2c301aed6effe",
-    "url": "/static/js/main.8e4f0543.chunk.js"
+    "revision": "72c6251394855608586a",
+    "url": "/static/js/main.a4d2be71.chunk.js"
   },
   {
     "revision": "2b5b85fd6e7177ede9b1",
     "url": "/static/js/runtime~main.47f13b47.js"
   },
   {
-    "revision": "8ba7516ee21d9b69c40cb4ef0ea02c0b",
-    "url": "/static/media/5.8ba7516e.jpg"
-  },
-  {
     "revision": "2fb0f1f7e35735786bd04ebd4da48beb",
     "url": "/static/media/6.2fb0f1f7.jpg"
+  },
+  {
+    "revision": "88a8857f49d6e236df747dc8685c4f33",
+    "url": "/static/media/Space_travel_EN.88a8857f.jpeg"
   },
   {
     "revision": "4b9a23c9c748c71e9add31be61cecc6d",
@@ -72,12 +72,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo.7bc8f939.png"
   },
   {
-    "revision": "83017e3fc8eb3fb51e168d0623360f01",
-    "url": "/static/media/rafal_szuwalski.83017e3f.jpeg"
+    "revision": "18c391b44cac0d6cebece24859664666",
+    "url": "/static/media/paulina_talarowska.18c391b4.jpeg"
   },
   {
-    "revision": "88a8857f49d6e236df747dc8685c4f33",
-    "url": "/static/media/roadmap.88a8857f.jpeg"
+    "revision": "83017e3fc8eb3fb51e168d0623360f01",
+    "url": "/static/media/rafal_szuwalski.83017e3f.jpeg"
   },
   {
     "revision": "fe7b8c6747df594cb3777399ad9290c6",
