@@ -20,9 +20,12 @@ function Footer() {
                 {/*<div className="logo_title_footer">Fuddi</div>*/}
             </div>
             <div className="social">
-                <img src={facebook} alt="Facebook"/>
-                <img src={instagram} alt="Instagram"/>
-                <img src={linkedin} alt="Linkedin"/>
+
+                <a target="_blank" rel="noopener noreferrer"
+                   href="https://www.facebook.com/Fuddi-107367687746824"> <img src={facebook} alt="Facebook icon"/></a>
+                <a target="_blank" rel="noopener noreferrer"
+                   href="https://www.linkedin.com/company/fuddiplace/"> <img src={linkedin}
+                                                                             alt="Linkedin icon"/></a>
             </div>
             <div className="google">
                 <img src={google} alt="Google"/>
