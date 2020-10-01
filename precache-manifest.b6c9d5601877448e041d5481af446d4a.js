@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ce95a09bc74b08f0a685136fc613447",
+    "revision": "45c73ee58966f38175a6f1afb64b717f",
     "url": "/index.html"
   },
   {
-    "revision": "c67fe04e19b094ce85bf",
+    "revision": "7ce794785314dbbd3315",
     "url": "/static/css/main.1dd88ba7.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.9ccc24b3.chunk.js"
   },
   {
-    "revision": "c67fe04e19b094ce85bf",
-    "url": "/static/js/main.67721d63.chunk.js"
+    "revision": "7ce794785314dbbd3315",
+    "url": "/static/js/main.28c155c6.chunk.js"
   },
   {
     "revision": "2b5b85fd6e7177ede9b1",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/adam_pucicki.03c7fc3c.jpeg"
   },
   {
-    "revision": "e0aab94f4498ab5c22d167deb6c0ff75",
-    "url": "/static/media/app.e0aab94f.png"
+    "revision": "53ff9fca0b6a444b73c4378fd33846a0",
+    "url": "/static/media/app2.53ff9fca.png"
   },
   {
     "revision": "6b9dd4f69791a3b7d1e13b689949955f",
@@ -80,10 +80,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/rafal_szuwalski.83017e3f.jpeg"
   },
   {
-    "revision": "fe7b8c6747df594cb3777399ad9290c6",
-    "url": "/static/media/screen1.fe7b8c67.jpeg"
-  },
-  {
     "revision": "cfb74ce5e59bf8b5e0aacdac651b6406",
     "url": "/static/media/screen2.cfb74ce5.jpeg"
   },
@@ -92,8 +88,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/screen3.9ab79f71.jpeg"
   },
   {
-    "revision": "b9de82165915666dbb2816caa39dfe14",
-    "url": "/static/media/screen4.b9de8216.jpeg"
+    "revision": "2229c71233a7c43a4248288186a502b0",
+    "url": "/static/media/screen5.2229c712.jpeg"
+  },
+  {
+    "revision": "a0035fea0a892a668cb98ecfd4a7c452",
+    "url": "/static/media/screen7.a0035fea.jpeg"
   },
   {
     "revision": "c9beb5e407592ed97afaf28bf2e934e4",
