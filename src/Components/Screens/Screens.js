@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components'
 import {Parallax} from "react-scroll-parallax/cjs";
-import screen1 from '../../img/screens/screen1.jpeg'
+import screen1 from '../../img/screens/screen7.jpeg'
 import screen2 from '../../img/screens/screen2.jpeg'
-import screen3 from '../../img/screens/screen3.jpeg'
-import screen4 from '../../img/screens/screen4.jpeg'
+import screen3 from '../../img/screens/screen5.jpeg'
+import screen4 from '../../img/screens/screen3.jpeg'
 
 const ScreensWrapper = styled.div`
   width: 100vw;

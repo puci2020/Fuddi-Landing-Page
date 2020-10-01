@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import white from './../../img/white3.png';
 import Header from "../Header/Header";
-import app from "../../img/app.png"
+import app from "../../img/app2.png"
 import {Parallax} from "react-scroll-parallax/cjs";
 import Grid from '@material-ui/core/Grid';
 import background from '../../img/home.jpeg'
@@ -49,7 +49,7 @@ const HomeWrapper = styled.div`
   overflow: hidden;
   @media(max-width: 1367px){
     
-    width:250px
+    width:200px
     
   }
   img{
