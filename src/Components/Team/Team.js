@@ -9,7 +9,7 @@ import face2 from '../../img/team/krystian_szwedo.jpeg'
 import face3 from '../../img/team/szymon_mrozowski.jpeg'
 import face4 from '../../img/team/adam_pucicki.jpeg'
 import face5 from '../../img/team/paulina_talarowska.jpeg'
-import face6 from '../../img/team/6.jpg'
+
 
 const StyledWrapper = styled.div`
   width: 100vw;
