@@ -8,7 +8,7 @@ import face1 from '../../img/team/rafal_szuwalski.jpeg'
 import face2 from '../../img/team/krystian_szwedo.jpeg'
 import face3 from '../../img/team/szymon_mrozowski.jpeg'
 import face4 from '../../img/team/adam_pucicki.jpeg'
-import face5 from '../../img/team/5.jpg'
+import face5 from '../../img/team/paulina_talarowska.jpeg'
 import face6 from '../../img/team/6.jpg'
 
 const StyledWrapper = styled.div`
@@ -229,44 +229,45 @@ const Team = () => {
                 </GridItem>
 
                 {/*<GridRow>*/}
-                    <GridItem className="four">
-                        <div className="photo"><img src={face4} alt="Adam Pucicki"/></div>
-                        <div className="desc">
-                            <h4>Adam Pucicki</h4>
-                            <h5>Frontend Specialist<br/>
-                                & Co-founder</h5>
-                            <Social>
-                                <a target="_blank" rel="noopener noreferrer" href="http://linkedin.com/in/adampucicki">
-                                    <img src={linkedin} alt="Linkedin icon"/></a>
-                                <a target="_blank" rel="noopener noreferrer" href="http://github.com/puci2020"><img
-                                    src={github} alt="Github icon"/></a>
-                            </Social>
-                        </div>
-                    </GridItem>
-                    {/*<GridItem>*/}
-                    {/*    <div className="photo"><img src={face6} alt="Face1"/></div>*/}
-                    {/*    <div className="desc">*/}
-                    {/*        <h4>John Doe</h4>*/}
-                    {/*        <h5>Frontend Developer</h5>*/}
-                    {/*        <Social>*/}
-                    {/*            <img src={facebook} alt="Facebook icon"/>*/}
-                    {/*            <img src={linkedin} alt="Linkedin icon"/>*/}
-                    {/*            <img src={github} alt="Github icon"/>*/}
-                    {/*        </Social>*/}
-                    {/*    </div>*/}
-                    {/*</GridItem>*/}
-                    <GridItem className="five">
-                        <div className="photo"><img src={face5} alt="Face1"/></div>
-                        <div className="desc">
-                            <h4>Paulina Talarowska</h4>
-                            <h5>KAM</h5>
-                            <Social>
-                                <img src={facebook} alt="Facebook icon"/>
-                                <img src={linkedin} alt="Linkedin icon"/>
-                                <img src={github} alt="Github icon"/>
-                            </Social>
-                        </div>
-                    </GridItem>
+                <GridItem className="four">
+                    <div className="photo"><img src={face4} alt="Adam Pucicki"/></div>
+                    <div className="desc">
+                        <h4>Adam Pucicki</h4>
+                        <h5>Frontend Specialist<br/>
+                            & Co-founder</h5>
+                        <Social>
+                            <a target="_blank" rel="noopener noreferrer" href="http://linkedin.com/in/adampucicki">
+                                <img src={linkedin} alt="Linkedin icon"/></a>
+                            <a target="_blank" rel="noopener noreferrer" href="http://github.com/puci2020"><img
+                                src={github} alt="Github icon"/></a>
+                        </Social>
+                    </div>
+                </GridItem>
+                {/*<GridItem>*/}
+                {/*    <div className="photo"><img src={face6} alt="Face1"/></div>*/}
+                {/*    <div className="desc">*/}
+                {/*        <h4>John Doe</h4>*/}
+                {/*        <h5>Frontend Developer</h5>*/}
+                {/*        <Social>*/}
+                {/*            <img src={facebook} alt="Facebook icon"/>*/}
+                {/*            <img src={linkedin} alt="Linkedin icon"/>*/}
+                {/*            <img src={github} alt="Github icon"/>*/}
+                {/*        </Social>*/}
+                {/*    </div>*/}
+                {/*</GridItem>*/}
+                <GridItem className="five">
+                    <div className="photo"><img src={face5} alt="Paulina Talarowska"/></div>
+                    <div className="desc">
+                        <h4>Paulina Talarowska</h4>
+                        <h5>KAM</h5>
+                        <Social>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/paulina.talarowska.12">
+                                <img src={facebook} alt="Facebook icon"/></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/paulina-talarowska/">
+                                <img src={linkedin} alt="Linkedin icon"/></a>
+                        </Social>
+                    </div>
+                </GridItem>
                 {/*</GridRow>*/}
             </StyledGrid>
         </StyledWrapper>

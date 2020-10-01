@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 // import "./Roadmap.css"
-import roadmap from '../../img/roadmap.jpeg';
+import roadmap from '../../img/space_travel/Space_travel_EN.jpeg';
 
 const RoadWrapper = styled.div`
   background: linear-gradient(#1d1d37, #3f3362);

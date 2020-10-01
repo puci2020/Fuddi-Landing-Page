@@ -21,7 +21,6 @@ const P = styled.p`
   padding: 20px 10%;
   color: ${({theme}) => theme.colors.white};
   letter-spacing: ${({theme}) => theme.font.space.s};
-  
   a{
     color: ${({theme}) => theme.colors.white};
   }
