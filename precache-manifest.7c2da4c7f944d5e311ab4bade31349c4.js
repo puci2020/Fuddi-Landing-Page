@@ -1,27 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "45c73ee58966f38175a6f1afb64b717f",
+    "revision": "87473a247b9406d07b2713d5510dc69f",
     "url": "/index.html"
   },
   {
-    "revision": "7ce794785314dbbd3315",
+    "revision": "c75f9ddfe3dcb305071c",
     "url": "/static/css/main.1dd88ba7.chunk.css"
   },
   {
-    "revision": "5c9256bcd8282341aa55",
-    "url": "/static/js/2.9ccc24b3.chunk.js"
+    "revision": "14f4a09d1f1e4499ec4d",
+    "url": "/static/js/2.f8a80c5b.chunk.js"
   },
   {
-    "revision": "7ce794785314dbbd3315",
-    "url": "/static/js/main.28c155c6.chunk.js"
+    "revision": "c75f9ddfe3dcb305071c",
+    "url": "/static/js/main.7424fbf3.chunk.js"
   },
   {
     "revision": "2b5b85fd6e7177ede9b1",
     "url": "/static/js/runtime~main.47f13b47.js"
-  },
-  {
-    "revision": "2fb0f1f7e35735786bd04ebd4da48beb",
-    "url": "/static/media/6.2fb0f1f7.jpg"
   },
   {
     "revision": "88a8857f49d6e236df747dc8685c4f33",
@@ -80,20 +76,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/rafal_szuwalski.83017e3f.jpeg"
   },
   {
-    "revision": "cfb74ce5e59bf8b5e0aacdac651b6406",
-    "url": "/static/media/screen2.cfb74ce5.jpeg"
-  },
-  {
-    "revision": "9ab79f718126d184f708a858238c88ce",
-    "url": "/static/media/screen3.9ab79f71.jpeg"
-  },
-  {
     "revision": "2229c71233a7c43a4248288186a502b0",
     "url": "/static/media/screen5.2229c712.jpeg"
   },
   {
     "revision": "a0035fea0a892a668cb98ecfd4a7c452",
     "url": "/static/media/screen7.a0035fea.jpeg"
+  },
+  {
+    "revision": "49fc8440fc50f384836bf70647e387af",
+    "url": "/static/media/screen8.49fc8440.jpeg"
+  },
+  {
+    "revision": "127a830f522730950ac7c2ba5114c1de",
+    "url": "/static/media/screen9.127a830f.jpeg"
   },
   {
     "revision": "c9beb5e407592ed97afaf28bf2e934e4",
