@@ -5,7 +5,7 @@ import {Link} from "react-scroll";
 
 const HeaderWrapper = styled.div`
   color: ${({theme}) => theme.colors.white};
-  text-shadow: .3rem .3rem .3rem black;
+  //text-shadow: .3rem .3rem .3rem black;
   width: 100%;
 `;
 
@@ -34,19 +34,20 @@ const H3 = styled.h3`
 const Button = styled.button`
   padding: 15px 20px;
   background-color: ${({theme}) => theme.colors.green};
-  margin-top: 15px;
+  //margin-top: 15px;
   font-size: ${({theme}) => theme.font.size.m};
   font-weight: ${({theme}) => theme.font.weight.regular};
   color: ${({theme}) => theme.colors.white};
   border: 2px solid ${({theme}) => theme.colors.green};
   outline: none;
   cursor: pointer;
-  transition: background-color .2s, color .2s;
+  transition: background-color .2s, border .2s;
   border-radius: 50px;
   
   &:hover{
   //color: ${({theme}) => theme.colors.white};
   background-color: #005800;
+  border: 2px solid #005800;
   }
 `;
 

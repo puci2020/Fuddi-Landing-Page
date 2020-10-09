@@ -6,7 +6,7 @@ import Header from "../Header/Header";
 import app from "../../img/app2.png"
 import {Parallax} from "react-scroll-parallax/cjs";
 import Grid from '@material-ui/core/Grid';
-import background from '../../img/strawberry.jpg'
+import background from '../../img/strawberry.jpeg'
 
 const HomeWrapper = styled.div`
   width: 100vw;
