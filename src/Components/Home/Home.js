@@ -6,7 +6,7 @@ import Header from "../Header/Header";
 import app from "../../img/app2.png"
 import {Parallax} from "react-scroll-parallax/cjs";
 import Grid from '@material-ui/core/Grid';
-import background from '../../img/home.jpeg'
+import background from '../../img/strawberry.jpg'
 
 const HomeWrapper = styled.div`
   width: 100vw;
@@ -32,7 +32,7 @@ const HomeWrapper = styled.div`
   
   .caption{
   padding-left: 10%;
-  padding-top: 25vh;
+  padding-top: 35vh;
   display: flex;
   //align-items: center;
   justify-content: center;
@@ -78,22 +78,22 @@ class Home extends Component {
                 {/*    <img className="white" src={white}/>*/}
                 {/*</Parallax>*/}
                 <Grid container>
-                    <Grid item className="caption" xs={12} md={6}>
+                    <Grid item className="caption" xs={12} md={12}>
                         <Header/>
                     </Grid>
-                    <Grid item className="caption" xs={12} md={6}>
-                        <Parallax className="phone" y={[40, -90]} tagOuter="figure">
-                            <div className="item">
-                                <img src={app} alt="Fuddi app screen"/>
-                            </div>
-                        </Parallax>
-                    </Grid>
+                    {/*<Grid item className="caption" xs={12} md={6}>*/}
+                    {/*    <Parallax className="phone" y={[40, -90]} tagOuter="figure">*/}
+                    {/*        <div className="item">*/}
+                    {/*            <img src={app} alt="Fuddi app screen"/>*/}
+                    {/*        </div>*/}
+                    {/*    </Parallax>*/}
+                    {/*</Grid>*/}
                 </Grid>
 
-                < img
-                    className="layer white"
-                    src={white} alt="White mountains"
-                />
+                {/*< img*/}
+                {/*    className="layer white"*/}
+                {/*    src={white} alt="White mountains"*/}
+                {/*/>*/}
 
             </HomeWrapper>
         );

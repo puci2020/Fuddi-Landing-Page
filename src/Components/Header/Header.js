@@ -20,22 +20,33 @@ const H1 = styled.h1`
   }
 `;
 
-const Button = styled.button`
-  padding: 10px 20px;
-  background-color: ${({theme}) => theme.colors.white};
-  margin-top: 10px;
+const H3 = styled.h3`
+  font-size: ${({theme}) => theme.font.size.m};
+  font-weight: ${({theme}) =>theme.font.weight.regular};
+  letter-spacing: ${({theme}) => theme.font.space.m};
+  padding-bottom: 15px;
+  
+  ${({theme}) => theme.media.phone}{
   font-size: ${({theme}) => theme.font.size.l};
-  font-weight: ${({theme}) => theme.font.weight.bold};
-  color: ${({theme}) => theme.colors.gray};
-  border: 2px solid ${({theme}) => theme.colors.white};
+  }
+`;
+
+const Button = styled.button`
+  padding: 15px 20px;
+  background-color: ${({theme}) => theme.colors.green};
+  margin-top: 15px;
+  font-size: ${({theme}) => theme.font.size.m};
+  font-weight: ${({theme}) => theme.font.weight.regular};
+  color: ${({theme}) => theme.colors.white};
+  border: 2px solid ${({theme}) => theme.colors.green};
   outline: none;
   cursor: pointer;
   transition: background-color .2s, color .2s;
   border-radius: 50px;
   
   &:hover{
-  color: ${({theme}) => theme.colors.white};
-  background-color: transparent;
+  //color: ${({theme}) => theme.colors.white};
+  background-color: #005800;
   }
 `;
 
@@ -48,7 +59,7 @@ function Header() {
     return(
         <HeaderWrapper>
             <H1>{t('home.header1')}</H1>
-            <H1>{t('home.header2')}</H1>
+            <H3>{t('home.header2')}</H3>
             {/*<h3>{t('home.header3')}</h3>*/}
             <Link activeClass="a" to="about" spy={true} smooth={true} offset={-80}
                   duration={500}><Button>{t('home.button')}</Button></Link>
