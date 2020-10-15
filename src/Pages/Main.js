@@ -68,8 +68,8 @@ class Main extends Component {
                     <Screens/>
                 </ParallaxProvider>
                 <About/>
-                <Team/>
                 <Roadmap/>
+                <Team/>
                 <Footer/>
 
             </div>

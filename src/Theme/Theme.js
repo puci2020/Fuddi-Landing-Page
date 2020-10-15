@@ -2,6 +2,7 @@ export const theme = {
     colors: {
         green: '#18611c',
         greenTransparent: '#18611cdb',
+        greenDark: '#005800',
         box: 'rgba(63,40,64,85%)',
         white: 'rgb(255, 255, 255)',
         gray: '#3e3e3e',
