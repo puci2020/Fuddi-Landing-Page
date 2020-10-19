@@ -128,20 +128,20 @@ function NavList() {
                     <Link smooth to="/#home"
                           scroll={el => el.scrollIntoView({behavior: 'smooth'})}> {t("link1.1")}</Link>
                 </li>
-                <li>
-                    <Link smooth to="/#about"
-                          scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link3.1")}</Link>
-                </li>
-                <li>
-                    {/*<Link activeClass="a" to="/#team" spy={true} smooth={true} offset={-80}*/}
-                    {/*      duration={500}>{t("link5.1")}</Link>*/}
-                    <Link smooth to="/#team"
-                          scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link5.1")}</Link>
-                </li>
-                <li>
-                    <Link smooth to="/#roadmap"
-                          scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link2.1")}</Link>
-                </li>
+                {/*<li>*/}
+                {/*    <Link smooth to="/#about"*/}
+                {/*          scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link3.1")}</Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                {/*    /!*<Link activeClass="a" to="/#team" spy={true} smooth={true} offset={-80}*!/*/}
+                {/*    /!*      duration={500}>{t("link5.1")}</Link>*!/*/}
+                {/*    <Link smooth to="/#team"*/}
+                {/*          scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link5.1")}</Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                {/*    <Link smooth to="/#roadmap"*/}
+                {/*          scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link2.1")}</Link>*/}
+                {/*</li>*/}
                 <li>
                     <Link smooth to={'/contact'}
                           scroll={el => el.scrollIntoView({behavior: 'smooth'})}>{t("link4.1")}</Link>
@@ -153,6 +153,14 @@ function NavList() {
                 <li>
                     <Link smooth to={'/faq/#faq'} scroll={el => el.scrollIntoView({behavior: 'smooth'})}
                           top="0">FAQ</Link>
+                </li>
+                <li>
+                    <Link smooth to="#" scroll={el => el.scrollIntoView({behavior: 'smooth'})}
+                          top="0">Blog</Link>
+                </li>
+                <li>
+                    <Link smooth to="#" scroll={el => el.scrollIntoView({behavior: 'smooth'})}
+                          top="0">Sklep</Link>
                 </li>
 
                 <li><Select id="lang" onChange={() => changeLanguage()}>
