@@ -9,6 +9,7 @@ import Roadmap from "../Components/Roadmap/Roadmap";
 import Footer from "../Components/Footer/Footer";
 import Screens from "../Components/Screens/Screens";
 import Team from "../Components/Team/Team";
+import About2 from "../Components/About/About2";
 
 
 class Main extends Component {
@@ -68,6 +69,7 @@ class Main extends Component {
                     <Screens/>
                 </ParallaxProvider>
                 <About/>
+                <About2/>
                 <Roadmap/>
                 <Team/>
                 <Footer/>
