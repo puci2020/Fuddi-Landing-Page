@@ -6,7 +6,7 @@ import user from '../../img/icons/user.svg'
 import farmer from '../../img/icons/farmer.svg'
 import delivery from '../../img/icons/delivery.svg'
 import {useTranslation} from "react-i18next";
-import back from '../../img/aboutBG.jpeg'
+import back from '../../img/vege.jpg'
 
 const Wrapper = styled.div`
     width: 100vw;
@@ -18,22 +18,34 @@ const Wrapper = styled.div`
     background-repeat: no-repeat;
     background-position: center 0;
     background-attachment: fixed;
-    padding-bottom: 20px;
+    //padding-bottom: 20px;
     font-size: ${({theme}) => theme.font.size.s};
     //@media (max-width: 960px){
     // .about{
     //    height: auto;
     //  }
     //}
-    
+    .shadow{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,50%);
+  }
 
 `;
 
 const H2 = styled.h2`
   font-size: ${({theme}) => theme.font.size.l};
-  margin: 40px 20px 40px 10%;
+  margin: 25vh 20px 40px 10%;
   color: ${({theme}) => theme.colors.white};
-  text-shadow: .2rem .2rem .1rem black;
+  letter-spacing: ${({theme}) => theme.font.space.s};
+  //text-shadow: .2rem .2rem .1rem black;
+  
+  ${({theme}) => theme.media.tablet}{
+    margin-top: 140px;
+  }
+  ${({theme}) => theme.media.phone}{
+    margin-top: 60px;
+  }
 `;
 
 const Row = styled.div`
@@ -95,10 +107,10 @@ const Row = styled.div`
 `;
 
 const Box = styled.div`
-  border-radius: 20px;
-  background-color: ${({theme}) => theme.colors.box};
+  //border-radius: 20px;
+  //background-color: ${({theme}) => theme.colors.box};
   width: 100%;
-  height: ${({first,  sec}) => first ? '320px' : sec ? '340px' : 'auto'};
+  height: ${({first, sec}) => first ? '320px' : sec ? '340px' : 'auto'};
   display: flex;
   align-items: center;
   flex-direction: ${({sec}) => sec ? 'column' : 'row'};
@@ -125,14 +137,16 @@ const Icon = styled.div`
 `;
 
 const Text = styled.div`
-  width: ${(props) => props.small ? '80%' : '60%'};
+  width: ${(props) => props.small ? '80%' : 'auto'};
   height: ${(props) => props.small ? '60%' : 'auto'};
   padding: 10px 20px 10px 10px;
   color: ${({theme}) => theme.colors.white};
   letter-spacing: ${({theme}) => theme.font.space.s};
   
   overflow: hidden;
+  font-size: ${({theme}) => theme.font.size.m};
   text-align: ${(props) => props.small ? 'center' : 'left'};
+  line-height: 30px;
   h4{
   padding: ${(props) => props.small ? '10px 0 20px' : 'auto'};
   }
@@ -153,63 +167,71 @@ const About = () => {
     return (
 
         <Wrapper id="about">
-                <H2>{t('benefits.headers.header1')}</H2>
-                <Row>
-                    <div className="one">
-                        <Box first>
-                            <Icon top>
-                                <img src={shoppingcart} alt="Shopping cart"/>
-                            </Icon>
-                            <Text>{t('benefits.lgBox.box1')}
-                            </Text>
-                        </Box>
-                    </div>
-                    <div className="two">
-                        <Box first>
-                            <Icon top>
-                                <img src={vegetable} alt="Vegetables"/>
-                            </Icon>
-                            <Text>{t('benefits.lgBox.box2')}
-                            </Text>
-                        </Box>
-                    </div>
-                </Row>
-                <H2>{t('benefits.headers.header2')}</H2>
-                <Row>
-                    <div className="three">
-                        <Box sec>
-                            <Icon bottom>
-                                <img src={user} alt="User icon"/>
-                            </Icon>
-                            <Text small>
-                                <h4>{t('benefits.smBox.box1.header')}</h4>
-                                <p>{t('benefits.smBox.box1.content')}</p>
-                            </Text>
-                        </Box>
-                    </div>
-                    <div className="four">
-                        <Box sec>
-                            <Icon bottom>
-                                <img src={farmer} alt="Farmer icon"/>
-                            </Icon>
-                            <Text small>
-                                <h4>{t('benefits.smBox.box2.header')}</h4>
-                                <p>{t('benefits.smBox.box2.content')}</p>
-                            </Text>
-                        </Box>
-                    </div>
-                    <div className="five">
-                        <Box sec>
-                            <Icon bottom>
-                                <img src={delivery} alt="Truck icon"/>
-                            </Icon>
-                            <Text small>
-                                <h4>{t('benefits.smBox.box3.header')}</h4>
-                                <p>{t('benefits.smBox.box3.content')}</p>
-                            </Text>
-                        </Box>
-                    </div>
-                </Row>
+            <div className="shadow">
+            {/*<H2>{t('benefits.headers.header1')}</H2>*/}
+            <H2>Wartości jakie cenimy</H2>
+            <Row>
+                <div className="one">
+                    <Box first>
+                        {/*<Icon top>*/}
+                        {/*    <img src={shoppingcart} alt="Shopping cart"/>*/}
+                        {/*</Icon>*/}
+                        {/*<Text>{t('benefits.lgBox.box1')}*/}
+                        {/*</Text>*/}
+                        <Text>Oferowane produkty będą najwyższej jakości w przystępnej cenie. Zależy nam na pokazaniu że wyroby wytyarzane przy użyciu rąk są nie tlko samczaniejsze ale mają w sobie cząśtę swojego twórcy lub w przypdaku owoców i warzyw akcent osoby która o nich dbała.
+                        </Text>
+                    </Box>
+                </div>
+                <div className="two">
+                    <Box first>
+                        {/*<Icon top>*/}
+                        {/*    <img src={vegetable} alt="Vegetables"/>*/}
+                        {/*</Icon>*/}
+                        {/*<Text>{t('benefits.lgBox.box2')}*/}
+                        {/*</Text>*/}
+                        <Text>Każdy rolnik i producent będzię mogł współtworzyć razem z nami platformę poprzez sprzedaż produktów, którę bedą nosiły miano premium.
+                            Dzięki temu posiłki podawane w restauracjach jak i te w domowym zaciszu będą jeszcze smaczniejsze i zdrowsze.
+                        </Text>
+                    </Box>
+                </div>
+            </Row>
+            {/*<H2>{t('benefits.headers.header2')}</H2>*/}
+            {/*<Row>*/}
+            {/*    <div className="three">*/}
+            {/*        <Box sec>*/}
+            {/*            <Icon bottom>*/}
+            {/*                <img src={user} alt="User icon"/>*/}
+            {/*            </Icon>*/}
+            {/*            <Text small>*/}
+            {/*                <h4>{t('benefits.smBox.box1.header')}</h4>*/}
+            {/*                <p>{t('benefits.smBox.box1.content')}</p>*/}
+            {/*            </Text>*/}
+            {/*        </Box>*/}
+            {/*    </div>*/}
+            {/*    <div className="four">*/}
+            {/*        <Box sec>*/}
+            {/*            <Icon bottom>*/}
+            {/*                <img src={farmer} alt="Farmer icon"/>*/}
+            {/*            </Icon>*/}
+            {/*            <Text small>*/}
+            {/*                <h4>{t('benefits.smBox.box2.header')}</h4>*/}
+            {/*                <p>{t('benefits.smBox.box2.content')}</p>*/}
+            {/*            </Text>*/}
+            {/*        </Box>*/}
+            {/*    </div>*/}
+            {/*    <div className="five">*/}
+            {/*        <Box sec>*/}
+            {/*            <Icon bottom>*/}
+            {/*                <img src={delivery} alt="Truck icon"/>*/}
+            {/*            </Icon>*/}
+            {/*            <Text small>*/}
+            {/*                <h4>{t('benefits.smBox.box3.header')}</h4>*/}
+            {/*                <p>{t('benefits.smBox.box3.content')}</p>*/}
+            {/*            </Text>*/}
+            {/*        </Box>*/}
+            {/*    </div>*/}
+            {/*</Row>*/}
+            </div>
         </Wrapper>
     );
 };

@@ -6,7 +6,7 @@ import Header from "../Header/Header";
 import app from "../../img/app2.png"
 import {Parallax} from "react-scroll-parallax/cjs";
 import Grid from '@material-ui/core/Grid';
-import background from '../../img/home.jpeg'
+import background from '../../img/strawberry.jpg'
 
 const HomeWrapper = styled.div`
   width: 100vw;
@@ -18,6 +18,12 @@ const HomeWrapper = styled.div`
   background-position: center 0;
   background-attachment: fixed;
   overflow: hidden;
+  
+  .shadow{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,30%);
+  }
 
   .layer{
   width: 100%;
@@ -32,7 +38,7 @@ const HomeWrapper = styled.div`
   
   .caption{
   padding-left: 10%;
-  padding-top: 25vh;
+  padding-top: 35vh;
   display: flex;
   //align-items: center;
   justify-content: center;
@@ -71,6 +77,7 @@ class Home extends Component {
 
         return (
             <HomeWrapper id="home">
+                <div className="shadow">
                 {/*<Parallax className="layer first_layer" y={[-10, 10]} tagOuter="figure">*/}
                 {/*    <img src={field}/>*/}
                 {/*</Parallax>*/}
@@ -78,23 +85,23 @@ class Home extends Component {
                 {/*    <img className="white" src={white}/>*/}
                 {/*</Parallax>*/}
                 <Grid container>
-                    <Grid item className="caption" xs={12} md={6}>
+                    <Grid item className="caption" xs={12} md={12}>
                         <Header/>
                     </Grid>
-                    <Grid item className="caption" xs={12} md={6}>
-                        <Parallax className="phone" y={[40, -90]} tagOuter="figure">
-                            <div className="item">
-                                <img src={app} alt="Fuddi app screen"/>
-                            </div>
-                        </Parallax>
-                    </Grid>
+                    {/*<Grid item className="caption" xs={12} md={6}>*/}
+                    {/*    <Parallax className="phone" y={[40, -90]} tagOuter="figure">*/}
+                    {/*        <div className="item">*/}
+                    {/*            <img src={app} alt="Fuddi app screen"/>*/}
+                    {/*        </div>*/}
+                    {/*    </Parallax>*/}
+                    {/*</Grid>*/}
                 </Grid>
 
-                < img
-                    className="layer white"
-                    src={white} alt="White mountains"
-                />
-
+                {/*< img*/}
+                {/*    className="layer white"*/}
+                {/*    src={white} alt="White mountains"*/}
+                {/*/>*/}
+                </div>
             </HomeWrapper>
         );
     }

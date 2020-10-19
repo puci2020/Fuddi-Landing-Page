@@ -13,7 +13,7 @@ const Button = styled.button`
   background-color: red;
   color: ${({theme}) => theme.colors.white};
   border-radius: 25px;
-  border: 1px solid darkolivegreen;
+  border: 1px solid red;
   //border: none;
   outline: none;
   cursor: pointer;
@@ -26,8 +26,8 @@ const Button = styled.button`
   z-index: 1;
   
   &:hover{
-    background-color: ${({theme}) => theme.colors.greenTransparent};
-    border: 1px solid lightgrey;
+    background-color: ${({theme}) => theme.colors.greenDark};
+    border: 1px solid ${({theme}) => theme.colors.greenDark};;
   }
   
   ${({theme}) => theme.media.phone}{
