@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d4dfe71e04222b49c39b446bab06801",
+    "revision": "d599f545864de13f3be6c73d53c7149f",
     "url": "/index.html"
   },
   {
-    "revision": "a3ff7cda0b00f8214c63",
-    "url": "/static/css/main.c414e820.chunk.css"
+    "revision": "605d048e8530e8fa34e2",
+    "url": "/static/css/main.5fde505c.chunk.css"
   },
   {
-    "revision": "02c1a8b886d03f801004",
-    "url": "/static/js/2.7d8534e2.chunk.js"
+    "revision": "15f8b3d43d675157e71b",
+    "url": "/static/js/2.0add4c26.chunk.js"
   },
   {
-    "revision": "a3ff7cda0b00f8214c63",
-    "url": "/static/js/main.0e0914d6.chunk.js"
+    "revision": "605d048e8530e8fa34e2",
+    "url": "/static/js/main.bd4bfb31.chunk.js"
   },
   {
     "revision": "2b5b85fd6e7177ede9b1",
@@ -22,10 +22,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "88a8857f49d6e236df747dc8685c4f33",
     "url": "/static/media/Space_travel_EN.88a8857f.jpeg"
-  },
-  {
-    "revision": "4b9a23c9c748c71e9add31be61cecc6d",
-    "url": "/static/media/aboutBG.4b9a23c9.jpeg"
   },
   {
     "revision": "03c7fc3c8c2255ab3dff936bc08ddd12",
@@ -40,24 +36,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/arrow.6b9dd4f6.svg"
   },
   {
+    "revision": "ed1dc2b38de3a8619be005b43196e6ad",
+    "url": "/static/media/box-z-logo-fuddi.ed1dc2b3.jpg"
+  },
+  {
     "revision": "4c9b32d7ade241c884fa2d39b369fe4e",
     "url": "/static/media/contact.4c9b32d7.png"
   },
   {
-    "revision": "f42a2bfebad2e99241fa6e89831e9620",
-    "url": "/static/media/delivery.f42a2bfe.svg"
+    "revision": "cc9a59e860877a2c5975610e1fa05c35",
+    "url": "/static/media/delivery.cc9a59e8.svg"
   },
   {
     "revision": "1e9f01162859ce7bec44274a13bb9d24",
     "url": "/static/media/faq.1e9f0116.jpeg"
   },
   {
-    "revision": "fcaaf268c0ca70b3b0476b4c623bac51",
-    "url": "/static/media/farmer.fcaaf268.svg"
-  },
-  {
-    "revision": "9b6015b850197f85e4bdf4d460e9bcc3",
-    "url": "/static/media/home.9b6015b8.jpeg"
+    "revision": "64aaf29c34fb4297c10ec55abc8ecc53",
+    "url": "/static/media/farmer.64aaf29c.svg"
   },
   {
     "revision": "7e6b41b6219d526e008adb44b9ef5058",
@@ -92,20 +88,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/screen9.127a830f.jpeg"
   },
   {
-    "revision": "c9beb5e407592ed97afaf28bf2e934e4",
-    "url": "/static/media/shopping-cart.c9beb5e4.svg"
+    "revision": "3ff2b0314d669fa73a9d4a4bee48dc23",
+    "url": "/static/media/shopping-cart.3ff2b031.svg"
+  },
+  {
+    "revision": "0b0bd54a43c8af880ad45df1e1ceb6e9",
+    "url": "/static/media/strawberry.0b0bd54a.jpg"
   },
   {
     "revision": "db23f1b993e27bfe9f5ff0f990a095ec",
     "url": "/static/media/szymon_mrozowski.db23f1b9.jpeg"
   },
   {
-    "revision": "dea70ba441a4878d17c0c4de7b487231",
-    "url": "/static/media/user.dea70ba4.svg"
+    "revision": "322aa033c00f89d5c12b1d589dbf5a4d",
+    "url": "/static/media/user.322aa033.svg"
   },
   {
-    "revision": "6eedafee69c6406a2c64ea6d0e796164",
-    "url": "/static/media/vegetable.6eedafee.svg"
+    "revision": "eb35c5c9f6c538bf21c96a6eac61d35f",
+    "url": "/static/media/vege.eb35c5c9.jpg"
+  },
+  {
+    "revision": "e7491f4e333746bd9d5b262aa1e7dc3d",
+    "url": "/static/media/vegetable.e7491f4e.svg"
   },
   {
     "revision": "31b7e9b62c231af4ad6610e75f6eee0e",
