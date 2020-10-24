@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d599f545864de13f3be6c73d53c7149f",
+    "revision": "14bb27e958346d1862bd242e5414b6b3",
     "url": "/index.html"
   },
   {
-    "revision": "605d048e8530e8fa34e2",
+    "revision": "9e4dda78637ee987c25d",
     "url": "/static/css/main.5fde505c.chunk.css"
   },
   {
-    "revision": "15f8b3d43d675157e71b",
-    "url": "/static/js/2.0add4c26.chunk.js"
+    "revision": "9fea002d959c9793886c",
+    "url": "/static/js/2.987bb5e0.chunk.js"
   },
   {
-    "revision": "605d048e8530e8fa34e2",
-    "url": "/static/js/main.bd4bfb31.chunk.js"
+    "revision": "9e4dda78637ee987c25d",
+    "url": "/static/js/main.a3a11853.chunk.js"
   },
   {
     "revision": "2b5b85fd6e7177ede9b1",
@@ -44,16 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/contact.4c9b32d7.png"
   },
   {
-    "revision": "cc9a59e860877a2c5975610e1fa05c35",
-    "url": "/static/media/delivery.cc9a59e8.svg"
-  },
-  {
     "revision": "1e9f01162859ce7bec44274a13bb9d24",
     "url": "/static/media/faq.1e9f0116.jpeg"
-  },
-  {
-    "revision": "64aaf29c34fb4297c10ec55abc8ecc53",
-    "url": "/static/media/farmer.64aaf29c.svg"
   },
   {
     "revision": "7e6b41b6219d526e008adb44b9ef5058",
@@ -88,10 +80,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/screen9.127a830f.jpeg"
   },
   {
-    "revision": "3ff2b0314d669fa73a9d4a4bee48dc23",
-    "url": "/static/media/shopping-cart.3ff2b031.svg"
-  },
-  {
     "revision": "0b0bd54a43c8af880ad45df1e1ceb6e9",
     "url": "/static/media/strawberry.0b0bd54a.jpg"
   },
@@ -100,16 +88,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/szymon_mrozowski.db23f1b9.jpeg"
   },
   {
-    "revision": "322aa033c00f89d5c12b1d589dbf5a4d",
-    "url": "/static/media/user.322aa033.svg"
-  },
-  {
     "revision": "eb35c5c9f6c538bf21c96a6eac61d35f",
     "url": "/static/media/vege.eb35c5c9.jpg"
-  },
-  {
-    "revision": "e7491f4e333746bd9d5b262aa1e7dc3d",
-    "url": "/static/media/vegetable.e7491f4e.svg"
   },
   {
     "revision": "31b7e9b62c231af4ad6610e75f6eee0e",
