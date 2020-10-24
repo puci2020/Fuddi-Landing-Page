@@ -14,6 +14,9 @@
   "link5": {
     "1": "Zespół"
   },
+  "link6": {
+    "1": "Sklep"
+  },
   "home": {
     "header1": "Świeże oraz tanie warzywa i owoce",
     "header2": "Fuddi to aplikacja dla każdego z nas. Zadowoli nawet najbardziej wymagające restauracje",
@@ -22,26 +25,14 @@
   },
   "benefits": {
     "headers": {
-      "header1": "Jakie wartości chcemy, aby niosła aplikacja?",
-      "header2": "Pragniemy połączyć trzy grupy użytkowników Fuddi"
+      "header1": "Wartości jakie cenimy",
+      "header2": "Zamów i wesprzyj \n Polskiego producenta"
     },
     "lgBox": {
-      "box1": "Tworzymy platformę m-commerce dzięki, której codzienne zakupy będą proste i szybkie.",
-      "box2": "Oferowane produkty będą najwyższej jakości w przystępnej cenie. Zależy nam na pokazaniu, że wyroby wytwarzane przy użyciu rąk są nie tylko smaczniejsze, ale mają w sobie cząstkę swojego twórcy lub w przypadku owoców i warzyw akcent osoby, która o nich dbała."
-    },
-    "smBox": {
-      "box1": {
-        "header": "Użytkownicy",
-        "content": "Jeśli nie byłoby użytkowników, nie byłoby aplikacji."
-      },
-      "box2": {
-        "header": "Producenci",
-        "content": "Rolnicy, jak i rzemieślnicy, to oni dzięki swojej ciężkiej pracy wytwarzają produkt najwyższej jakości."
-      },
-      "box3": {
-        "header": "Dostawcy",
-        "content": "Każda osoba, która przy okazji podróży zadeklaruje chęć dostarczenia towaru od Producenta do Klienta."
-      }
+      "box1": "Oferowane produkty będą najwyższej jakości w przystępnej cenie. Zależy nam na pokazaniu, że wyroby wytwarzane przy użyciu rąk są nie tylko samczaniejsze, ale mają w sobie cząstkę swojego twórcy lub w przypadku owoców i warzyw akcent osoby, która o nich dbała.",
+      "box2": "Każdy rolnik i producent będzie mógł współtworzyć razem z nami platformę poprzez sprzedaż produktów, które będą nosiły miano premium.\nDzięki temu posiłki podawane w restauracjach, jak i te w domowym zaciszu będą jeszcze smaczniejsze i zdrowsze.",
+      "box3": "Wybierając produkt w naszej aplikacji, uruchamiasz ogromną machinę, która sprawi, że zamówienie dostaniesz na czas i nie straci ono na jakości.",
+      "box4": "Producent przygotuje dla Ciebie najlepsze produkty, dostawca je odbierze i dostarczy prosto pod Twoje drzwi."
     }
   },
   "team": {

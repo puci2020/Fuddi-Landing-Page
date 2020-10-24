@@ -14,34 +14,25 @@
   "link5": {
     "1": "Team"
   },
+  "link6": {
+    "1": "Shop"
+  },
   "home": {
-    "header1": "Fresh vegetables and fruits without leaving your home?",
-    "header2": "Fuddi is the application for you!",
+    "header1": "Fresh and cheap vegetables and fruits",
+    "header2": "Fuddi is an application for all of us. It will satisfy even the most demanding restaurants",
     "header3": "Download the Beta on Google Play now",
     "button": "Check now!"
   },
   "benefits": {
     "headers": {
-      "header1": "What values do we want the application to carry?",
-      "header2": "We wish to bring together three groups of Fuddi users"
+      "header1": "Values we value",
+      "header2": "Order and support \n a Polish producer"
     },
     "lgBox": {
-      "box1": "We create an m-commerce platform thanks to which everyday shopping will be simple and fast.",
-      "box2": "The products offered will be of the highest quality at an affordable price. We want to show that the products made with the use of hands are not only tastier, but also have a part of their creator or, in the case of fruit and vegetables, the accent of the person who took care of them."
-    },
-    "smBox": {
-      "box1": {
-        "header": "Users",
-        "content": "If there was no user, there would be no application."
-      },
-      "box2": {
-        "header": "Producers",
-        "content": "Farmers and craftsmen, thanks to their hard work, produce the highest quality product."
-      },
-      "box3": {
-        "header": "Suppliers",
-        "content": "Any person who declares the willingness to deliver the goods from the manufacturer to the customer during the trip."
-      }
+      "box1": "The products offered will be of the highest quality at an affordable price. We want to show that the products made with the use of hands are not only more cheap, but also have a part of their creator or, in the case of fruit and vegetables, the accent of the person who took care of them.",
+      "box2": "Each farmer and producer will be able to co-create the platform with us by selling products that will be called premium.\nAs a result, meals served in restaurants and those at home will be even tastier and healthier.",
+      "box3": "By choosing a product in our application, you start a huge machine that will ensure that you get your order on time and will not lose its quality.",
+      "box4": "The manufacturer will prepare the best products for you, the supplier will pick them up and deliver them straight to your door."
     }
   },
   "team" : {
