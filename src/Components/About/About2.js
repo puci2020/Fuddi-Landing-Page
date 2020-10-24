@@ -95,15 +95,15 @@ const About2 = () => {
     return (
 
         <Wrapper id="about">
-                {/*<H2>{t('benefits.headers.header1')}</H2>*/}
+
 
 
                     <div className="one">
-                        <H2>Zamów i wesprzyj <br/>Polskiego producenta</H2>
+                        <H2>{t('benefits.headers.header2')}</H2>
                         <Box>
 
-                            <Text>Wybierając produkt w naszej aplikacji uruchamiasz ogromną machinę, która sprawi, że zamówienie dostaniesz na czas i nie straci ono na jakości.</Text>
-                            <Text>Producent przygotuje dla Ciebie najlepsze produkty, dostawca je odbierze i dostaczy prosto pod Twoje drzwi.</Text>
+                            <Text>{t('benefits.lgBox.box3')}</Text>
+                            <Text>{t('benefits.lgBox.box4')}</Text>
                         </Box>
                     </div>
                     <div className="two">
