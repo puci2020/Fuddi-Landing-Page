@@ -2,7 +2,6 @@ import React from 'react';
 import "./Footer.css"
 import logo from "../../img/logo.png";
 import facebook from '../../img/social_icons/facebook.png'
-import instagram from '../../img/social_icons/instagram.png'
 import linkedin from '../../img/social_icons/linkedin.png'
 import google from '../../img/social_icons/google.png'
 import mail from '../../img/social_icons/mail.png'
@@ -17,7 +16,6 @@ function Footer() {
                 <div className="logo_item">
                     <img src={logo} alt="Fuddi logo"/>
                 </div>
-                {/*<div className="logo_title_footer">Fuddi</div>*/}
             </div>
             <div className="social">
 

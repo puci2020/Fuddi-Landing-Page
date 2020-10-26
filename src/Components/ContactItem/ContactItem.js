@@ -44,7 +44,6 @@ const ContactLeft = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  //background-color: #636363;
   img{
   width: 100%;
   height: auto;
@@ -56,7 +55,6 @@ const ContactLeft = styled.div`
 `;
 
 const ContactRight = styled.div`
-  //padding-top: 40px;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -91,34 +89,33 @@ const Textarea = styled.textarea`
   height: 30vh;
 `;
 
-const Checkbox = styled.div`
-  width: auto;
-  height: auto;
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  input[type="checkbox"]{
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  label{
-  display: flex;
-  align-items: center;
-  }
-`;
+// const Checkbox = styled.div`
+//   width: auto;
+//   height: auto;
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 30px;
+//   input[type="checkbox"]{
+//     width: 20px;
+//     height: 20px;
+//     margin-right: 10px;
+//   }
+//   label{
+//   display: flex;
+//   align-items: center;
+//   }
+// `;
 
-const Label = styled.label`
-  margin-left: 10px;
-  color: rgb(5,28,74);
- 
-`;
+// const Label = styled.label`
+//   margin-left: 10px;
+//   color: rgb(5,28,74);
+//
+// `;
 
 const Button = styled.button`
   width: 100%;
   height: 40px;
   border-radius: 20px;
-  //border: 1px solid lightgrey;
   border: none;
   outline: none;
   cursor:pointer;
@@ -138,7 +135,7 @@ const ContactItem = () => {
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [question, setQuestion] = useState('');
-    const [checkbox, setCheckbox] = useState(false);
+    // const [checkbox, setCheckbox] = useState(false);
     const date = Date().toLocaleString();
 
     const {t} = useTranslation();
