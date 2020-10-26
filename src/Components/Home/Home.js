@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import styled from 'styled-components'
 import Header from "../Header/Header";
 import Grid from '@material-ui/core/Grid';
-import background from '../../img/strawberry.jpg'
+import background from '../../img/home-strawberry.jpeg'
+import backgroundTablet from '../../img/home-strawberry-tablet.jpeg'
+import backgroundPhone from '../../img/home-strawberry-phone.jpeg'
 
 const HomeWrapper = styled.div`
   width: 100vw;
@@ -21,16 +23,6 @@ const HomeWrapper = styled.div`
   background-color: rgba(0,0,0,30%);
   }
 
-  .layer{
-  width: 100%;
-  height: auto;
-  position: absolute;
-  bottom: -80px;
-  
-  ${({theme}) => theme.media.tablet}{
-  bottom: 0;
-  }
-  }
   
   .caption{
   padding-left: 10%;
@@ -44,25 +36,11 @@ const HomeWrapper = styled.div`
     padding-right: 10%;
   }
   }
-  
-  .phone{
-  width: 300px;
-  height: 2000px;
-  overflow: hidden;
-  @media(max-width: 1367px){
-    
-    width:200px
-    
+   ${({theme}) => theme.media.tablet}{
+     background-image: url(${backgroundTablet});
   }
-  img{
-  width: 100%;
-  height: 100%;
-  }
-  
-  
-  ${({theme}) => theme.media.tablet}{
-  display: none;
-  }
+  ${({theme}) => theme.media.phone}{
+     background-image: url(${backgroundPhone});
   }
 `;
 
