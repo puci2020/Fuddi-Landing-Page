@@ -52,7 +52,7 @@ const ContentItem = styled.div`
         transition: transform .3s ease-in-out;
       }
   }
-  p{
+  div{
     text-align: left;
     .space{
     height: 10px;
@@ -96,9 +96,9 @@ const Box = ({title, children}) => {
     return (
         <ContentItem onClick={() => setOpen(!open)}>
             <h4><div className="header">{title}</div> <img className={open ? '' : 'rotate'} src={arrow} alt="right_arrow"/></h4>
-            <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>
+            <div className={open ? 'accordion__item collapsed' : 'accordion__item'}>
                 <div className="space"/>
-                {children}</p>
+                {children}</div>
         </ContentItem>
     )
 };
@@ -138,42 +138,6 @@ const FaqItem = () => {
                 <Box title={t('faq.quest9.header')}>
                     {t('faq.quest9.content')}
                 </Box>
-                {/*<ContentItem>*/}
-                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest1.header')}</h4>*/}
-                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest1.content')}</p>*/}
-                {/*</ContentItem>*/}
-                {/*<ContentItem>*/}
-                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest2.header')}</h4>*/}
-                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest2.content')}</p>*/}
-                {/*</ContentItem>*/}
-                {/*<ContentItem>*/}
-                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest3.header')}</h4>*/}
-                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest3.content')}</p>*/}
-                {/*</ContentItem>*/}
-                {/*<ContentItem>*/}
-                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest4.header')}</h4>*/}
-                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest4.content')}</p>*/}
-                {/*</ContentItem>*/}
-                {/*<ContentItem>*/}
-                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest5.header')}</h4>*/}
-                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest5.content')}</p>*/}
-                {/*</ContentItem>*/}
-                {/*<ContentItem>*/}
-                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest6.header')}</h4>*/}
-                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest6.content')}</p>*/}
-                {/*</ContentItem>*/}
-                {/*<ContentItem>*/}
-                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest7.header')}</h4>*/}
-                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest7.content')}</p>*/}
-                {/*</ContentItem>*/}
-                {/*<ContentItem>*/}
-                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest8.header')}</h4>*/}
-                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest8.content')}</p>*/}
-                {/*</ContentItem>*/}
-                {/*<ContentItem>*/}
-                {/*    <h4 onClick={() => setOpen(!open)}>{t('faq.quest9.header')}</h4>*/}
-                {/*    <p className={open ? 'accordion__item collapsed' : 'accordion__item'}>{t('faq.quest9.content')}</p>*/}
-                {/*</ContentItem>*/}
             </Content>
         </div>
     );
