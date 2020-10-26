@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "14bb27e958346d1862bd242e5414b6b3",
+    "revision": "78c11e50acee40019f4ea69df23f98ab",
     "url": "/index.html"
   },
   {
-    "revision": "9e4dda78637ee987c25d",
+    "revision": "3ba8e5f64f16e39604b3",
     "url": "/static/css/main.5fde505c.chunk.css"
   },
   {
-    "revision": "9fea002d959c9793886c",
-    "url": "/static/js/2.987bb5e0.chunk.js"
+    "revision": "06df2cb5fc3455afcc8c",
+    "url": "/static/js/2.6812ac40.chunk.js"
   },
   {
-    "revision": "9e4dda78637ee987c25d",
-    "url": "/static/js/main.a3a11853.chunk.js"
+    "revision": "3ba8e5f64f16e39604b3",
+    "url": "/static/js/main.7b1303ea.chunk.js"
   },
   {
     "revision": "2b5b85fd6e7177ede9b1",
@@ -28,16 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/adam_pucicki.03c7fc3c.jpeg"
   },
   {
-    "revision": "53ff9fca0b6a444b73c4378fd33846a0",
-    "url": "/static/media/app2.53ff9fca.png"
-  },
-  {
     "revision": "6b9dd4f69791a3b7d1e13b689949955f",
     "url": "/static/media/arrow.6b9dd4f6.svg"
   },
   {
-    "revision": "ed1dc2b38de3a8619be005b43196e6ad",
-    "url": "/static/media/box-z-logo-fuddi.ed1dc2b3.jpg"
+    "revision": "bf9cda32b8344ed164e95090b1977564",
+    "url": "/static/media/box-z-logo-fuddi.bf9cda32.jpg"
   },
   {
     "revision": "4c9b32d7ade241c884fa2d39b369fe4e",
@@ -46,6 +42,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1e9f01162859ce7bec44274a13bb9d24",
     "url": "/static/media/faq.1e9f0116.jpeg"
+  },
+  {
+    "revision": "423f9148ad9767e5593ca1664aa9cd13",
+    "url": "/static/media/home-strawberry-phone.423f9148.jpeg"
+  },
+  {
+    "revision": "0358a71c7876591b7611d93c1b3cd559",
+    "url": "/static/media/home-strawberry-tablet.0358a71c.jpeg"
+  },
+  {
+    "revision": "a13a59895a5111a17c19192b5f6c8d3a",
+    "url": "/static/media/home-strawberry.a13a5989.jpeg"
   },
   {
     "revision": "7e6b41b6219d526e008adb44b9ef5058",
@@ -80,23 +88,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/screen9.127a830f.jpeg"
   },
   {
-    "revision": "0b0bd54a43c8af880ad45df1e1ceb6e9",
-    "url": "/static/media/strawberry.0b0bd54a.jpg"
-  },
-  {
     "revision": "db23f1b993e27bfe9f5ff0f990a095ec",
     "url": "/static/media/szymon_mrozowski.db23f1b9.jpeg"
   },
   {
-    "revision": "eb35c5c9f6c538bf21c96a6eac61d35f",
-    "url": "/static/media/vege.eb35c5c9.jpg"
+    "revision": "238917e3a418f84f8936f232b9f9fa32",
+    "url": "/static/media/vegetables-phone.238917e3.jpeg"
+  },
+  {
+    "revision": "3313baec6642ca3c3dac0a91375af776",
+    "url": "/static/media/vegetables-tablet.3313baec.jpeg"
+  },
+  {
+    "revision": "735c838b081bc6ff27ebf79e572730a0",
+    "url": "/static/media/vegetables.735c838b.jpeg"
   },
   {
     "revision": "31b7e9b62c231af4ad6610e75f6eee0e",
     "url": "/static/media/wave.31b7e9b6.png"
-  },
-  {
-    "revision": "06bf648d094166952dcd30c255fc3fc2",
-    "url": "/static/media/white3.06bf648d.png"
   }
 ]);
