@@ -1,14 +1,16 @@
 import React from 'react';
 import styled from 'styled-components'
 import {useTranslation} from "react-i18next";
-import back from '../../img/vege.jpg'
+import background from '../../img/vegetables.jpeg'
+import backgroundTablet from '../../img/vegetables-tablet.jpeg'
+import backgroundPhone from '../../img/vegetables-phone.jpeg'
 
 const Wrapper = styled.div`
     width: 100vw;
     height: auto;
     position: relative;
     overflow: hidden;
-    background-image: url(${back});
+    background-image: url(${background});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 0;
@@ -21,7 +23,13 @@ const Wrapper = styled.div`
   height: 100vh;
   background-color: rgba(0,0,0,50%);
   }
-
+  
+  ${({theme}) => theme.media.tablet}{
+     background-image: url(${backgroundTablet});
+  }
+  ${({theme}) => theme.media.phone}{
+     background-image: url(${backgroundPhone});
+  }
 `;
 
 const H2 = styled.h2`
