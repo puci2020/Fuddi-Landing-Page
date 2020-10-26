@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "78c11e50acee40019f4ea69df23f98ab",
+    "revision": "2c8e2f194218eb567684b4c00a208664",
     "url": "/index.html"
   },
   {
-    "revision": "3ba8e5f64f16e39604b3",
+    "revision": "a38e5b5f4bd0046305b7",
     "url": "/static/css/main.5fde505c.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.6812ac40.chunk.js"
   },
   {
-    "revision": "3ba8e5f64f16e39604b3",
-    "url": "/static/js/main.7b1303ea.chunk.js"
+    "revision": "a38e5b5f4bd0046305b7",
+    "url": "/static/js/main.515d9297.chunk.js"
   },
   {
     "revision": "2b5b85fd6e7177ede9b1",
@@ -22,10 +22,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "88a8857f49d6e236df747dc8685c4f33",
     "url": "/static/media/Space_travel_EN.88a8857f.jpeg"
-  },
-  {
-    "revision": "03c7fc3c8c2255ab3dff936bc08ddd12",
-    "url": "/static/media/adam_pucicki.03c7fc3c.jpeg"
   },
   {
     "revision": "6b9dd4f69791a3b7d1e13b689949955f",
@@ -56,20 +52,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/home-strawberry.a13a5989.jpeg"
   },
   {
-    "revision": "7e6b41b6219d526e008adb44b9ef5058",
-    "url": "/static/media/krystian_szwedo.7e6b41b6.jpeg"
+    "revision": "8bfaaeeb01f0f88a5200a6c07ead4332",
+    "url": "/static/media/krystian_szwedo.8bfaaeeb.jpeg"
   },
   {
     "revision": "7bc8f9392bae1a45861a49ab20d52589",
     "url": "/static/media/logo.7bc8f939.png"
   },
   {
-    "revision": "18c391b44cac0d6cebece24859664666",
-    "url": "/static/media/paulina_talarowska.18c391b4.jpeg"
+    "revision": "d4980982341d1071dc0f311b8cd59414",
+    "url": "/static/media/paulina_talarowska.d4980982.jpeg"
   },
   {
-    "revision": "83017e3fc8eb3fb51e168d0623360f01",
-    "url": "/static/media/rafal_szuwalski.83017e3f.jpeg"
+    "revision": "de985c83557ca9d77852a4187cd02388",
+    "url": "/static/media/rafal_szuwalski.de985c83.jpeg"
   },
   {
     "revision": "2229c71233a7c43a4248288186a502b0",
@@ -88,8 +84,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/screen9.127a830f.jpeg"
   },
   {
-    "revision": "db23f1b993e27bfe9f5ff0f990a095ec",
-    "url": "/static/media/szymon_mrozowski.db23f1b9.jpeg"
+    "revision": "9c46b139f2df5b4d42eabeac922c494d",
+    "url": "/static/media/szymon_mrozowski.9c46b139.jpeg"
   },
   {
     "revision": "238917e3a418f84f8936f232b9f9fa32",
