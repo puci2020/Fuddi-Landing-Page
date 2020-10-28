@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c8e2f194218eb567684b4c00a208664",
+    "revision": "8467ad06d1ad73f516c445bdc3dfb6e7",
     "url": "/index.html"
   },
   {
-    "revision": "a38e5b5f4bd0046305b7",
+    "revision": "0fa14d5842aa02410d41",
     "url": "/static/css/main.5fde505c.chunk.css"
   },
   {
-    "revision": "06df2cb5fc3455afcc8c",
-    "url": "/static/js/2.6812ac40.chunk.js"
+    "revision": "8c24082cf381f2a3882a",
+    "url": "/static/js/2.cd2876a4.chunk.js"
   },
   {
-    "revision": "a38e5b5f4bd0046305b7",
-    "url": "/static/js/main.515d9297.chunk.js"
+    "revision": "0fa14d5842aa02410d41",
+    "url": "/static/js/main.c148adbd.chunk.js"
   },
   {
     "revision": "2b5b85fd6e7177ede9b1",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a13a59895a5111a17c19192b5f6c8d3a",
     "url": "/static/media/home-strawberry.a13a5989.jpeg"
+  },
+  {
+    "revision": "e2ee65c14c2391643fe748631e568417",
+    "url": "/static/media/isComing.e2ee65c1.png"
   },
   {
     "revision": "8bfaaeeb01f0f88a5200a6c07ead4332",
