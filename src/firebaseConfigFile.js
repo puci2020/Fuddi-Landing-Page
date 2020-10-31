@@ -2,14 +2,14 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 
 var firebaseConfig = {
-    apiKey: "AIzaSyAvcGc7_YO6YNUcuI0vxYQmtZ68F1LuXkg",
-    authDomain: "fuddi-landing-page.firebaseapp.com",
-    databaseURL: "https://fuddi-landing-page.firebaseio.com",
-    projectId: "fuddi-landing-page",
-    storageBucket: "fuddi-landing-page.appspot.com",
-    messagingSenderId: "70540378752",
-    appId: "1:70540378752:web:2f4ff657ed05ee5f715c65",
-    measurementId: "G-M946MGV635"
+    apiKey: "AIzaSyAVOv1Tyqg8qW_l0G6vWurwHbOQdZ3SoCE",
+    authDomain: "fuddi-d039f.firebaseapp.com",
+    databaseURL: "https://fuddi-d039f.firebaseio.com",
+    projectId: "fuddi-d039f",
+    storageBucket: "fuddi-d039f.appspot.com",
+    messagingSenderId: "813440231050",
+    appId: "1:813440231050:web:e6e58d2dab8e742127af73",
+    measurementId: "G-TWN10TK6J5"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
