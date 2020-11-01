@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import GlobalStyle from "./GlobalStyles"
 import styled from 'styled-components'
 import {ThemeProvider} from 'styled-components'
@@ -7,6 +7,7 @@ import {useTranslation} from "react-i18next";
 import {HashLink as Link} from 'react-router-hash-link';
 import SideDrawer from "../Components/SideDrawer/SideDrawer";
 import Navbar from "../Components/Navbar/Navbar";
+import AOS from "aos";
 
 const Button = styled.button`
   width: 220px;
@@ -74,6 +75,13 @@ const Layout = ({children}) => {
     }
 
     const {t} = useTranslation();
+    useEffect(() => {
+        AOS.init({
+            disable: 'mobile',
+            once: true,
+            duration: 700
+        });
+    })
 
     return (
         <ThemeProvider theme={theme}>
@@ -81,7 +89,7 @@ const Layout = ({children}) => {
             {children}
             <Navbar drawerClickHandler={drawerToggleClickHandler}/>
             {sideDrawer}
-            <Link to="/newsletter"><Button>{t('newsletter.button')}</Button></Link>
+            <Link to="/newsletter"><Button data-aos="fade-up-left">{t('newsletter.button')}</Button></Link>
         </ThemeProvider>
     );
 };

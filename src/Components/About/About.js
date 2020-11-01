@@ -4,6 +4,7 @@ import {useTranslation} from "react-i18next";
 import background from '../../img/vegetables.jpeg'
 import backgroundTablet from '../../img/vegetables-tablet.jpeg'
 import backgroundPhone from '../../img/vegetables-phone.jpeg'
+import 'aos/dist/aos.css'
 
 const Wrapper = styled.div`
     width: 100vw;
@@ -84,6 +85,7 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   flex-direction: ${({sec}) => sec ? 'column' : 'row'};
+  overflow: hidden;
 `;
 
 
@@ -121,14 +123,14 @@ const About = () => {
             <div className="shadow">
             <H2>{t('benefits.headers.header1')}</H2>
             <Row>
-                <div className="one">
+                <div className="one" >
                     <Box first>
-                        <Text>{t('benefits.lgBox.box1')}</Text>
+                        <Text data-aos="fade-up">{t('benefits.lgBox.box1')}</Text>
                     </Box>
                 </div>
                 <div className="two">
                     <Box first>
-                        <Text>{t('benefits.lgBox.box2')}</Text>
+                        <Text data-aos="fade-up" data-aos-delay="200">{t('benefits.lgBox.box2')}</Text>
                     </Box>
                 </div>
             </Row>
