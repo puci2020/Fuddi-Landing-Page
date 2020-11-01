@@ -62,6 +62,7 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 `;
 
 
@@ -102,11 +103,11 @@ const About2 = () => {
                         <H2>{t('benefits.headers.header2')}</H2>
                         <Box>
 
-                            <Text>{t('benefits.lgBox.box3')}</Text>
-                            <Text>{t('benefits.lgBox.box4')}</Text>
+                            <Text data-aos="fade-up">{t('benefits.lgBox.box3')}</Text>
+                            <Text data-aos="fade-up" data-aos-delay="200">{t('benefits.lgBox.box4')}</Text>
                         </Box>
                     </div>
-                    <div className="two">
+                    <div className="two" data-aos="flip-left" data-aos-delay="400">
 
                             <img src={deliver} alt="Delivery Fuddi"/>
 

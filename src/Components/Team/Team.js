@@ -130,6 +130,7 @@ const GridItem = styled.div`
   justify-content: space-between;
   flex-direction: column;
   padding: 20px;
+  overflow: hidden;
   
   
   .photo{
@@ -185,7 +186,7 @@ const Team = () => {
         <StyledWrapper id="team">
             <H2>{t("team.header")}</H2>
             <StyledGrid>
-                <GridItem className="first">
+                <GridItem className="first" data-aos="flip-left">
                     <div className="photo">
                         <img src={face1} alt="Radał Szuwalski"/>
                     </div>
@@ -199,7 +200,7 @@ const Team = () => {
                         </Social>
                     </div>
                 </GridItem>
-                <GridItem className="second">
+                <GridItem className="second" data-aos="flip-left">
                     <div className="photo"><img src={face2} alt="Krystian Szwedo"/></div>
                     <div className="desc">
                         <h4>Krystian Szwedo</h4>
@@ -213,7 +214,7 @@ const Team = () => {
                         </Social>
                     </div>
                 </GridItem>
-                <GridItem className="third">
+                <GridItem className="third" data-aos="flip-left">
                     <div className="photo"><img src={face3} alt="Szymon Mrozowski"/></div>
                     <div className="desc">
                         <h4>Szymon Mrozowski</h4>
@@ -229,7 +230,7 @@ const Team = () => {
                 </GridItem>
 
                 {/*<GridRow>*/}
-                <GridItem className="four">
+                <GridItem className="four" data-aos="flip-left">
                     <div className="photo"><img src={face4} alt="Adam Pucicki"/></div>
                     <div className="desc">
                         <h4>Adam Pucicki</h4>
@@ -255,7 +256,7 @@ const Team = () => {
                 {/*        </Social>*/}
                 {/*    </div>*/}
                 {/*</GridItem>*/}
-                <GridItem className="five">
+                <GridItem className="five" data-aos="flip-left">
                     <div className="photo"><img src={face5} alt="Paulina Talarowska"/></div>
                     <div className="desc">
                         <h4>Paulina Talarowska</h4>

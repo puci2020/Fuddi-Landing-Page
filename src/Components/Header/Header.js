@@ -59,11 +59,11 @@ function Header() {
 
     return(
         <HeaderWrapper>
-            <H1>{t('home.header1')}</H1>
-            <H3>{t('home.header2')}</H3>
+            <H1 data-aos="zoom-in-left">{t('home.header1')}</H1>
+            <H3 data-aos="zoom-in-left" data-aos-delay="200">{t('home.header2')}</H3>
             {/*<h3>{t('home.header3')}</h3>*/}
             <Link activeClass="a" to="about" spy={true} smooth={true} offset={-80}
-                  duration={500}><Button>{t('home.button')}</Button></Link>
+                  duration={500}><Button data-aos="zoom-in-left" data-aos-delay="400">{t('home.button')}</Button></Link>
         </HeaderWrapper>
     );
 
