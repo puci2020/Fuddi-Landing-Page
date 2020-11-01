@@ -34,6 +34,7 @@ const StyledGrid = styled.div`
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 100px;
   padding: 0 10%;
+  overflow: hidden;
   
   .first{
   grid-column: 1/3;
