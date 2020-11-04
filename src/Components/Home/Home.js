@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styled from 'styled-components'
 import Header from "../Header/Header";
 import Grid from '@material-ui/core/Grid';
@@ -45,9 +45,9 @@ const HomeWrapper = styled.div`
 `;
 
 
-class Home extends Component {
+const Home = () => {
 
-    render() {
+
 
         return (
             <HomeWrapper id="home">
@@ -60,7 +60,7 @@ class Home extends Component {
                 </div>
             </HomeWrapper>
         );
-    }
+
 }
 
 export default Home;

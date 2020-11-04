@@ -7,7 +7,8 @@ import {useTranslation} from "react-i18next";
 import {HashLink as Link} from 'react-router-hash-link';
 import SideDrawer from "../Components/SideDrawer/SideDrawer";
 import Navbar from "../Components/Navbar/Navbar";
-import AOS from "aos";
+import AOS from "aos"
+
 
 const Button = styled.button`
   width: 220px;
