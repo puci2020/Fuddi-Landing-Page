@@ -12,12 +12,12 @@ const App = () => {
     return (
         <Router basename={process.env.PUBLIC_URL}>
             <Switch>
-                <Route exact path={"/"} component={Main}/>
-                <Route exact path={"/faq"} component={Faq}/>
-                <Route exact path={"/contact"} component={Contact}/>
-                <Route exact path={"/newsletter"} component={Newsletter}/>
-                <Route exact path={"/crowdfunding"} component={Crowdfunding}/>
-                <Route exact path={"/shop"} component={Shop}/>
+                <Route exact path={process.env.PUBLIC_URL + "/"} component={Main}/>
+                <Route path={"/faq"} component={Faq}/>
+                <Route path={"/contact"} component={Contact}/>
+                <Route path={"/newsletter"} component={Newsletter}/>
+                <Route path={"/crowdfunding"} component={Crowdfunding}/>
+                <Route path={"/shop"} component={Shop}/>
             </Switch>
         </Router>
     );
