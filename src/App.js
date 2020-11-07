@@ -10,16 +10,15 @@ import Shop from "./Pages/Shop/Shop";
 
 const App = () => {
     return (
-        <Router>
-            <Switch>
-                <Route exact path={process.env.PUBLIC_URL + "/"} component={Main}/>
-                <Route path={process.env.PUBLIC_URL + "/faq"} component={Faq}/>
-                <Route path={process.env.PUBLIC_URL + "/contact"} component={Contact}/>
-                <Route path={process.env.PUBLIC_URL + "/newsletter"} component={Newsletter}/>
-                <Route path={process.env.PUBLIC_URL + "/crowdfunding"} component={Crowdfunding}/>
-                <Route path={process.env.PUBLIC_URL + "/shop"} component={Shop}/>
+            <Switch basename={process.env.PUBLIC_URL}>
+                <Route exact path={"/"} component={Main}/>
+                <Route path={"/faq"} component={Faq}/>
+                <Route path={"/contact"} component={Contact}/>
+                <Route path={"/newsletter"} component={Newsletter}/>
+                <Route path={"/crowdfunding"} component={Crowdfunding}/>
+                <Route path={"/shop"} component={Shop}/>
+                <Route component={Main}/>
             </Switch>
-        </Router>
     );
 }
 
