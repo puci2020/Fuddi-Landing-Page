@@ -1,5 +1,5 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React, {useState} from 'react';
+import {makeStyles} from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -9,11 +9,13 @@ import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
+import {red} from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+import Avatar from '@material-ui/core/Avatar';
+import {Link} from 'react-router-dom'
+import styled from 'styled-components'
 
 import image from "../../img/home-strawberry.jpeg"
 
@@ -39,11 +41,26 @@ const useStyles = makeStyles((theme) => ({
     avatar: {
         backgroundColor: red[500],
     },
+    title: {
+        fontSize: '1rem',
+    },
+    subheader:{
+        fontSize: '.7rem'
+    }
 }));
 
-const Post = ({head, date, img, shortDesc, longDesc}) => {
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+  
+   &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+`
+
+const Post = ({id, head, date, img, shortDesc, longDesc}) => {
     const classes = useStyles();
-    const [expanded, setExpanded] = React.useState(false);
+    const [expanded, setExpanded] = useState(false);
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
@@ -51,32 +68,39 @@ const Post = ({head, date, img, shortDesc, longDesc}) => {
 
     return (
         <Card className={classes.root}>
-            <CardHeader
-                action={
-                    <IconButton aria-label="settings">
-                        <MoreVertIcon />
-                    </IconButton>
-                }
-                title={head}
-                subheader="September 14, 2016"
-            />
-            <CardMedia
-                className={classes.media}
-                image={image}
-                title="Paella dish"
-            />
-            <CardContent>
-                <Typography variant="body2" color="textSecondary" component="p">
-                    This impressive paella is a perfect party dish and a fun meal to cook together with your
-                    guests. Add 1 cup of frozen peas along with the mussels, if you like.
-                </Typography>
-            </CardContent>
+            <StyledLink to={'blog/' + id} >
+                <CardHeader
+                    className={classes.header}
+                    // avatar={<Avatar aria-label="recipe" className={classes.avatar}>
+                    //     R
+                    // </Avatar>}
+                    action={
+                        <IconButton aria-label="settings">
+                            {/*<MoreVertIcon />*/}
+                        </IconButton>
+                    }
+                    title={<span className={classes.title}>{head}</span> }
+                    subheader={<span className={classes.subheader}>September 14, 2016</span> }
+                />
+
+                <CardMedia
+                    className={classes.media}
+                    image={image}
+                    title="Paella dish"
+                />
+                <CardContent>
+                    <Typography variant="body2" color="textSecondary" component="p">
+                        This impressive paella is a perfect party dish and a fun meal to cook together with your
+                        guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                    </Typography>
+                </CardContent>
+            </StyledLink>
             <CardActions disableSpacing>
                 <IconButton aria-label="add to favorites">
-                    <FavoriteIcon />
+                    <FavoriteIcon/>
                 </IconButton>
                 <IconButton aria-label="share">
-                    <ShareIcon />
+                    <ShareIcon/>
                 </IconButton>
                 <IconButton
                     className={clsx(classes.expand, {
@@ -86,7 +110,7 @@ const Post = ({head, date, img, shortDesc, longDesc}) => {
                     aria-expanded={expanded}
                     aria-label="show more"
                 >
-                    <ExpandMoreIcon />
+                    <ExpandMoreIcon/>
                 </IconButton>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>

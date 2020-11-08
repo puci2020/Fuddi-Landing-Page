@@ -31,9 +31,10 @@ const Content = styled.div`
   height: auto;
   padding: 60px 10% 20px 10%;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   //align-items: center;
   justify-items: center;
+  background-color: aliceblue;
   
   ${({theme}) => theme.media.tablet}{
     grid-template-columns: repeat(2, 1fr);
@@ -92,8 +93,8 @@ const Blog = () => {
                                              data-aos-delay="400">{t('home.button')}</Button></Link>
             </Background>
             <Content>
-                <Post head={"asdasd"}/>
-                <Post/>
+                <Post id={"askjdhas6876asid@#$"} head={"smaczne owoce"}/>
+                <Post id={"jahx@"}/>
                 <Post/>
                 <Post/>
             </Content>

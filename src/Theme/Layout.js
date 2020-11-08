@@ -45,14 +45,6 @@ const Layout = ({children}) => {
     const [active, setActive] = useState(false);
 
     const drawerToggleClickHandler = () => {
-        // setSideDrawerOpen(prevState => {
-        //     return setSideDrawerOpen(!prevState)
-        // });
-        //
-        // setActive(prevState => {
-        //     return setActive(!prevState)
-        // });
-
         setSideDrawerOpen(!sideDrawerOpen);
         setActive(!active);
 
