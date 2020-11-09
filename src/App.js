@@ -20,7 +20,7 @@ const App = () => {
                 <Route path={"/newsletter"} component={Newsletter}/>
                 <Route path={"/crowdfunding"} component={Crowdfunding}/>
                 <Route exact path={"/blog"} component={Blog}/>
-                <Route path={"/newPost"} component={NewPost}/>
+                <Route path={"/blog/newPost"} component={NewPost}/>
                 <Route path={"/blog/:id"} component={PostPage}/>
 
                 <Route path={"/shop"} component={Shop}/>

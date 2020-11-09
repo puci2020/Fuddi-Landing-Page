@@ -5,6 +5,7 @@ import background from "../../img/blog/home3.jpeg"
 import {HashLink as Link} from 'react-router-hash-link';
 import {useTranslation} from "react-i18next"
 import Post from "../../Components/Blog/Post";
+import NewPost from "./NewPost";
 // import PostUpload from "../../Components/Blog/PostUpload";
 
 
@@ -129,8 +130,9 @@ const Blog = () => {
                 <Post/>
             </Content>
             {/*<PostUpload/>*/}
-            <Link to="/newPost"><NewButton data-aos="fade-up-left">Nowy post</NewButton></Link>
-        </Layout>
+            <Link to={"/blog/newPost"}><NewButton data-aos="fade-up-left">Nowy post</NewButton></Link>
+
+            </Layout>
     );
 };
 

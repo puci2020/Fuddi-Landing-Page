@@ -35,7 +35,7 @@ const NewPost = () => {
         <Layout>
             <Nav scroll={nav}/>
             <Wrapper>
-
+ewe
             </Wrapper>
 
 
