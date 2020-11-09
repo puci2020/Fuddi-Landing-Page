@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from "../../Theme/Layout"
 import background from "../../img/blog/home3.jpeg"
-import {Link} from "react-scroll"
+import {HashLink as Link} from 'react-router-hash-link';
 import {useTranslation} from "react-i18next"
 import Post from "../../Components/Blog/Post";
+// import PostUpload from "../../Components/Blog/PostUpload";
 
 
 
@@ -80,6 +81,35 @@ const Button = styled.button`
   }
 `;
 
+const NewButton = styled.button`
+  width: 220px;
+  height: 50px;
+  background-color: red;
+  color: ${({theme}) => theme.colors.white};
+  border-radius: 25px;
+  border: 1px solid red;
+  outline: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  font: inherit;
+  font-weight: ${({theme}) => theme.font.weight.plusRegular};
+  transition: .2s;
+  z-index: 1;
+  
+  &:hover{
+    background-color: ${({theme}) => theme.colors.greenDark};
+    border: 1px solid ${({theme}) => theme.colors.greenDark};;
+  }
+  
+  ${({theme}) => theme.media.phone}{
+    bottom: 20px;
+    right: 20px;
+    
+  }
+`
+
 
 const Blog = () => {
 
@@ -98,6 +128,8 @@ const Blog = () => {
                 <Post/>
                 <Post/>
             </Content>
+            {/*<PostUpload/>*/}
+            <Link to="/newPost"><NewButton data-aos="fade-up-left">Nowy post</NewButton></Link>
         </Layout>
     );
 };
