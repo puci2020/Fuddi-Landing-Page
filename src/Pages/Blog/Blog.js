@@ -1,14 +1,12 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
 import Layout from "../../Theme/Layout"
 import background from "../../img/blog/home3.jpeg"
 import {HashLink as Link} from 'react-router-hash-link';
 import {useTranslation} from "react-i18next"
 import Post from "../../Components/Blog/Post";
-import NewPost from "./NewPost";
+import {auth} from "../../firebaseConfigFile";
 // import PostUpload from "../../Components/Blog/PostUpload";
-
-
 
 
 const Background = styled.div`
@@ -92,7 +90,7 @@ const NewButton = styled.button`
   outline: none;
   cursor: pointer;
   position: fixed;
-  bottom: 150px;
+  bottom: 110px;
   right: 50px;
   font: inherit;
   font-weight: ${({theme}) => theme.font.weight.plusRegular};
@@ -104,24 +102,40 @@ const NewButton = styled.button`
     border: 1px solid ${({theme}) => theme.colors.greenDark};;
   }
   
-  ${({theme}) => theme.media.phone}{
-    bottom: 20px;
-    right: 20px;
-    
-  }
+
+  
+   ${({theme}) => theme.media.phone}{
+  //   bottom: 20px;
+     right: 20px;
+   }
 `
 
 
 const Blog = () => {
 
     const {t} = useTranslation()
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged((authUser) => {
+            if (authUser) {
+                setUser(authUser);
+            } else {
+                setUser(null);
+            }
+        });
+        return () => {
+            unsubscribe();
+        }
+    }, [user]);
 
     return (
         <Layout>
             <Background>
                 <H1 data-aos="zoom-in-up">Stowrzony by wnieść do Twojego <br/>życia więcej świeżości</H1>
-                <Link data-aos="zoom-in-up" duration={800} activeClass="a" to="about" spy={true} smooth={true} offset={-80}><Button
-                                             data-aos-delay="400">{t('home.button')}</Button></Link>
+                <Link data-aos="zoom-in-up" duration={800} activeClass="a" to="about" spy={true} smooth={true}
+                      offset={-80}><Button
+                    data-aos-delay="400">{t('home.button')}</Button></Link>
             </Background>
             <Content>
                 <Post id={"askjdhas6876asid@#$"} head={"smaczne owoce"}/>
@@ -130,9 +144,17 @@ const Blog = () => {
                 <Post/>
             </Content>
             {/*<PostUpload/>*/}
-            <Link to={"/blog/newPost"}><NewButton data-aos="fade-up-left">Nowy post</NewButton></Link>
 
-            </Layout>
+            {user ? (
+                <>
+                    <Link to={"/newPost"}><NewButton data-aos="fade-up-left">Nowy post</NewButton></Link>
+                    <NewButton style={{bottom: 170}} data-aos="fade-up-left" onClick={() => auth.signOut()}>Wyloguj się</NewButton>
+                </>
+            ) : ('')
+            }
+
+
+        </Layout>
     );
 };
 

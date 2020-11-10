@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { HashRouter as Router, Route} from 'react-router-dom';
 import Main from './Pages/Main'
 import Faq from "./Pages/Faq";
@@ -9,6 +9,7 @@ import Shop from "./Pages/Shop/Shop";
 import Blog from "./Pages/Blog/Blog";
 import PostPage from "./Components/Blog/PostPage";
 import NewPost from "./Pages/Blog/NewPost";
+import AdminLogin from "./Pages/Blog/AdminLogin";
 
 
 const App = () => {
@@ -20,8 +21,10 @@ const App = () => {
                 <Route path={"/newsletter"} component={Newsletter}/>
                 <Route path={"/crowdfunding"} component={Crowdfunding}/>
                 <Route exact path={"/blog"} component={Blog}/>
-                <Route path={"/blog/newPost"} component={NewPost}/>
-                <Route path={"/blog/:id"} component={PostPage}/>
+                <Route  path={"/newPost"} component={NewPost}/>
+                <Route  path={"/admin"} component={AdminLogin}/>
+                <Route  path={"/blog/:id"} component={PostPage}/>
+
 
                 <Route path={"/shop"} component={Shop}/>
             </Router>

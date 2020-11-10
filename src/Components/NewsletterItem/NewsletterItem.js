@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components'
-import firebase from "../../firebaseConfigFile";
+import {db} from "../../firebaseConfigFile";
 import {useTranslation} from "react-i18next";
 
 const StyledItem = styled.div`
@@ -85,7 +85,7 @@ const NewsletterItem = () => {
         }
 
         function sendToDB() {
-            firebase.firestore().collection('/newsletter').add({
+            db.collection('/newsletter').add({
                 email,
                 date
             }).then(() => {
