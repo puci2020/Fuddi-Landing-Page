@@ -6,6 +6,10 @@ import Contact from "./Pages/Contact";
 import Newsletter from "./Pages/Newsletter";
 import Crowdfunding from "./Pages/Crowdfunding";
 import Shop from "./Pages/Shop/Shop";
+import Blog from "./Pages/Blog/Blog";
+import PostPage from "./Components/Blog/PostPage";
+import NewPost from "./Pages/Blog/NewPost";
+import AdminLogin from "./Pages/Blog/AdminLogin";
 
 
 const App = () => {
@@ -16,6 +20,12 @@ const App = () => {
                 <Route path={"/contact"} component={Contact}/>
                 <Route path={"/newsletter"} component={Newsletter}/>
                 <Route path={"/crowdfunding"} component={Crowdfunding}/>
+                <Route exact path={"/blog"} component={Blog}/>
+                <Route  path={"/newPost"} component={NewPost}/>
+                <Route  path={"/admin"} component={AdminLogin}/>
+                <Route  path={"/blog/:id"} component={PostPage}/>
+
+
                 <Route path={"/shop"} component={Shop}/>
             </Router>
     );

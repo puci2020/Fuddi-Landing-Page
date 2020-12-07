@@ -53,7 +53,7 @@ const Button = styled.button`
 
 
 
-function Header() {
+const Header = () => {
 
     const {t} = useTranslation();
 

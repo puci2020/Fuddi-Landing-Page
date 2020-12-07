@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import wave from '../../img/wave.png'
 import people from '../../img/contact.png'
 import {useTranslation} from "react-i18next";
-import firebase from "../../firebaseConfigFile";
+import {db} from "../../firebaseConfigFile";
 
 const ContactWrapper = styled.div`
   
@@ -181,7 +181,7 @@ const ContactItem = () => {
             alert(t('contact.alert.error.success'))
         }
         function sendToDB() {
-            firebase.firestore().collection('/contact-form').add({
+            db.collection('/contact-form').add({
                 firstName,
                 lastName,
                 email,
