@@ -16,6 +16,8 @@ import { red } from "@material-ui/core/colors";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import phones from "../../img/blog/posts/post1/phones.jpeg";
 import water from "../../img/blog/posts/post1/water.jpeg";
@@ -26,9 +28,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     margin: 20,
     maxWidth: 1000,
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-around'
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
   },
   media: {
     height: 0,
@@ -55,14 +57,21 @@ const useStyles = makeStyles((theme) => ({
     fontSize: ".7rem",
   },
   imageContent: {
-    marginTop: 20,
-    marginBottom: 20,
+    margin: "auto",
     width: "100%",
     height: "auto",
-    maxWidth: 1000,
+    maxWidth: 700,
   },
   paragraph: {
     textAlign: "justify",
+  },
+  imgWrapper: {
+      marginTop: 30,
+      marginBottom: 30,
+      width: "100%",
+      height: "auto",
+      display: "flex",
+      justifyContent: 'center'    
   },
 }));
 
@@ -247,7 +256,9 @@ const Post = ({ id, head, date, img, shortDesc, longDesc }) => {
               końcu co chwila musi być opracowana i wyprodukowana nowa seria
               ubrań dla konsumenta spragnionego nowości.
             </p>
-            <img src={phones} className={classes.imageContent} alt="phones" />
+            <div className={classes.imgWrapper}>
+              <img src={phones} className={classes.imageContent} alt="phones" />
+            </div>
             <p className={classes.paragraph}>
               Inny przykład - smartfony. Obecnie model dystrybucji elektroniki
               użytkowej kładzie nacisk na kupowanie coraz częściej pojawiających
@@ -304,7 +315,9 @@ const Post = ({ id, head, date, img, shortDesc, longDesc }) => {
               idei zero waste, w przyszłości może to się nazywać nie ideą, ale
               koniecznością.
             </p>
+            <div className={classes.imgWrapper}>
             <img src={water} className={classes.imageContent} alt="water" />
+            </div>
             <p className={classes.paragraph}>
               W antykonsumpcjonizm wpisuje tzw. ekonomia współdzielenia, o
               której więcej możesz doczytać w jednym z naszych poprzednich
@@ -350,7 +363,9 @@ const Post = ({ id, head, date, img, shortDesc, longDesc }) => {
               się w oczy hasła promocyjne coś jednak kupimy. Coś co potem
               rzucamy w kąt i żałujemy, że to kupiliśmy.
             </p>
+            <div className={classes.imgWrapper}>
             <img src={reduce} className={classes.imageContent} alt="reduce" />
+            </div>
             <p className={classes.paragraph}>
               Potrzebna jest autorefleksja. A przede wszystkim, wcześniej przed
               samym zakupem. Zero waste określa się m. in. jako zasadę 5R czyli
@@ -383,11 +398,13 @@ const Post = ({ id, head, date, img, shortDesc, longDesc }) => {
               owoce i będzie mógł on dalej utrzymywać się z pracy w swoim
               gospodarstwie rolnym.
             </p>
+            <div className={classes.imgWrapper}>
             <img
               src={vegetables}
               className={classes.imageContent}
               alt="vegetables"
             />
+            </div>
             <p className={classes.paragraph}>
               Być może zadajesz sobie pytanie jak to zrobić – kupować rozsądnie
               i wspierać swoje otoczenie, swój region? To proste. Już niedługo
@@ -399,6 +416,15 @@ const Post = ({ id, head, date, img, shortDesc, longDesc }) => {
               gospodarstwo rolne - bo będzie miało komu produkować ekologiczną
               żywność.
             </p>
+          </Typography>
+          <Typography paragraph>
+            <p>Zapraszamy do dyskusji na naszych social mediach:</p>
+              <a href="https://www.facebook.com/Fuddi-107367687746824" target="_blank">
+                  <FacebookIcon/>
+              </a>
+              <a href="https://www.linkedin.com/company/fuddiplace/" target="_blank">
+                  <LinkedInIcon/>
+              </a>
           </Typography>
           <Typography paragraph>
             <h4>Źródła:</h4>
