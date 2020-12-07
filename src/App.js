@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashRouter as Router, Route} from 'react-router-dom';
+import React, {useEffect} from 'react';
+import {HashRouter as Router, Route} from 'react-router-dom';
 import Main from './Pages/Main'
 import Faq from "./Pages/Faq";
 import Contact from "./Pages/Contact";
@@ -13,7 +13,7 @@ import AdminLogin from "./Pages/Blog/AdminLogin";
 
 
 const App = () => {
-        return (
+    return (
             <Router basename={process.env.PUBLIC_URL}>
                 <Route exact path={"/"} component={Main}/>
                 <Route path={"/faq"} component={Faq}/>
@@ -28,7 +28,7 @@ const App = () => {
 
                 <Route path={"/shop"} component={Shop}/>
             </Router>
-        );
+    );
 }
 
 export default App;
