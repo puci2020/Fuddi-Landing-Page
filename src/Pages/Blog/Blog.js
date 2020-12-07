@@ -6,6 +6,7 @@ import {HashLink as Link} from 'react-router-hash-link';
 import {useTranslation} from "react-i18next"
 import Post from "../../Components/Blog/Post";
 import {auth} from "../../firebaseConfigFile";
+import postImage from '../../img/blog/posts/post1/black-friday.jpeg'
 // import PostUpload from "../../Components/Blog/PostUpload";
 
 
@@ -31,13 +32,13 @@ const Content = styled.div`
   height: auto;
   padding: 60px 10% 20px 10%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   //align-items: center;
   justify-items: center;
   background-color: aliceblue;
   
   ${({theme}) => theme.media.tablet}{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   
   ${({theme}) => theme.media.phone}{
@@ -138,10 +139,11 @@ const Blog = () => {
                     data-aos-delay="400">{t('home.button')}</Button></Link>
             </Background>
             <Content>
-                <Post id={"askjdhas6876asid@#$"} head={"smaczne owoce"}/>
-                <Post id={"jahx@"}/>
-                <Post/>
-                <Post/>
+                <Post id={"askjdhas6876asid@#$"} 
+                head={"Black Friday i konsumpcjonizm z pandemią w tle"}
+                date={"7 październik 2020"}
+                img={postImage}
+                />
             </Content>
             {/*<PostUpload/>*/}
 
