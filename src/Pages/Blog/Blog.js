@@ -141,7 +141,7 @@ const Blog = () => {
             <Content>
                 <Post id={"askjdhas6876asid@#$"} 
                 head={"Black Friday i konsumpcjonizm z pandemią w tle"}
-                date={"7 październik 2020"}
+                date={"27 listopada 2020 Czas czytania: 4 min"}
                 img={postImage}
                 />
             </Content>
