@@ -133,12 +133,12 @@ const Blog = () => {
     return (
         <Layout>
             <Background>
-                <H1 data-aos="zoom-in-up">Stowrzony by wnieść do Twojego <br/>życia więcej świeżości</H1>
-                <Link data-aos="zoom-in-up" duration={800} activeClass="a" to="about" spy={true} smooth={true}
+                <H1 data-aos="zoom-in-up">Stworzony by wnieść do Twojego <br/>życia więcej świeżości</H1>
+                <Link data-aos="zoom-in-up" duration={800} activeClass="a" to="#posts" spy={true} smooth={true}
                       offset={-80}><Button
                     data-aos-delay="400">{t('home.button')}</Button></Link>
             </Background>
-            <Content>
+            <Content id="posts">
                 <Post id={"askjdhas6876asid@#$"} 
                 head={"Black Friday i konsumpcjonizm z pandemią w tle"}
                 date={"27 listopada 2020 Czas czytania: 4 min"}
