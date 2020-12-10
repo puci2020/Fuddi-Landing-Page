@@ -1,14 +1,16 @@
-import React, {useEffect, useState} from 'react'
-import styled from 'styled-components'
-import Layout from "../../Theme/Layout"
-import background from "../../img/blog/home3.jpeg"
-import {HashLink as Link} from 'react-router-hash-link';
-import {useTranslation} from "react-i18next"
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import Layout from "../../Theme/Layout";
+import background from "../../img/blog/home3.jpeg";
+import { HashLink as Link } from "react-router-hash-link";
+import { useTranslation } from "react-i18next";
 import Post from "../../Components/Blog/Post";
-import {auth} from "../../firebaseConfigFile";
-import postImage from '../../img/blog/posts/post1/black-friday.jpeg'
-// import PostUpload from "../../Components/Blog/PostUpload";
+import Post2 from "../../Components/Blog/Post2";
+import { auth } from "../../firebaseConfigFile";
 
+import postImage from "../../img/blog/posts/post1/black-friday.jpeg";
+import postImage2 from "../../img/blog/posts/post2/zero-waste.jpeg";
+// import PostUpload from "../../Components/Blog/PostUpload";
 
 const Background = styled.div`
   width: 100vw;
@@ -24,8 +26,7 @@ const Background = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-
-`
+`;
 const Content = styled.div`
   width: 100vw;
   min-height: 100vh;
@@ -36,48 +37,47 @@ const Content = styled.div`
   //align-items: center;
   justify-items: center;
   background-color: aliceblue;
-  
-  ${({theme}) => theme.media.tablet}{
+
+  ${({ theme }) => theme.media.tablet} {
     grid-template-columns: repeat(1, 1fr);
   }
-  
-  ${({theme}) => theme.media.phone}{
-    grid-template-columns: 1fr;
-  }
-`
 
-const H1 = styled.h1`
-  font-size: ${({theme}) => theme.font.size.xl};
-  font-weight: ${({theme}) => theme.font.weight.bold};
-  letter-spacing: ${({theme}) => theme.font.space.m};
-  padding-bottom: 15px;
-  color: white;
-  overflow: hidden;
-  
-  ${({theme}) => theme.media.phone}{
-  font-size: ${({theme}) => theme.font.size.l};
+  ${({ theme }) => theme.media.phone} {
+    grid-template-columns: 1fr;
   }
 `;
 
+const H1 = styled.h1`
+  font-size: ${({ theme }) => theme.font.size.xl};
+  font-weight: ${({ theme }) => theme.font.weight.bold};
+  letter-spacing: ${({ theme }) => theme.font.space.m};
+  padding-bottom: 15px;
+  color: white;
+  overflow: hidden;
+
+  ${({ theme }) => theme.media.phone} {
+    font-size: ${({ theme }) => theme.font.size.l};
+  }
+`;
 
 const Button = styled.button`
   padding: 15px 20px;
-  background-color: ${({theme}) => theme.colors.green};
+  background-color: ${({ theme }) => theme.colors.green};
   //margin-top: 15px;
-  font-size: ${({theme}) => theme.font.size.m};
-  font-weight: ${({theme}) => theme.font.weight.regular};
-  color: ${({theme}) => theme.colors.white};
-  border: 2px solid ${({theme}) => theme.colors.green};
+  font-size: ${({ theme }) => theme.font.size.m};
+  font-weight: ${({ theme }) => theme.font.weight.regular};
+  color: ${({ theme }) => theme.colors.white};
+  border: 2px solid ${({ theme }) => theme.colors.green};
   outline: none;
   cursor: pointer;
-  transition: background-color .2s, border .2s;
+  transition: background-color 0.2s, border 0.2s;
   border-radius: 50px;
   overflow: hidden;
-  
-  &:hover{
-  //color: ${({theme}) => theme.colors.white};
-  background-color: ${({theme}) => theme.colors.greenDark};
-  border: 2px solid ${({theme}) => theme.colors.greenDark};;
+
+  &:hover {
+    //color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.greenDark};
+    border: 2px solid ${({ theme }) => theme.colors.greenDark};
   }
 `;
 
@@ -85,7 +85,7 @@ const NewButton = styled.button`
   width: 220px;
   height: 50px;
   background-color: red;
-  color: ${({theme}) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.white};
   border-radius: 25px;
   border: 1px solid red;
   outline: none;
@@ -94,70 +94,101 @@ const NewButton = styled.button`
   bottom: 110px;
   right: 50px;
   font: inherit;
-  font-weight: ${({theme}) => theme.font.weight.plusRegular};
-  transition: .2s;
+  font-weight: ${({ theme }) => theme.font.weight.plusRegular};
+  transition: 0.2s;
   z-index: 1;
-  
-  &:hover{
-    background-color: ${({theme}) => theme.colors.greenDark};
-    border: 1px solid ${({theme}) => theme.colors.greenDark};;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.greenDark};
+    border: 1px solid ${({ theme }) => theme.colors.greenDark};
   }
-  
 
-  
-   ${({theme}) => theme.media.phone}{
-  //   bottom: 20px;
-     right: 20px;
-   }
-`
-
+  ${({ theme }) => theme.media.phone} {
+    //   bottom: 20px;
+    right: 20px;
+  }
+`;
 
 const Blog = () => {
+  const { t } = useTranslation();
+  const [user, setUser] = useState(null);
 
-    const {t} = useTranslation()
-    const [user, setUser] = useState(null);
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        setUser(authUser);
+      } else {
+        setUser(null);
+      }
+    });
+    return () => {
+      unsubscribe();
+    };
+  }, [user]);
 
-    useEffect(() => {
-        const unsubscribe = auth.onAuthStateChanged((authUser) => {
-            if (authUser) {
-                setUser(authUser);
-            } else {
-                setUser(null);
-            }
-        });
-        return () => {
-            unsubscribe();
-        }
-    }, [user]);
+  return (
+    <Layout>
+      <Background>
+        <H1 data-aos="zoom-in-up">
+          Stworzony by wnieść do Twojego <br />
+          życia więcej świeżości
+        </H1>
+        <Link
+          data-aos="zoom-in-up"
+          duration={800}
+          activeClass="a"
+          to="#posts"
+          spy={true}
+          smooth={true}
+          offset={-80}
+        >
+          <Button data-aos-delay="400">{t("home.button")}</Button>
+        </Link>
+      </Background>
+      <Content id="posts">
+        <Post
+          id={"askjdhas6876asid@#$"}
+          head={"Black Friday i konsumpcjonizm z pandemią w tle"}
+          date={"27 listopada 2020 Czas czytania: 4 min"}
+          img={postImage}
+          shortDesc={`Czy wiesz, że jeden dzień może być wart aż 2,3 miliarda złotych? Aż
+                tyle wynoszą łączne wydatki w skali kraju w ciągu tłumnie obchodzonego
+                Black Friday. Święto konsumpcjonizmu. Raj dla łowców promocji. A może
+                festiwal złudzeń i nierozsądnych zakupów…`}
+        />
+      </Content>
+      <Content id="posts">
+        <Post2
+          id={"asdasd"}
+          head={
+            "Ekonomia współdzielenia - recepta na lepsze wykorzystanie zasobów"
+          }
+          date={"10 grudnia 2020 Czas czytania: 5 min"}
+          img={postImage2}
+          shortDesc={`Czas leci do przodu, przyzwyczajenia się zmieniają, a co za tym idzie? Wymyślane są nowe rozwiązania, które usprawniają każdą część naszej codzienności. Jednym z popularnych ruchów, który ma coraz większy wpływ na gospodarkę jest tak zwana ekonomia współdzielenia. Działanie według tej idei może stać się szansą na lepsze i bardziej etyczne korzystanie z zasobów.
+                `}
+        />
+      </Content>
+      {/*<PostUpload/>*/}
 
-    return (
-        <Layout>
-            <Background>
-                <H1 data-aos="zoom-in-up">Stworzony by wnieść do Twojego <br/>życia więcej świeżości</H1>
-                <Link data-aos="zoom-in-up" duration={800} activeClass="a" to="#posts" spy={true} smooth={true}
-                      offset={-80}><Button
-                    data-aos-delay="400">{t('home.button')}</Button></Link>
-            </Background>
-            <Content id="posts">
-                <Post id={"askjdhas6876asid@#$"} 
-                head={"Black Friday i konsumpcjonizm z pandemią w tle"}
-                date={"27 listopada 2020 Czas czytania: 4 min"}
-                img={postImage}
-                />
-            </Content>
-            {/*<PostUpload/>*/}
-
-            {user ? (
-                <>
-                    <Link to={"/newPost"}><NewButton data-aos="fade-up-left">Nowy post</NewButton></Link>
-                    <NewButton style={{bottom: 170}} data-aos="fade-up-left" onClick={() => auth.signOut()}>Wyloguj się</NewButton>
-                </>
-            ) : ('')
-            }
-
-
-        </Layout>
-    );
+      {user ? (
+        <>
+          <Link to={"/newPost"}>
+            <NewButton data-aos="fade-up-left">Nowy post</NewButton>
+          </Link>
+          <NewButton
+            style={{ bottom: 170 }}
+            data-aos="fade-up-left"
+            onClick={() => auth.signOut()}
+          >
+            Wyloguj się
+          </NewButton>
+        </>
+      ) : (
+        ""
+      )}
+    </Layout>
+  );
 };
 
 export default Blog;

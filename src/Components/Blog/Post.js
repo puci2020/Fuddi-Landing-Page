@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: "1rem",
+    fontWeight: 'bold'
   },
   subheader: {
     fontSize: ".7rem",
@@ -188,10 +189,7 @@ const Post = ({ id, head, date, img, shortDesc, longDesc }) => {
       <CardMedia className={classes.media} image={img} title="Paella dish" />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Czy wiesz, że jeden dzień może być wart aż 2,3 miliarda złotych? Aż
-          tyle wynoszą łączne wydatki w skali kraju w ciągu tłumnie obchodzonego
-          Black Friday. Święto konsumpcjonizmu. Raj dla łowców promocji. A może
-          festiwal złudzeń i nierozsądnych zakupów…
+          {shortDesc}
         </Typography>
       </CardContent>
       {/* </StyledLink> */}
