@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import Layout from "../../Theme/Layout";
 import styled from "styled-components";
-import {auth} from "../../firebaseConfigFile";
+import {auth, db, storage} from "../../firebaseConfigFile";
+import firebase from "firebase";
 import MDEditor from '@uiw/react-md-editor';
 
 const Wrapper = styled.div`
@@ -56,7 +57,14 @@ cursor:pointer;
 const NewPost = () => {
     const [nav, setNav] = useState(false);
     const [user, setUser] = useState(null);
-    const [email, setEmail] = useState('');
+    // const [email, setEmail] = useState('');
+
+    const [image, setImage] = useState(null);
+    const [shortDesc, setShortDesc] = useState('');
+    const [title, setTitle] = useState('');
+    const [date, setDate] = useState('');
+    const [content, setContent] = useState('');
+    // const [progress, setProgress] = useState(0);
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -80,6 +88,48 @@ const NewPost = () => {
 
     window.addEventListener('scroll', changeBackground);
 
+    const handleChange = (e) => {
+        if (e.target.files[0]) {
+            setImage(e.target.files[0])
+        }
+    };
+
+    const handleUpload = () => {
+        const uploadTask = storage.ref(`images/${image.name}`).put(image);
+
+        uploadTask.on(
+            "state_changed",
+            (snapshot) => {
+                // const progrss = Math.round(
+                //     (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+                // );
+                // setProgress(progrss);
+            },
+            (error) => {
+                console.log(error);
+                alert(error.message);
+            },
+            () => {
+                storage.ref("images").child(image.name).getDownloadURL().then(url => {
+                    db.collection("posts").add({
+                        timestapm: firebase.firestore.FieldValue.serverTimestamp(),
+                        shortDesc: shortDesc,
+                        imageURL: url,
+                        title: title,
+                        content: content,
+                        date: date
+                    });
+                    // setProgress(0);
+                    setShortDesc('');
+                    setImage(null);
+                    setTitle('');
+                    setContent('');
+                });
+
+            }
+        );
+    };
+
     return (
         <Layout>
             <Nav scroll={nav}/>
@@ -87,27 +137,38 @@ const NewPost = () => {
             {user ? (
                 <Form>
                     <input
-                        placeholder="Title"
+                        placeholder="Tytuł"
                         type="text"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        value={title}
+                        onChange={(e) => setTitle(e.target.value)}
+                        className="form__item input"
+                    />
+                    <input
+                        placeholder="Data"
+                        type="text"
+                        value={date}
+                        onChange={(e) => setDate(e.target.value)}
                         className="form__item input"
                     />
                     < textarea
                         placeholder="Short description"
                         className="form__item"
                         rows="10"
+                        value={shortDesc}
+                        onChange={e => setShortDesc(e.target.value)}
                     />
                     <MDEditor
-                        // value={value}
-                        // onChange={setValue}
+                        value={content}
+                        onChange={setContent}
                         className="form__item"
                     />
                     <input
                         type="file"
                         className="form__item"
+                        onChange={handleChange}
                     />
-                    <button className="form__item form__button" type="submit" >Sign In</button>
+                    {/* <progress className="control" value={progress} max="100"/> */}
+                    <button className="form__item form__button" type="submit" onClick={handleUpload}>Publikuj post</button>
                 </Form>
             ) : ('Zaloguj się!')}
 

@@ -6,7 +6,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
 import Post from "../../Components/Blog/Post";
 import Post2 from "../../Components/Blog/Post2";
-import { auth } from "../../firebaseConfigFile";
+import { auth, db } from "../../firebaseConfigFile";
 
 import postImage from "../../img/blog/posts/post1/black-friday.jpeg";
 import postImage2 from "../../img/blog/posts/post2/zero-waste.jpeg";
@@ -112,6 +112,7 @@ const NewButton = styled.button`
 const Blog = () => {
   const { t } = useTranslation();
   const [user, setUser] = useState(null);
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -125,6 +126,19 @@ const Blog = () => {
       unsubscribe();
     };
   }, [user]);
+
+  useEffect(() => {
+    db.collection("posts")
+      .orderBy("timestapm", "desc")
+      .onSnapshot((snapshot) => {
+        setPosts(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        );
+      });
+  }, [posts]);
 
   return (
     <Layout>
@@ -146,7 +160,10 @@ const Blog = () => {
         </Link>
       </Background>
       <Content id="posts">
-        <Post
+        {posts.map(({ id, data }) => (
+          <Post key={id} id={id} data={data} />
+        ))}
+        {/* <Post
           id={"askjdhas6876asid@#$"}
           head={"Black Friday i konsumpcjonizm z pandemią w tle"}
           date={"27 listopada 2020 Czas czytania: 4 min"}
@@ -155,9 +172,10 @@ const Blog = () => {
                 tyle wynoszą łączne wydatki w skali kraju w ciągu tłumnie obchodzonego
                 Black Friday. Święto konsumpcjonizmu. Raj dla łowców promocji. A może
                 festiwal złudzeń i nierozsądnych zakupów…`}
-        />
+          longDesc={}
+        /> */}
       </Content>
-      <Content id="posts">
+      {/* <Content id="posts">
         <Post2
           id={"asdasd"}
           head={
@@ -168,7 +186,7 @@ const Blog = () => {
           shortDesc={`Czas leci do przodu, przyzwyczajenia się zmieniają, a co za tym idzie? Wymyślane są nowe rozwiązania, które usprawniają każdą część naszej codzienności. Jednym z popularnych ruchów, który ma coraz większy wpływ na gospodarkę jest tak zwana ekonomia współdzielenia. Działanie według tej idei może stać się szansą na lepsze i bardziej etyczne korzystanie z zasobów.
                 `}
         />
-      </Content>
+      </Content> */}
       {/*<PostUpload/>*/}
 
       {user ? (

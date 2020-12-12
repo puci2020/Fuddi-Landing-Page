@@ -10,14 +10,15 @@ import CardActions from "@material-ui/core/CardActions";
 import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
+import MDEditor from "@uiw/react-md-editor";
 import { red } from "@material-ui/core/colors";
 // import FavoriteIcon from "@material-ui/icons/Favorite";
 // import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import FacebookIcon from "@material-ui/icons/Facebook";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 import phones from "../../img/blog/posts/post1/phones.jpeg";
 import water from "../../img/blog/posts/post1/water.jpeg";
@@ -52,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: "1rem",
-    fontWeight: 'bold'
+    fontWeight: "bold",
   },
   subheader: {
     fontSize: ".7rem",
@@ -67,12 +68,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "justify",
   },
   imgWrapper: {
-      marginTop: 30,
-      marginBottom: 30,
-      width: "100%",
-      height: "auto",
-      display: "flex",
-      justifyContent: 'center'    
+    marginTop: 30,
+    marginBottom: 30,
+    width: "100%",
+    height: "auto",
+    display: "flex",
+    justifyContent: "center",
   },
 }));
 
@@ -89,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
 //   }
 // `;
 
-const Post = ({ id, head, date, img, shortDesc, longDesc }) => {
+const Post = ({ id, data }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
 
@@ -182,14 +183,18 @@ const Post = ({ id, head, date, img, shortDesc, longDesc }) => {
         action={
           <IconButton aria-label="settings">{/*<MoreVertIcon />*/}</IconButton>
         }
-        title={<span className={classes.title}>{head}</span>}
-        subheader={<span className={classes.subheader}>{date}</span>}
+        title={<span className={classes.title}>{data.title}</span>}
+        subheader={<span className={classes.subheader}>{data.date}</span>}
       />
 
-      <CardMedia className={classes.media} image={img} title="Paella dish" />
+      <CardMedia
+        className={classes.media}
+        image={data.imageURL}
+        title="Paella dish"
+      />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          {shortDesc}
+          {data.shortDesc}
         </Typography>
       </CardContent>
       {/* </StyledLink> */}
@@ -217,6 +222,11 @@ const Post = ({ id, head, date, img, shortDesc, longDesc }) => {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>
+            <p className={classes.paragraph}>
+              <MDEditor.Markdown source={data.content} />
+            </p>
+          </Typography>
+          {/* <Typography paragraph>
             <h4>Black Friday - nowe święto</h4>
           </Typography>
           <Typography paragraph>
@@ -488,7 +498,7 @@ const Post = ({ id, head, date, img, shortDesc, longDesc }) => {
           <Typography paragraph>
             Zdjęcie autorstwa Max Fischer, Gabriel Freytez, Rifqi Ramadhan,
             picjumbo.com, Vlada Karpovich z Pexels
-          </Typography>
+          </Typography> */}
         </CardContent>
       </Collapse>
     </Card>
