@@ -6,10 +6,12 @@ import { HashLink as Link } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
 import Post from "../../Components/Blog/Post";
 import Post2 from "../../Components/Blog/Post2";
+import Post3 from "../../Components/Blog/Post3";
 import { auth } from "../../firebaseConfigFile";
 
 import postImage from "../../img/blog/posts/post1/black-friday.jpeg";
 import postImage2 from "../../img/blog/posts/post2/zero-waste.jpeg";
+import postImage3 from "../../img/blog/posts/post3/zdj4.jpeg";
 // import PostUpload from "../../Components/Blog/PostUpload";
 
 const Background = styled.div`
@@ -146,15 +148,15 @@ const Blog = () => {
         </Link>
       </Background>
       <Content id="posts">
-        <Post
-          id={"askjdhas6876asid@#$"}
-          head={"Black Friday i konsumpcjonizm z pandemią w tle"}
-          date={"27 listopada 2020 Czas czytania: 4 min"}
-          img={postImage}
-          shortDesc={`Czy wiesz, że jeden dzień może być wart aż 2,3 miliarda złotych? Aż
-                tyle wynoszą łączne wydatki w skali kraju w ciągu tłumnie obchodzonego
-                Black Friday. Święto konsumpcjonizmu. Raj dla łowców promocji. A może
-                festiwal złudzeń i nierozsądnych zakupów…`}
+        <Post3
+          id={"asdasdasd"}
+          head={
+            "Szybki eksperyment ekonomiczny - Co się dzieje gdy kupujemy od zagranicznych korporacji?"
+          }
+          date={"14 grudnia 2020 Czas czytania: 5 min"}
+          img={postImage3}
+          shortDesc={`Myślisz, że to od jakiego producenta kupujesz nie ma znaczenia? Bo przecież co znaczą zakupy jednej osoby wobec zakupów wszystkich mieszkańców kraju... Nic bardziej mylnego.
+          `}
         />
       </Content>
       <Content id="posts">
@@ -169,6 +171,19 @@ const Blog = () => {
                 `}
         />
       </Content>
+      <Content id="posts">
+        <Post
+          id={"askjdhas6876asid@#$"}
+          head={"Black Friday i konsumpcjonizm z pandemią w tle"}
+          date={"27 listopada 2020 Czas czytania: 4 min"}
+          img={postImage}
+          shortDesc={`Czy wiesz, że jeden dzień może być wart aż 2,3 miliarda złotych? Aż
+                tyle wynoszą łączne wydatki w skali kraju w ciągu tłumnie obchodzonego
+                Black Friday. Święto konsumpcjonizmu. Raj dla łowców promocji. A może
+                festiwal złudzeń i nierozsądnych zakupów…`}
+        />
+      </Content>
+      
       {/*<PostUpload/>*/}
 
       {user ? (
