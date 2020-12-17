@@ -163,31 +163,7 @@ const Blog = () => {
         {posts.map(({ id, data }) => (
           <Post key={id} id={id} data={data} />
         ))}
-        {/* <Post
-          id={"askjdhas6876asid@#$"}
-          head={"Black Friday i konsumpcjonizm z pandemią w tle"}
-          date={"27 listopada 2020 Czas czytania: 4 min"}
-          img={postImage}
-          shortDesc={`Czy wiesz, że jeden dzień może być wart aż 2,3 miliarda złotych? Aż
-                tyle wynoszą łączne wydatki w skali kraju w ciągu tłumnie obchodzonego
-                Black Friday. Święto konsumpcjonizmu. Raj dla łowców promocji. A może
-                festiwal złudzeń i nierozsądnych zakupów…`}
-          longDesc={}
-        /> */}
       </Content>
-      {/* <Content id="posts">
-        <Post2
-          id={"asdasd"}
-          head={
-            "Ekonomia współdzielenia - recepta na lepsze wykorzystanie zasobów"
-          }
-          date={"10 grudnia 2020 Czas czytania: 5 min"}
-          img={postImage2}
-          shortDesc={`Czas leci do przodu, przyzwyczajenia się zmieniają, a co za tym idzie? Wymyślane są nowe rozwiązania, które usprawniają każdą część naszej codzienności. Jednym z popularnych ruchów, który ma coraz większy wpływ na gospodarkę jest tak zwana ekonomia współdzielenia. Działanie według tej idei może stać się szansą na lepsze i bardziej etyczne korzystanie z zasobów.
-                `}
-        />
-      </Content> */}
-      {/*<PostUpload/>*/}
 
       {user ? (
         <>
