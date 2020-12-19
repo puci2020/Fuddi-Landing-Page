@@ -12,18 +12,9 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import MDEditor from "@uiw/react-md-editor";
 import { red } from "@material-ui/core/colors";
-// import FavoriteIcon from "@material-ui/icons/Favorite";
-// import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-
-import phones from "../../img/blog/posts/post1/phones.jpeg";
-import water from "../../img/blog/posts/post1/water.jpeg";
-import reduce from "../../img/blog/posts/post1/reduce.jpeg";
-import vegetables from "../../img/blog/posts/post1/vegetables.jpeg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -77,18 +68,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-// const StyledLink = styled(Link)`
-//   text-decoration: none;
-//   color: black;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
 
-//   &:focus,
-//   &:hover,
-//   &:visited,
-//   &:link,
-//   &:active {
-//     text-decoration: none;
-//   }
-// `;
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+`;
 
 const Post = ({ id, data }) => {
   const classes = useStyles();
@@ -100,14 +91,14 @@ const Post = ({ id, data }) => {
 
   return (
     <Card className={classes.root}>
-      {/* <StyledLink to={'blog/' + id} > */}
+      <StyledLink to={'blog/' + id} >
       <CardHeader
         className={classes.header}
         action={
           <IconButton aria-label="settings">{/*<MoreVertIcon />*/}</IconButton>
         }
         title={<span className={classes.title}>{data.title}</span>}
-        subheader={<span className={classes.subheader}>{data.date}</span>}
+        subheader={<span className={classes.subheader}>{data.date} Czas czytania: {data.time}</span>}
       />
 
       <CardMedia
@@ -120,7 +111,7 @@ const Post = ({ id, data }) => {
           {data.shortDesc}
         </Typography>
       </CardContent>
-      {/* </StyledLink> */}
+      </StyledLink>
       <CardActions disableSpacing>
         <Button onClick={handleExpandClick} variant="contained" color="primary">
           Czytaj więcej
