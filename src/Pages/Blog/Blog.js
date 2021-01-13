@@ -7,11 +7,13 @@ import { useTranslation } from "react-i18next";
 import Post from "../../Components/Blog/Post";
 import Post2 from "../../Components/Blog/Post2";
 import Post3 from "../../Components/Blog/Post3";
+import Post4 from "../../Components/Blog/Post4";
 import { auth } from "../../firebaseConfigFile";
 
 import postImage from "../../img/blog/posts/post1/black-friday.jpeg";
 import postImage2 from "../../img/blog/posts/post2/zero-waste.jpeg";
 import postImage3 from "../../img/blog/posts/post3/zdj4.jpeg";
+import postImage4 from "../../img/blog/posts/post4/glowny.jpeg";
 // import PostUpload from "../../Components/Blog/PostUpload";
 
 const Background = styled.div`
@@ -147,6 +149,17 @@ const Blog = () => {
           <Button data-aos-delay="400">{t("home.button")}</Button>
         </Link>
       </Background>
+      <Content id="posts">
+        <Post4
+          id={"asdasdasdaaasd"}
+          head={
+            "Ekspert z Niemiec: “Polacy zostali rozjechani przez kapitalizm. Również przez nas.”"
+          }
+          date={"13 stycznia 2021 Czas czytania: 5 min"}
+          img={postImage4}
+          shortDesc={`Dlaczego za produkty w niemieckiej sieciówce płacimy więcej? Jesteśmy “krajem taniej siły roboczej”, a do tego “rozjechanym przez kapitalizm”? Tak podsumował Polskę niemiecki ekspert. To nie brzmi dobrze. Co w związku z tym także my sami, jako konsumenci, możemy zrobić aby poprawić sytuację gospodarczą w kraju? `}
+        />
+      </Content>
       <Content id="posts">
         <Post3
           id={"asdasdasd"}
