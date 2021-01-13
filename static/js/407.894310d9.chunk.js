@@ -1,0 +1,2 @@
+(window["webpackJsonpreact-translate-app"]=window["webpackJsonpreact-translate-app"]||[]).push([[407],{588:function(a,s){var e=Prism.util.clone(Prism.languages.typescript);Prism.languages.tsx=Prism.languages.extend("jsx",e)}}]);
+//# sourceMappingURL=407.894310d9.chunk.js.map

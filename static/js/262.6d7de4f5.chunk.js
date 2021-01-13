@@ -1,0 +1,2 @@
+(window["webpackJsonpreact-translate-app"]=window["webpackJsonpreact-translate-app"]||[]).push([[262],{443:function(a,n){Prism.languages["nand2tetris-hdl"]={comment:/\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,keyword:/\b(?:CHIP|IN|OUT|PARTS|BUILTIN|CLOCKED)\b/,boolean:/\b(?:true|false)\b/,function:/[A-Za-z][A-Za-z0-9]*(?=\()/,number:/\b\d+\b/,operator:/=|\.\./,punctuation:/[{}[\];(),:]/}}}]);
+//# sourceMappingURL=262.6d7de4f5.chunk.js.map
