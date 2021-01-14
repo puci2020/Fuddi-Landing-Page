@@ -255,10 +255,9 @@ const Post3 = ({ id, head, date, img, shortDesc, longDesc }) => {
             <p className={classes.paragraph}>
               Jakiś czas temu na blogu pisaliśmy skrótowo o tym co się dzieje
               gdy Polacy kupują rodzime produkty, a co gdy kupują takie same
-              produkty ale pochodzenia zagranicznego. Jeśli jeszcze nie czytałeś
-              tego artykułu to możesz zapoznać się z nim pod tym linkiem <a href="http://localhost:3000/#/blog">[LINK]</a>.
-              Szczególnie zwróć uwagę na to jak wędruje kapitał w zależności od
-              Twoich zakupów i co finalnie dzieje się z wydanymi pieniędzmi.
+              produkty ale pochodzenia zagranicznego. Szczególnie
+              zwróć uwagę na to jak wędruje kapitał w zależności od Twoich
+              zakupów i co finalnie dzieje się z wydanymi pieniędzmi.
             </p>
             <div className={classes.imgWrapper}>
               <img src={zdj1} className={classes.imageContent} alt="zdj4" />
@@ -284,9 +283,9 @@ const Post3 = ({ id, head, date, img, shortDesc, longDesc }) => {
               są tańsze niż na naszym krajowym rynku.{" "}
             </p>
             <div className={classes.imgWrapper}>
-            <div className={classes.imgWrapper}>
-              <img src={zdj2} className={classes.imageContent} alt="zdj4" />
-            </div>
+              <div className={classes.imgWrapper}>
+                <img src={zdj2} className={classes.imageContent} alt="zdj4" />
+              </div>
             </div>
             <p className={classes.paragraph}>
               A jaka jest tego przyczyna? Petzold wskazuje na wpływ reklamy i
