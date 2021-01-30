@@ -5,12 +5,7 @@ import background from "../../img/blog/home3.jpeg";
 import { HashLink as Link } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
 import Post from "../../Components/Blog/Post";
-import Post2 from "../../Components/Blog/Post2";
 import { auth, db } from "../../firebaseConfigFile";
-
-import postImage from "../../img/blog/posts/post1/black-friday.jpeg";
-import postImage2 from "../../img/blog/posts/post2/zero-waste.jpeg";
-// import PostUpload from "../../Components/Blog/PostUpload";
 
 const Background = styled.div`
   width: 100vw;
@@ -113,6 +108,7 @@ const Blog = () => {
   const { t } = useTranslation();
   const [user, setUser] = useState(null);
   const [posts, setPosts] = useState([]);
+  const [loading, setloading] = useState(true);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -128,60 +124,74 @@ const Blog = () => {
   }, [user]);
 
   useEffect(() => {
+    let mounted = true;
     db.collection("posts")
       .orderBy("timestapm", "desc")
       .onSnapshot((snapshot) => {
-        setPosts(
-          snapshot.docs.map((doc) => ({
-            id: doc.id,
-            data: doc.data(),
-          }))
-        );
+        if (mounted) {
+          setPosts(
+            snapshot.docs.map((doc) => ({
+              id: doc.id,
+              data: doc.data(),
+            }))
+          );
+          setloading(false);
+        }
       });
-  }, [posts]);
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   return (
-    <Layout>
-      <Background>
-        <H1 data-aos="zoom-in-up">
-          Stworzony by wnieść do Twojego <br />
-          życia więcej świeżości
-        </H1>
-        <Link
-          data-aos="zoom-in-up"
-          duration={800}
-          activeClass="a"
-          to="#posts"
-          spy={true}
-          smooth={true}
-          offset={-80}
-        >
-          <Button data-aos-delay="400">{t("home.button")}</Button>
-        </Link>
-      </Background>
-      <Content id="posts">
-        {posts.map(({ id, data }) => (
-          <Post key={id} id={id} data={data} />
-        ))}
-      </Content>
-
-      {user ? (
-        <>
-          <Link to={"/newPost"}>
-            <NewButton data-aos="fade-up-left">Nowy post</NewButton>
-          </Link>
-          <NewButton
-            style={{ bottom: 170 }}
-            data-aos="fade-up-left"
-            onClick={() => auth.signOut()}
-          >
-            Wyloguj się
-          </NewButton>
-        </>
-      ) : (
+    <>
+      {loading ? (
         ""
+      ) : (
+        
+        <Layout>
+          <Background>
+            <H1 data-aos="zoom-in-up">
+              Stworzony by wnieść do Twojego <br />
+              życia więcej świeżości
+            </H1>
+            <Link
+              data-aos="zoom-in-up"
+              duration={800}
+              to="#posts"
+              smooth={true}
+              offset={-80}
+            >
+              <Button data-aos-delay="400">{t("home.button")}</Button>
+            </Link>
+          </Background>
+          <Content id="posts">
+            {posts.map(({ id, data }) => (
+              <Post key={id} id={id} data={data} />
+            ))}
+          </Content>
+
+          {user ? (
+            <>
+              <Link to={"/newPost"}>
+                <NewButton data-aos="fade-up-left">Nowy post</NewButton>
+              </Link>
+              <NewButton
+                style={{ bottom: 170 }}
+                data-aos="fade-up-left"
+                onClick={() => auth.signOut()}
+              >
+                Wyloguj się
+              </NewButton>
+            </>
+          ) : (
+            ""
+          )}
+          </Layout>
+        
       )}
-    </Layout>
+    </>
   );
 };
 

@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import clsx from "clsx";
 import Card from "@material-ui/core/Card";
 import Button from "@material-ui/core/Button";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
-import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import MDEditor from "@uiw/react-md-editor";
 import { red } from "@material-ui/core/colors";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -23,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",
+    textDecoration: "none",
   },
   media: {
     height: 0,
@@ -83,40 +80,43 @@ const StyledLink = styled(Link)`
 
 const Post = ({ id, data }) => {
   const classes = useStyles();
-  const [expanded, setExpanded] = useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
 
   return (
     <Card className={classes.root}>
-      <StyledLink to={'blog/' + id} >
-      <CardHeader
-        className={classes.header}
-        action={
-          <IconButton aria-label="settings">{/*<MoreVertIcon />*/}</IconButton>
-        }
-        title={<span className={classes.title}>{data.title}</span>}
-        subheader={<span className={classes.subheader}>{data.date} Czas czytania: {data.time}</span>}
-      />
+      <StyledLink to={"blog/" + id}>
+        <CardHeader
+          className={classes.header}
+          action={
+            <IconButton aria-label="settings">
+              {/*<MoreVertIcon />*/}
+            </IconButton>
+          }
+          title={<span className={classes.title}>{data.title}</span>}
+          subheader={
+            <span className={classes.subheader}>
+              {data.date} Czas czytania: {data.time}
+            </span>
+          }
+        />
 
-      <CardMedia
-        className={classes.media}
-        image={data.imageURL}
-        title="Paella dish"
-      />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {data.shortDesc}
-        </Typography>
-      </CardContent>
+        <CardMedia
+          className={classes.media}
+          image={data.imageURL}
+          title="Paella dish"
+        />
+        <CardContent>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {data.shortDesc}
+          </Typography>
+        </CardContent>
       </StyledLink>
       <CardActions disableSpacing>
-        <Button onClick={handleExpandClick} variant="contained" color="primary">
-          Czytaj więcej
-        </Button>
-        <IconButton
+        <StyledLink to={"blog/" + id}>
+          <Button variant="contained" color="primary">
+            Czytaj więcej
+          </Button>
+        </StyledLink>
+        {/* <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,
           })}
@@ -126,14 +126,14 @@ const Post = ({ id, data }) => {
         >
           <ExpandMoreIcon />
         </IconButton>
-        {/* <IconButton aria-label="share">
+         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
-        </IconButton> */}
+        </IconButton>  */}
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+      {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>
             <p className={classes.paragraph}>
@@ -141,7 +141,7 @@ const Post = ({ id, data }) => {
             </p>
           </Typography>
         </CardContent>
-      </Collapse>
+      </Collapse> */}
     </Card>
   );
 };

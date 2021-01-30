@@ -15,6 +15,9 @@ const Wrapper = styled.div`
   .content {
     text-align: justify;
   }
+  @media (max-width: 768px) {
+    padding: 120px 20px;
+  }
 `;
 
 const Nav = styled.div`
@@ -69,6 +72,7 @@ const PostPage = () => {
   const [nav, setNav] = useState(false);
   const [posts, setPosts] = useState([]);
   const [user, setUser] = useState(null);
+  const [loading, setloading] = useState(true);
 
   const changeBackground = () => {
     if (window.scrollY >= 80) setNav(true);
@@ -80,15 +84,23 @@ const PostPage = () => {
   const { id } = useParams();
 
   useEffect(() => {
+    let mounted = true;
     db.collection("posts")
       .doc(id)
       .get()
       .then(function (doc) {
         if (doc.exists) {
-          setPosts(doc.data());
+          if (mounted) {
+            setPosts(doc.data());
+            setloading(false);
+          }
         }
       });
-  }, []);
+
+    return () => {
+      mounted = false;
+    };
+  }, [id]);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -104,41 +116,49 @@ const PostPage = () => {
   }, [user]);
 
   return (
-    <Layout>
-      <Nav scroll={nav} />
-      <Wrapper>
-        <h3>{posts.title}</h3>
-        <span>
-          {posts.date} Czas czytania: {posts.time}
-        </span>
-        <Img className="img">
-          <img className="img" src={posts.imageURL} alt="" />
-        </Img>
-        <div className="content">
-          <MDEditor.Markdown source={posts.content} />
-        </div>
-      </Wrapper>
-
-      {user ? (
-        <>
-          <NewButton style={{ bottom: 170 }} data-aos="fade-up-left">
-            Edytuj post
-          </NewButton>
-          <NewPost
-            index={id}
-            img={posts.imageURL}
-            tit={posts.title}
-            dat={posts.date}
-            tim={posts.time}
-            cont={posts.content}
-            short={posts.shortDesc}
-            ed={true}
-          />
-        </>
-      ) : (
+    <>
+      {loading ? (
         ""
+      ) : (
+        
+        <Layout>
+          <Nav scroll={nav} />
+          <Wrapper>
+            <h3>{posts.title}</h3>
+            <span>
+              {posts.date} Czas czytania: {posts.time}
+            </span>
+            <Img className="img">
+              <img className="img" src={posts.imageURL} alt="" />
+            </Img>
+            <div className="content">
+              <MDEditor.Markdown source={posts.content} />
+            </div>
+          </Wrapper>
+
+          {user ? (
+            <>
+              <NewButton style={{ bottom: 170 }} data-aos="fade-up-left">
+                Edytuj post
+              </NewButton>
+              <NewPost
+                index={id}
+                img={posts.imageURL}
+                tit={posts.title}
+                dat={posts.date}
+                tim={posts.time}
+                cont={posts.content}
+                short={posts.shortDesc}
+                ed={true}
+              />
+            </>
+          ) : (
+            ""
+          )}
+          </Layout>
+        
       )}
-    </Layout>
+    </>
   );
 };
 

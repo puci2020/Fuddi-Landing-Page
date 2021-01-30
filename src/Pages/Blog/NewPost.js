@@ -64,8 +64,9 @@ const NewPost = ({ index, img, tit, tim, dat, cont, short, ed }) => {
   const [time, setTime] = useState("");
   const [content, setContent] = useState("");
 
-  const [imag, setImag] = useState('')
+  const [imag, setImag] = useState("");
   const [edit, setEdit] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   // const [progress, setProgress] = useState(0);
 
@@ -83,13 +84,20 @@ const NewPost = ({ index, img, tit, tim, dat, cont, short, ed }) => {
   }, [user]);
 
   useEffect(() => {
-    setTitle(tit);
-    setTime(tim);
-    setDate(dat);
-    setContent(cont);
-    setShortDesc(short);
-    setEdit(ed);
-    setImag(img);
+    let mounted = true;
+    if (mounted) {
+      setTitle(tit);
+      setTime(tim);
+      setDate(dat);
+      setContent(cont);
+      setShortDesc(short);
+      setEdit(ed);
+      setImag(img);
+      setLoading(false);
+    }
+    return () => {
+      mounted = false;
+    };
   }, [tit, tim, dat, cont, short, ed, img]);
 
   const changeBackground = () => {
@@ -113,7 +121,7 @@ const NewPost = ({ index, img, tit, tim, dat, cont, short, ed }) => {
         content: content,
         date: date,
         time: time,
-        urlImage: imag
+        urlImage: imag,
       },
       { merge: true }
     );
@@ -164,72 +172,79 @@ const NewPost = ({ index, img, tit, tim, dat, cont, short, ed }) => {
 
   return (
     <Layout>
-      <Nav scroll={nav} />
-      <Wrapper>
-        {user ? (
-          <Form>
-            <input
-              placeholder="Tytuł"
-              type="text"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              className="form__item input"
-            />
-            <input
-              placeholder="Data np. 1 stycznia 2020"
-              type="text"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-              className="form__item input"
-            />
-            <input
-              placeholder="Czas czytania np. 5 min"
-              type="text"
-              value={time}
-              onChange={(e) => setTime(e.target.value)}
-              className="form__item input"
-            />
-            <textarea
-              placeholder="Short description"
-              className="form__item"
-              rows="10"
-              value={shortDesc}
-              onChange={(e) => setShortDesc(e.target.value)}
-            />
-            <MDEditor
-              value={content}
-              onChange={setContent}
-              className="form__item"
-            />
-            {edit ? (
-              <button
-                className="form__item form__button"
-                type="submit"
-                onClick={updatePost}
-              >
-                Aktualizuj post
-              </button>
-            ) : (
-              <>
+    
+      {loading ? (
+        ""
+      ) : (
+        <>
+          <Nav scroll={nav} />
+          <Wrapper>
+            {user ? (
+              <Form>
                 <input
-                  type="file"
-                  className="form__item"
-                  onChange={handleChange}
+                  placeholder="Tytuł"
+                  type="text"
+                  value={title || ""}
+                  onChange={(e) => setTitle(e.target.value)}
+                  className="form__item input"
                 />
-                <button
-                  className="form__item form__button"
-                  type="submit"
-                  onClick={handleUpload}
-                >
-                  Publikuj post
-                </button>
-              </>
+                <input
+                  placeholder="Data np. 1 stycznia 2020"
+                  type="text"
+                  value={date || ""}
+                  onChange={(e) => setDate(e.target.value)}
+                  className="form__item input"
+                />
+                <input
+                  placeholder="Czas czytania np. 5 min"
+                  type="text"
+                  value={time || ""}
+                  onChange={(e) => setTime(e.target.value)}
+                  className="form__item input"
+                />
+                <textarea
+                  placeholder="Short description"
+                  className="form__item"
+                  rows="10"
+                  value={shortDesc || ""}
+                  onChange={(e) => setShortDesc(e.target.value)}
+                />
+                <MDEditor
+                  value={content || ""}
+                  onChange={setContent}
+                  className="form__item"
+                />
+                {edit ? (
+                  <button
+                    className="form__item form__button"
+                    type="submit"
+                    onClick={updatePost}
+                  >
+                    Aktualizuj post
+                  </button>
+                ) : (
+                  <>
+                    <input
+                      type="file"
+                      className="form__item"
+                      onChange={handleChange}
+                    />
+                    <button
+                      className="form__item form__button"
+                      type="submit"
+                      onClick={handleUpload}
+                    >
+                      Publikuj post
+                    </button>
+                  </>
+                )}
+              </Form>
+            ) : (
+              "Zaloguj się!"
             )}
-          </Form>
-        ) : (
-          "Zaloguj się!"
-        )}
-      </Wrapper>
+          </Wrapper>
+        </>
+      )}
     </Layout>
   );
 };

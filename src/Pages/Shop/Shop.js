@@ -23,7 +23,7 @@ const Shop = () => {
     return (
         <Layout>
             <Wrapper>
-                <img src={isComing}/>
+                <img src={isComing} alt='iscomming'/>
             </Wrapper>
         </Layout>
     );
