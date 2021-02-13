@@ -10,6 +10,17 @@ background-color: #003d00;
 display: flex;
 align-items: center;
 justify-content: center;
+flex-direction: column;
+color: white;
+font-size: 1.6rem;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  p{
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+  }
 
   ${({theme}) => theme.media.phone}{
     img{
@@ -23,7 +34,10 @@ const Shop = () => {
     return (
         <Layout>
             <Wrapper>
-                <img src={isComing}/>
+                {/* <img src={isComing}/> */}
+                <p>Zamówienia przyjmujemy na:</p>
+                <a href={"mailto:fuddi.kontakt@gmail.com"}>fuddi.kontakt@gmail.com</a>
+                733 084 316<br/>
             </Wrapper>
         </Layout>
     );
