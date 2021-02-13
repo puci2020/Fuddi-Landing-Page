@@ -16,10 +16,12 @@ font-size: 1.6rem;
   a{
     text-decoration: none;
     color: white;
+    
   }
   p{
     margin-bottom: 10px;
     font-size: 1.7rem;
+
   }
 
   ${({theme}) => theme.media.phone}{
