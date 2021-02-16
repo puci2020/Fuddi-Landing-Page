@@ -13,6 +13,7 @@ flex-direction: column;
 color: white;
 font-size: 1.6rem;
 
+
 p{
   margin-bottom: 10px;
   font-size: 1.7rem;
@@ -36,7 +37,9 @@ const Shop = () => {
     return (
         <Layout>
             <Wrapper>
+
                 {/* <img src={isComing} alt='iscomming'/> */}
+
                 <p>Zamówienia przyjmujemy na:</p>
                 <a href={"mailto:fuddi.kontakt@gmail.com"}>fuddi.kontakt@gmail.com</a>
                 733 084 316<br/>

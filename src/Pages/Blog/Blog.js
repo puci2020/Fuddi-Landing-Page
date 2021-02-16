@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import Post from "../../Components/Blog/Post";
 import { auth, db } from "../../firebaseConfigFile";
 
+
 const Background = styled.div`
   width: 100vw;
   height: 100vh;
