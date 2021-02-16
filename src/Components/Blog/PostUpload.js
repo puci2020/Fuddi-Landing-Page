@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components'
 import {Button, Input} from "@material-ui/core";
-// import {db, storage} from "./firebase";
-// import firebase from "firebase";
+
 
 const UploadWrapper = styled.div`
   .closed{
@@ -136,11 +135,11 @@ const PostUpload = ({username}) => {
             <button className={open ? "btn" : "btn btnOpen"} onClick={handleOpen}>Post new content</button>
             <div className={open ? "closed" : "closed open"}>
                 <progress className="control" value={progress} max="100"/>
-                <Input className="control" value={title} type="text" placeholder="Enter a title..."
+                <Input className="control" value={title||''} type="text" placeholder="Enter a title..."
                        onChange={e => setTitle(e.target.value)}/>
-                <Input className="control" value={caption} type="text" placeholder="Enter a caption..."
+                <Input className="control" value={caption||''} type="text" placeholder="Enter a caption..."
                        onChange={e => setCaption(e.target.value)}/>
-                <Input className="control" value={desc} type="text" placeholder="Enter a long caption..."
+                <Input className="control" value={desc||''} type="text" placeholder="Enter a long caption..."
                        onChange={e => setDesc(e.target.value)}/>
                 <div className="file">
                     <Input className="control file__input" type="file" onChange={handleChange}/>

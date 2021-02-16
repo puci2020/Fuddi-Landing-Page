@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {HashRouter as Router, Route} from 'react-router-dom';
 import Main from './Pages/Main'
 import Faq from "./Pages/Faq";

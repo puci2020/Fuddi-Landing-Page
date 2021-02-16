@@ -5,16 +5,8 @@ import background from "../../img/blog/home3.jpeg";
 import { HashLink as Link } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
 import Post from "../../Components/Blog/Post";
-import Post2 from "../../Components/Blog/Post2";
-import Post3 from "../../Components/Blog/Post3";
-import Post4 from "../../Components/Blog/Post4";
-import { auth } from "../../firebaseConfigFile";
+import { auth, db } from "../../firebaseConfigFile";
 
-import postImage from "../../img/blog/posts/post1/black-friday.jpeg";
-import postImage2 from "../../img/blog/posts/post2/zero-waste.jpeg";
-import postImage3 from "../../img/blog/posts/post3/zdj4.jpeg";
-import postImage4 from "../../img/blog/posts/post4/glowny.jpeg";
-// import PostUpload from "../../Components/Blog/PostUpload";
 
 const Background = styled.div`
   width: 100vw;
@@ -116,6 +108,8 @@ const NewButton = styled.button`
 const Blog = () => {
   const { t } = useTranslation();
   const [user, setUser] = useState(null);
+  const [posts, setPosts] = useState([]);
+  const [loading, setloading] = useState(true);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -130,92 +124,75 @@ const Blog = () => {
     };
   }, [user]);
 
-  return (
-    <Layout>
-      <Background>
-        <H1 data-aos="zoom-in-up">
-          Stworzony by wnieść do Twojego <br />
-          życia więcej świeżości
-        </H1>
-        <Link
-          data-aos="zoom-in-up"
-          duration={800}
-          activeClass="a"
-          to="#posts"
-          spy={true}
-          smooth={true}
-          offset={-80}
-        >
-          <Button data-aos-delay="400">{t("home.button")}</Button>
-        </Link>
-      </Background>
-      <Content id="posts">
-        <Post4
-          id={"asdasdasdaaasd"}
-          head={
-            "Ekspert z Niemiec: “Polacy zostali rozjechani przez kapitalizm. Również przez nas.”"
-          }
-          date={"13 stycznia 2021 Czas czytania: 5 min"}
-          img={postImage4}
-          shortDesc={`Dlaczego za produkty w niemieckiej sieciówce płacimy więcej? Jesteśmy “krajem taniej siły roboczej”, a do tego “rozjechanym przez kapitalizm”? Tak podsumował Polskę niemiecki ekspert. To nie brzmi dobrze. Co w związku z tym także my sami, jako konsumenci, możemy zrobić aby poprawić sytuację gospodarczą w kraju? `}
-        />
-      </Content>
-      <Content id="posts">
-        <Post3
-          id={"asdasdasd"}
-          head={
-            "Szybki eksperyment ekonomiczny - Co się dzieje gdy kupujemy od zagranicznych korporacji?"
-          }
-          date={"14 grudnia 2020 Czas czytania: 5 min"}
-          img={postImage3}
-          shortDesc={`Myślisz, że to od jakiego producenta kupujesz nie ma znaczenia? Bo przecież co znaczą zakupy jednej osoby wobec zakupów wszystkich mieszkańców kraju... Nic bardziej mylnego.
-          `}
-        />
-      </Content>
-      <Content id="posts">
-        <Post2
-          id={"asdasd"}
-          head={
-            "Ekonomia współdzielenia - recepta na lepsze wykorzystanie zasobów"
-          }
-          date={"10 grudnia 2020 Czas czytania: 5 min"}
-          img={postImage2}
-          shortDesc={`Czas leci do przodu, przyzwyczajenia się zmieniają, a co za tym idzie? Wymyślane są nowe rozwiązania, które usprawniają każdą część naszej codzienności. Jednym z popularnych ruchów, który ma coraz większy wpływ na gospodarkę jest tak zwana ekonomia współdzielenia. Działanie według tej idei może stać się szansą na lepsze i bardziej etyczne korzystanie z zasobów.
-                `}
-        />
-      </Content>
-      <Content id="posts">
-        <Post
-          id={"askjdhas6876asid@#$"}
-          head={"Black Friday i konsumpcjonizm z pandemią w tle"}
-          date={"27 listopada 2020 Czas czytania: 4 min"}
-          img={postImage}
-          shortDesc={`Czy wiesz, że jeden dzień może być wart aż 2,3 miliarda złotych? Aż
-                tyle wynoszą łączne wydatki w skali kraju w ciągu tłumnie obchodzonego
-                Black Friday. Święto konsumpcjonizmu. Raj dla łowców promocji. A może
-                festiwal złudzeń i nierozsądnych zakupów…`}
-        />
-      </Content>
-      
-      {/*<PostUpload/>*/}
+  useEffect(() => {
+    let mounted = true;
+    db.collection("posts")
+      .orderBy("timestapm", "desc")
+      .onSnapshot((snapshot) => {
+        if (mounted) {
+          setPosts(
+            snapshot.docs.map((doc) => ({
+              id: doc.id,
+              data: doc.data(),
+            }))
+          );
+          setloading(false);
+        }
+      });
 
-      {user ? (
-        <>
-          <Link to={"/newPost"}>
-            <NewButton data-aos="fade-up-left">Nowy post</NewButton>
-          </Link>
-          <NewButton
-            style={{ bottom: 170 }}
-            data-aos="fade-up-left"
-            onClick={() => auth.signOut()}
-          >
-            Wyloguj się
-          </NewButton>
-        </>
-      ) : (
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  return (
+    <>
+      {loading ? (
         ""
+      ) : (
+        
+        <Layout>
+          <Background>
+            <H1 data-aos="zoom-in-up">
+              Stworzony by wnieść do Twojego <br />
+              życia więcej świeżości
+            </H1>
+            <Link
+              data-aos="zoom-in-up"
+              duration={800}
+              to="#posts"
+              smooth={true}
+              offset={-80}
+            >
+              <Button data-aos-delay="400">{t("home.button")}</Button>
+            </Link>
+          </Background>
+          <Content id="posts">
+            {posts.map(({ id, data }) => (
+              <Post key={id} id={id} data={data} />
+            ))}
+          </Content>
+
+          {user ? (
+            <>
+              <Link to={"/newPost"}>
+                <NewButton data-aos="fade-up-left">Nowy post</NewButton>
+              </Link>
+              <NewButton
+                style={{ bottom: 170 }}
+                data-aos="fade-up-left"
+                onClick={() => auth.signOut()}
+              >
+                Wyloguj się
+              </NewButton>
+            </>
+          ) : (
+            ""
+          )}
+          </Layout>
+        
       )}
-    </Layout>
+    </>
   );
 };
 
