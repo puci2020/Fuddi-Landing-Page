@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Layout from "../../Theme/Layout"
-import isComing from "../../img/isComing.png"
 
 const Wrapper = styled.div`
 width: 100vw;
