@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter as Router, Route} from 'react-router-dom';
+import {HashRouter as Routera, Router, Route} from 'react-router-dom';
 import Main from './Pages/Main'
 import Faq from "./Pages/Faq";
 import Contact from "./Pages/Contact";
@@ -11,24 +11,20 @@ import PostPage from "./Components/Blog/PostPage";
 import NewPost from "./Pages/Blog/NewPost";
 import AdminLogin from "./Pages/Blog/AdminLogin";
 import ReactGA from 'react-ga';
-import { useEffect } from 'react';
-import { createBrowserHistory } from 'history';
+import createHistory from 'history/createBrowserHistory';
 
-const history = createBrowserHistory();
-
-// history.listen(location => {
-//     ReactGA.set({ page: location.pathname }); // Update the user's current page
-//     ReactGA.pageview(location.pathname);
-// })
+const history = createHistory();
+ReactGA.initialize('G-WSW3BKQX9B');
+history.listen((location, action) => {
+    ReactGA.pageview(window.location.href + location.search);
+    // console.log(window.location.href + location.search);
+})
 
 
 const App = () => {
-    useEffect(() => {
-        ReactGA.initialize('G-WSW3BKQX9B');
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    },[])
     return (
-            <Router basename={process.env.PUBLIC_URL}>
+        <Router history={history}>
+            <Routera basename={process.env.PUBLIC_URL}>
                 <Route exact path={"/"} component={Main}/>
                 <Route path={"/faq"} component={Faq}/>
                 <Route path={"/contact"} component={Contact}/>
@@ -41,6 +37,7 @@ const App = () => {
 
 
                 <Route path={"/shop"} component={Shop}/>
+            </Routera>
             </Router>
     );
 }
