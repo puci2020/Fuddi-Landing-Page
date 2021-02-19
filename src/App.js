@@ -16,18 +16,19 @@ import { createBrowserHistory } from 'history';
 
 const history = createBrowserHistory();
 
-history.listen(location => {
-    ReactGA.set({ page: location.pathname }); // Update the user's current page
-    ReactGA.pageview(location.pathname);
-})
+// history.listen(location => {
+//     ReactGA.set({ page: location.pathname }); // Update the user's current page
+//     ReactGA.pageview(location.pathname);
+// })
 
-ReactGA.initialize('G-WSW3BKQX9B');
+
 const App = () => {
     useEffect(() => {
+        ReactGA.initialize('G-WSW3BKQX9B');
         ReactGA.pageview(window.location.pathname + window.location.search);
-    })
+    },[])
     return (
-            <Router history={history} basename={process.env.PUBLIC_URL}>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Route exact path={"/"} component={Main}/>
                 <Route path={"/faq"} component={Faq}/>
                 <Route path={"/contact"} component={Contact}/>
