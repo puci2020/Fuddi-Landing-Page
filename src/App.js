@@ -10,11 +10,24 @@ import Blog from "./Pages/Blog/Blog";
 import PostPage from "./Components/Blog/PostPage";
 import NewPost from "./Pages/Blog/NewPost";
 import AdminLogin from "./Pages/Blog/AdminLogin";
+import ReactGA from 'react-ga';
+import { useEffect } from 'react';
+import { createBrowserHistory } from 'history';
 
+const history = createBrowserHistory();
 
+history.listen(location => {
+    ReactGA.set({ page: location.pathname }); // Update the user's current page
+    ReactGA.pageview(location.pathname);
+})
+
+ReactGA.initialize('G-WSW3BKQX9B');
 const App = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    })
     return (
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router history={history} basename={process.env.PUBLIC_URL}>
                 <Route exact path={"/"} component={Main}/>
                 <Route path={"/faq"} component={Faq}/>
                 <Route path={"/contact"} component={Contact}/>

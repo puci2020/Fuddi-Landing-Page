@@ -8,6 +8,8 @@ import { HashLink as Link } from "react-router-hash-link";
 import SideDrawer from "../Components/SideDrawer/SideDrawer";
 import Navbar from "../Components/Navbar/Navbar";
 import AOS from "aos";
+// import ReactGA from 'react-ga';
+// import { withRouter } from 'react-router-dom';
 
 const Button = styled.button`
   width: 220px;
@@ -36,6 +38,8 @@ const Button = styled.button`
     right: 20px;
   }
 `;
+
+// ReactGA.initialize('G-WSW3BKQX9B');
 
 const Layout = ({ children }) => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
@@ -68,6 +72,11 @@ const Layout = ({ children }) => {
   }
 
   const { t } = useTranslation();
+
+  // useEffect(() => {
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // })
+
   useEffect(() => {
     let mounted = true;
     if (mounted) {
