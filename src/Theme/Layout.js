@@ -81,7 +81,7 @@ const Layout = ({ children }) => {
     let mounted = true;
     if (mounted) {
       AOS.init({
-        disable: "mobile",
+        // disable: "mobile",
         once: true,
         duration: 700,
       });
