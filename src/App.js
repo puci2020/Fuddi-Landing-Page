@@ -26,7 +26,7 @@ const App = () => {
         // <Router>
 
             <Router basename={process.env.PUBLIC_URL}>
-                <Route exact path={"/"} component={Main}/>
+                <Route exact path={"/"} component={Shop}/>
                 <Route path={"/faq"} component={Faq}/>
                 <Route path={"/contact"} component={Contact}/>
                 <Route path={"/newsletter"} component={Newsletter}/>
@@ -37,7 +37,7 @@ const App = () => {
                 <Route  path={"/blog/:id"} component={PostPage}/>
 
 
-                <Route path={"/shop"} component={Shop}/>
+                <Route path={"/home"} component={Main}/>
             </Router>
             // </Router>
     );

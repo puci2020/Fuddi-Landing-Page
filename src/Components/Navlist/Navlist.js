@@ -102,7 +102,11 @@ function NavList() {
         <NavWrapper>
             <UL>
                 <li>
-                    <Link smooth to="/#home"
+                    <Link smooth to={'/'} scroll={el => el.scrollIntoView({behavior: 'smooth'})}
+                          top="0">{t("link6.1")}</Link>
+                </li>
+                <li>
+                    <Link smooth to="/home"
                           scroll={el => el.scrollIntoView({behavior: 'smooth'})}> {t("link1.1")}</Link>
                 </li>
                 <li>
@@ -121,10 +125,7 @@ function NavList() {
                     <Link smooth to={'/blog'} scroll={el => el.scrollIntoView({behavior: 'smooth'})}
                           top="0">Blog</Link>
                 </li>
-                <li>
-                    <Link smooth to={'/shop'} scroll={el => el.scrollIntoView({behavior: 'smooth'})}
-                          top="0">{t("link6.1")}</Link>
-                </li>
+
 
                 <li><Select id="lang" onChange={() => changeLanguage()}>
                     <option value={'pl'}>PL</option>
