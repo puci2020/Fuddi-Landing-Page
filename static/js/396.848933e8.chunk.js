@@ -1,2 +1,0 @@
-(window["webpackJsonpreact-translate-app"]=window["webpackJsonpreact-translate-app"]||[]).push([[396],{543:function(a,t){Prism.languages["t4-vb"]=Prism.languages["t4-templating"].createT4("vbnet")}}]);
-//# sourceMappingURL=396.848933e8.chunk.js.map
