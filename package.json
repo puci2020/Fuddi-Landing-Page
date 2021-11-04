@@ -2,7 +2,7 @@
   "name": "react-translate-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fuddi.pl",
+  "homepage": "https://puci2020.github.io/Fuddi-Landing-Page/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -20,7 +20,7 @@
     "react-dom": "^16.9.0",
     "react-ga": "^3.3.0",
     "react-i18next": "^10.12.4",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^5.3.0",
     "react-router-hash-link": "^2.0.0",
     "react-router-hash-link-offset": "^1.2.0",
     "react-scripts": "3.1.1",
